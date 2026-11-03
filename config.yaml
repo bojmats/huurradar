@@ -1,7 +1,7 @@
 # ============================================================
 #  HuurRadar – zoekinstellingen
 #  Pas dit bestand aan op GitHub (potloodje) en sla op.
-#  De volgende run (binnen ~15 min) gebruikt de nieuwe instellingen.
+#  De volgende scan (08:17 of 18:17) gebruikt de nieuwe instellingen.
 # ============================================================
 
 max_prijs: 1500        # maximale huur per maand in euro's
@@ -46,15 +46,22 @@ gebieden:
       - prinsenland
   - naam: Nieuwerkerk aan den IJssel
     slug: nieuwerkerk-aan-den-ijssel
+    postcodes: ["2911-2914"]
   - naam: Zevenhuizen
     slug: zevenhuizen
+    postcodes: ["2761-2762"]
   - naam: Gouda
     slug: gouda
+    postcodes: ["2800-2809"]
   - naam: Zoetermeer
     slug: zoetermeer
+    postcodes: ["2711-2729"]
 
 # Hoeveel resultaatpagina's per site per plaats maximaal (nieuwste staan bovenaan)
 max_paginas: 3
 
 # Advertenties die niet meer online staan worden na zoveel dagen uit het overzicht gehaald
-bewaar_dagen_offline: 7
+bewaar_dagen_offline: 14
+
+# Hoeveel scans als los tabblad in het overzicht blijven staan
+bewaar_scans: 30

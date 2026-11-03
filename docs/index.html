@@ -29,6 +29,11 @@
   .chip input{margin:0;accent-color:var(--accent)}
   .price{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 10px}
   .price input{width:110px;accent-color:var(--accent);padding:0;border:0}
+  .tabs{display:flex;gap:6px;overflow-x:auto;max-width:1100px;margin:12px auto 0;padding-bottom:2px;scrollbar-width:thin}
+  .tab{flex:none;font:inherit;font-size:14px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:10px;padding:7px 12px;cursor:pointer;white-space:nowrap;position:relative}
+  .tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .tab .n{font-weight:700;margin-left:6px}
+  .tab.unread::after{content:"";position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
   main{max-width:1100px;margin:0 auto;padding:16px}
   .summary{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;color:var(--muted);font-size:14px}
   .summary button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
@@ -70,12 +75,12 @@
       <option value="price">Goedkoopste eerst</option>
       <option value="m2">Grootste eerst</option>
     </select>
-    <label class="chip"><input type="checkbox" id="onlyNew"> Alleen nieuw</label>
     <label class="chip"><input type="checkbox" id="showOff"> Ook offline</label>
   </div>
+  <div class="tabs" id="tabs"></div>
 </header>
 <main>
-  <div class="summary"><span id="count"></span><button id="markRead">Alles gezien</button></div>
+  <div class="summary"><span id="count"></span><button id="markRead">Alle scans gezien</button></div>
   <div class="grid" id="grid"></div>
 </main>
 
@@ -87,7 +92,9 @@ const store = {
   set(k,v){ try{ localStorage.setItem(k,v) }catch(e){} }
 };
 let data = null;
-let lastVisit = store.get("hr_seen") || "1970-01-01T00:00:00+00:00";
+let tab = "all";                       // "all" of de tijd van een scan
+let seen = new Set(JSON.parse(store.get("hr_seen_scans") || "[]"));
+const saveSeen = () => store.set("hr_seen_scans", JSON.stringify([...seen]));
 
 const euro = n => n == null ? "Prijs onbekend" : "€ " + n.toLocaleString("nl-NL");
 const ago = iso => {
@@ -98,25 +105,36 @@ const ago = iso => {
   if (h < 24) return h + " uur geleden";
   return Math.round(h / 24) + " dag(en) geleden";
 };
+const scanLabel = iso => new Date(iso).toLocaleString("nl-NL",
+  {weekday:"short", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"});
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function scans(){
+  // nieuwste eerst; oudere data zonder scan-lijst: afleiden uit first_seen
+  let list = data.scans && data.scans.length ? data.scans.slice()
+    : [...new Set(data.listings.map(l => l.first_seen))].map(t => ({time:t}));
+  list.forEach(s => s.new = data.listings.filter(l => l.first_seen === s.time).length);
+  return list.sort((a,b) => b.time.localeCompare(a.time));
+}
 
 async function load(){
   try{
     const r = await fetch("listings.json?t=" + Date.now(), {cache:"no-store"});
     data = await r.json();
   }catch(e){
-    $("updated").textContent = "Nog geen data – wacht op de eerste run";
     data = {listings:[]};
   }
+  $("updated").textContent = data.updated ? "Laatste scan " + ago(data.updated) : "Nog geen scan gedraaid";
+  // eerste bezoek: alle bestaande scans behalve de nieuwste als gezien markeren
+  if (!store.get("hr_seen_scans")) { scans().slice(1).forEach(s => seen.add(s.time)); saveSeen(); }
   init();
   render();
 }
 
 let inited = false;
 function init(){
-  if (data.updated) $("updated").textContent = "Bijgewerkt " + ago(data.updated);
   $("status").innerHTML = Object.entries(data.status || {}).map(([s,v]) =>
-    `<span class="dot ${v.ok ? "" : "bad"}" title="${v.ok ? "werkt" : "geblokkeerd of fout bij laatste run"}">${SOURCES[s]||s}</span>`).join("");
+    `<span class="dot ${v.ok ? "" : "bad"}" title="${v.ok ? "werkt" : "geblokkeerd of fout bij laatste scan"}">${SOURCES[s]||s}</span>`).join("");
   if (inited) return;
   inited = true;
   const areas = [...new Set(data.listings.map(l => l.area).filter(Boolean))].sort();
@@ -124,35 +142,54 @@ function init(){
   Object.entries(SOURCES).forEach(([k,v]) => $("source").add(new Option(v, k)));
   const max = data.criteria?.max_prijs || 1500;
   $("max").max = Math.max(3000, max); $("max").value = max; $("maxOut").textContent = max;
-  ["q","area","source","max","sort","onlyNew","showOff"].forEach(id =>
+  ["q","area","source","max","sort","showOff"].forEach(id =>
     $(id).addEventListener("input", () => { $("maxOut").textContent = $("max").value; render(); }));
-  $("markRead").onclick = () => { lastVisit = data.updated || new Date().toISOString(); store.set("hr_seen", lastVisit); render(); };
+  $("markRead").onclick = () => { scans().forEach(s => seen.add(s.time)); saveSeen(); render(); };
+  $("tabs").addEventListener("click", e => {
+    const b = e.target.closest(".tab"); if (!b) return;
+    tab = b.dataset.t;
+    if (tab !== "all") { seen.add(tab); saveSeen(); }
+    render();
+  });
+  // open meteen de nieuwste ongelezen scan
+  const firstUnread = scans().find(s => !seen.has(s.time) && s.new);
+  if (firstUnread) { tab = firstUnread.time; seen.add(tab); saveSeen(); }
+}
+
+function renderTabs(){
+  const all = `<button class="tab ${tab==="all"?"on":""}" data-t="all">Alle woningen<span class="n">${data.listings.filter(l=>l.active!==false).length}</span></button>`;
+  $("tabs").innerHTML = all + scans().map(s =>
+    `<button class="tab ${tab===s.time?"on":""} ${seen.has(s.time)?"":"unread"}" data-t="${s.time}">${scanLabel(s.time)}<span class="n">${s.new ? "+" + s.new : "0"}</span></button>`).join("");
 }
 
 function render(){
+  renderTabs();
   const q = $("q").value.toLowerCase().trim();
   const max = +$("max").value;
+  const inScan = tab !== "all";
   let list = data.listings.filter(l =>
-    ($("showOff").checked || l.active !== false) &&
+    (inScan ? l.first_seen === tab : ($("showOff").checked || l.active !== false)) &&
     (!$("area").value || l.area === $("area").value) &&
     (!$("source").value || l.source === $("source").value) &&
     (l.price == null || l.price <= max) &&
-    (!$("onlyNew").checked || l.first_seen > lastVisit) &&
     (!q || `${l.title} ${l.address} ${l.wijk||""} ${l.area}`.toLowerCase().includes(q))
   );
   const s = $("sort").value;
   list.sort((a,b) => s === "price" ? (a.price??1e9) - (b.price??1e9)
                   : s === "m2" ? (b.surface??0) - (a.surface??0)
                   : b.first_seen.localeCompare(a.first_seen));
-  const nNew = data.listings.filter(l => l.active !== false && l.first_seen > lastVisit).length;
-  $("count").textContent = `${list.length} woning${list.length===1?"":"en"}` + (nNew ? ` · ${nNew} nieuw sinds je laatste bezoek` : "");
-  document.title = nNew ? `(${nNew}) HuurRadar` : "HuurRadar";
+  const unread = scans().filter(s => !seen.has(s.time) && s.new);
+  const nUnread = unread.reduce((n,s) => n + s.new, 0);
+  $("count").textContent = inScan
+    ? `${list.length} nieuwe woning${list.length===1?"":"en"} in scan van ${scanLabel(tab)}`
+    : `${list.length} woning${list.length===1?"":"en"}` + (nUnread ? ` · ${nUnread} nieuw in ${unread.length} ongelezen scan${unread.length===1?"":"s"}` : "");
+  document.title = nUnread ? `(${nUnread}) HuurRadar` : "HuurRadar";
   $("grid").innerHTML = list.length ? list.map(card).join("") :
-    `<div class="empty">Geen woningen gevonden met deze filters.</div>`;
+    `<div class="empty">${inScan ? "Deze scan vond geen nieuwe woningen." : "Geen woningen gevonden met deze filters."}</div>`;
 }
 
 function card(l){
-  const isNew = l.first_seen > lastVisit && l.active !== false;
+  const isNew = !seen.has(l.first_seen) && l.active !== false && tab === "all";
   const off = l.active === false;
   return `<a class="card ${off?"off":""}" href="${esc(l.url)}" target="_blank" rel="noopener">
     <div class="img" style="${l.image ? `background-image:url('${esc(l.image)}')` : ""}">
@@ -173,7 +210,7 @@ function card(l){
 }
 
 load();
-setInterval(load, 3 * 60 * 1000); // elke 3 minuten verversen
+setInterval(load, 10 * 60 * 1000); // elke 10 minuten verversen
 </script>
 </body>
 </html>

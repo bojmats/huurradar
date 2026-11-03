@@ -324,10 +324,15 @@ def main() -> int:
         l["active"] = True
         merged[lid] = l
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=cfg.get("bewaar_dagen_offline", 7))
+    cutoff = datetime.now(timezone.utc) - timedelta(days=cfg.get("bewaar_dagen_offline", 14))
     failed_sources = {s for s, st in status.items() if not st["ok"]}
+    gebied_by_name = {g["naam"]: g for g in cfg["gebieden"]}
     for lid, old in existing.items():
         if lid in merged:
+            continue
+        # past niet meer bij de (aangepaste) instellingen -> weg
+        g = gebied_by_name.get(old.get("area"))
+        if g is None or not matches(old, g, cfg):
             continue
         # als een bron deze run faalde, gooien we zijn advertenties niet weg
         if old["source"] in failed_sources:
@@ -339,6 +344,12 @@ def main() -> int:
 
     listings = sorted(merged.values(), key=lambda l: l["first_seen"], reverse=True)
     new_count = sum(1 for l in listings if l["first_seen"] == stamp)
+    scans = load_existing().get("scans")
+    if scans is None:  # oudere data: eerdere scans afleiden
+        scans = [{"time": t, "new": sum(1 for l in listings if l["first_seen"] == t)}
+                 for t in sorted({l["first_seen"] for l in listings if l["first_seen"] != stamp})]
+    scans.append({"time": stamp, "new": new_count})
+    scans = scans[-cfg.get("bewaar_scans", 30):]
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(
         json.dumps(
@@ -350,6 +361,7 @@ def main() -> int:
                     "gebieden": [g["naam"] for g in cfg["gebieden"]],
                 },
                 "status": status,
+                "scans": scans,
                 "listings": listings,
             },
             ensure_ascii=False,

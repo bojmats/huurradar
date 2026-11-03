@@ -1,6 +1,6 @@
 # HuurRadar
 
-Checkt elke 15 minuten Pararius, Huurwoningen.nl en Funda op nieuwe huurwoningen
+Checkt twee keer per dag (08:17 en 18:17) Pararius, Huurwoningen.nl en Funda op nieuwe huurwoningen
 in jouw gebieden en onder jouw maximumprijs, en zet ze in een overzichtspagina.
 Draait gratis op GitHub, ook als je laptop uit staat.
 
@@ -18,7 +18,7 @@ Draait gratis op GitHub, ook als je laptop uit staat.
    → Branch: `main`, map `/docs` → *Save*. Na een minuut staat je app op
    `https://<jouw-gebruikersnaam>.github.io/huurradar/`.
 5. **Eerste run starten** – tab *Actions* → *Huurwoningen checken* → *Run workflow*.
-   Daarna gaat hij elke 15 minuten vanzelf.
+   Daarna draait hij vanzelf om 08:17 en 18:17.
 
 Tip: open de pagina op je telefoon en kies *Zet op beginscherm*, dan heb je hem als app.
 
@@ -35,10 +35,10 @@ Open `config.yaml` op GitHub, klik op het potloodje, pas aan en *Commit*:
 
 ## De overzichtspagina
 
-- **Nieuw**-label voor alles wat sinds je laatste "Alles gezien" binnenkwam.
+- Tabblad *Alle woningen* toont alles wat nu online staat.
 - Filters op gebied, site, prijs, en zoeken op straat/wijk.
 - Bolletjes rechtsboven: groen = site werkte bij de laatste run, rood = geblokkeerd/fout.
-- Ververst zichzelf elke 3 minuten.
+- Elke scan krijgt een eigen tabblad met alleen de nieuwe woningen; een oranje stip = nog niet bekeken.
 
 ## Goed om te weten
 
@@ -47,7 +47,7 @@ Open `config.yaml` op GitHub, klik op het potloodje, pas aan en *Commit*:
 - Sites passen soms hun opmaak aan; vindt een bron ineens 0 woningen, dan moet de
   parser in `scraper/scrape.py` worden bijgewerkt.
 - Scrapen staat in de gebruiksvoorwaarden van deze sites niet toegestaan. Voor
-  persoonlijk gebruik in dit tempo (4× per uur, met pauzes) is het risico klein,
+  persoonlijk gebruik in dit tempo (2× per dag, met pauzes) is het risico klein,
   maar gebruik het niet commercieel.
 - GitHub start geplande runs soms een paar minuten later dan gepland.
 - Lokaal testen: `pip install -r requirements.txt && python scraper/scrape.py`,
