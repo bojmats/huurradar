@@ -2,7 +2,7 @@ name: Huurwoningen checken
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 7,17 * * *"
   workflow_dispatch:
 
 permissions:
