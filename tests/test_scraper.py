@@ -1,0 +1,45 @@
+import sys, pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "scraper"))
+import scrape
+
+PARARIUS = """
+<ul><li class="search-list__item search-list__item--listing">
+<section class="listing-search-item listing-search-item--list listing-search-item--for-rent">
+ <div class="listing-search-item__depiction"><img src="https://img/1.jpg"></div>
+ <h2 class="listing-search-item__title"><a class="listing-search-item__link listing-search-item__link--title" href="/appartement-te-huur/rotterdam/abc/oudedijk">Appartement Oudedijk</a></h2>
+ <div class="listing-search-item__sub-title'">3062 AB Rotterdam (Kralingen-Oost)</div>
+ <div class="listing-search-item__price">€ 1.350 per maand</div>
+ <ul><li class="illustrated-features__item illustrated-features__item--surface-area">62 m²</li>
+ <li class="illustrated-features__item illustrated-features__item--number-of-rooms">3 kamers</li></ul>
+</section></li>
+<li><section class="listing-search-item listing-search-item--for-rent">
+ <h2 class="listing-search-item__title"><a class="listing-search-item__link--title" href="/x/rotterdam/def/zuidplein">Studio Zuidplein</a></h2>
+ <div class="listing-search-item__sub-title">3083 CW Rotterdam (Tarwewijk)</div>
+ <div class="listing-search-item__price">€ 950 per maand</div>
+</section></li></ul>"""
+
+FUNDA = """<div><div class="card"><a href="/detail/huur/gouda/appartement-markt-1/123/"><h2>Markt 1</h2></a>
+<p>2801 JE Gouda</p><p>€ 1.100 /maand</p><ul><li>55 m²</li><li>2 kamers</li></ul></div></div>"""
+
+def test_pararius():
+    ls = scrape.parse_pararius_like(PARARIUS, "https://www.pararius.nl", "pararius")
+    assert len(ls) == 2
+    a = ls[0]
+    assert a["price"] == 1350 and a["surface"] == 62 and a["rooms"] == 3
+    assert a["postcode"] == "3062 AB" and a["wijk"] == "Kralingen-Oost"
+    assert a["url"].startswith("https://www.pararius.nl/appartement")
+
+def test_filter():
+    import yaml
+    cfg = yaml.safe_load(open(scrape.CONFIG_PATH))
+    rdam = cfg["gebieden"][0]
+    ls = scrape.parse_pararius_like(PARARIUS, "https://www.pararius.nl", "pararius")
+    assert scrape.matches(ls[0], rdam, cfg)          # Kralingen 3062 -> ja
+    assert not scrape.matches(ls[1], rdam, cfg)      # Tarwewijk 3083 -> nee
+    no_pc = {"price": 1000, "postcode": None, "wijk": "Ommoord", "address": "", "title": ""}
+    assert scrape.matches(no_pc, rdam, cfg)
+    assert not scrape.matches({**ls[0], "price": 2000}, rdam, cfg)
+
+def test_funda():
+    ls = scrape.parse_funda(FUNDA, "https://www.funda.nl")
+    assert len(ls) == 1 and ls[0]["price"] == 1100 and ls[0]["postcode"] == "2801 JE" and ls[0]["surface"] == 55

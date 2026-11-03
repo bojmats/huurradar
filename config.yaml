@@ -1,0 +1,60 @@
+# ============================================================
+#  HuurRadar – zoekinstellingen
+#  Pas dit bestand aan op GitHub (potloodje) en sla op.
+#  De volgende run (binnen ~15 min) gebruikt de nieuwe instellingen.
+# ============================================================
+
+max_prijs: 1500        # maximale huur per maand in euro's
+min_prijs: 0
+min_kamers: 0          # 0 = geen minimum
+min_oppervlakte: 0     # in m², 0 = geen minimum
+
+# Welke sites doorzocht worden (true/false)
+bronnen:
+  pararius: true
+  huurwoningen: true
+  funda: true          # Funda blokkeert bots vaak; mislukt dit, dan gaan de andere gewoon door
+
+# Gebieden. Per plaats:
+#   slug      = plaatsnaam zoals in de URL van de sites
+#   postcodes = (optioneel) alleen woningen met deze postcodes. Bereik "3031-3039" of los "3059".
+#               Zonder postcodes wordt de hele plaats meegenomen.
+#   wijken    = (optioneel) woorden waarop gematcht wordt als een advertentie geen postcode toont
+gebieden:
+  - naam: Rotterdam
+    slug: rotterdam
+    postcodes:
+      - "3031-3039"   # Rotterdam Noord (Oude Noorden, Blijdorp, Liskwartier, Agniesebuurt, Bergpolder, Provenierswijk)
+      - "3059"        # Nesselande
+      - "3061-3063"   # Kralingen
+      - "3064-3069"   # Prins Alexander (Ommoord, Zevenkamp, Het Lage Land, Oosterflank, Prinsenland)
+    wijken:
+      - noord
+      - blijdorp
+      - liskwartier
+      - oude noorden
+      - agniesebuurt
+      - bergpolder
+      - provenierswijk
+      - kralingen
+      - nesselande
+      - prins alexander
+      - ommoord
+      - zevenkamp
+      - lage land
+      - oosterflank
+      - prinsenland
+  - naam: Nieuwerkerk aan den IJssel
+    slug: nieuwerkerk-aan-den-ijssel
+  - naam: Zevenhuizen
+    slug: zevenhuizen
+  - naam: Gouda
+    slug: gouda
+  - naam: Zoetermeer
+    slug: zoetermeer
+
+# Hoeveel resultaatpagina's per site per plaats maximaal (nieuwste staan bovenaan)
+max_paginas: 3
+
+# Advertenties die niet meer online staan worden na zoveel dagen uit het overzicht gehaald
+bewaar_dagen_offline: 7
