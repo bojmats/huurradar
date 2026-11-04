@@ -57,12 +57,17 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
+LAST_STATUS = {"code": None}
+
+
 def fetch(url: str) -> str | None:
+    LAST_STATUS["code"] = None
     try:
         r = http.get(url, headers=HEADERS, timeout=30, **IMPERSONATE)
     except Exception as e:  # netwerkfout
         log(f"   ! fout bij ophalen {url}: {e}")
         return None
+    LAST_STATUS["code"] = r.status_code
     if r.status_code != 200:
         log(f"   ! {url} gaf status {r.status_code}")
         return None
@@ -322,17 +327,18 @@ def matches(listing: dict, gebied: dict, cfg: dict) -> bool:
 
 # ----------------------------------------------------------------- detailpagina
 
-def enrich(l: dict) -> None:
+def enrich(l: dict) -> bool:
     html = fetch(l["url"])
-    l["detail_checked"] = True
     if not html:
-        return
+        return False  # volgende scan opnieuw proberen
+    l["detail_checked"] = True
     soup = BeautifulSoup(html, "html.parser")
     if not l.get("image"):
         l["image"] = og_image(soup)
     desc = soup.select_one("meta[name='description'], meta[property='og:description']")
     body = text_of(soup.select_one("[class*='listing-detail-description'], [class*='description'], main"))
     l["detail_text"] = ((desc.get("content", "") if desc else "") + " " + body)[:1500]
+    return True
 
 
 # ----------------------------------------------------------------- main
@@ -404,9 +410,17 @@ def main() -> int:
     # detailpagina's: foto ophalen en controleren op woningruil (max N per scan)
     todo = [l for l in merged.values() if l.get("active") and not l.get("detail_checked")]
     todo.sort(key=lambda l: (l["first_seen"] != stamp, l["first_seen"]))  # nieuwste eerst
-    limit = cfg.get("max_detailpaginas", 40)
-    for l in todo[:limit]:
-        enrich(l)
+    limit = cfg.get("max_detailpaginas", 15)
+    blocked: dict[str, int] = {}
+    done = 0
+    for l in todo:
+        if done >= limit:
+            break
+        if blocked.get(l["source"], 0) >= 2:  # site blokkeert: deze scan niet verder proberen
+            continue
+        if not enrich(l) and LAST_STATUS["code"] in (403, 429):
+            blocked[l["source"]] = blocked.get(l["source"], 0) + 1
+        done += 1
     for lid in [lid for lid, l in merged.items() if is_excluded(l, cfg)]:
         log(f"   - uitgesloten: {merged[lid]['title']}")
         del merged[lid]
