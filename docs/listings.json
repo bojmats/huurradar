@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T08:15:49+00:00",
+ "updated": "2026-11-04T15:28:57+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -14,11 +14,11 @@
  "status": {
   "pararius": {
    "ok": true,
-   "count": 8
+   "count": 14
   },
   "huurwoningen": {
    "ok": true,
-   "count": 67
+   "count": 19
   },
   "funda": {
    "ok": false,
@@ -33,9 +33,121 @@
   {
    "time": "2026-11-04T08:15:49+00:00",
    "new": 0
+  },
+  {
+   "time": "2026-11-04T15:28:57+00:00",
+   "new": 3
   }
  ],
  "listings": [
+  {
+   "id": "pararius-8cebf08eb617",
+   "source": "pararius",
+   "title": "Kamer Buffelstraat",
+   "url": "https://www.pararius.nl/kamer-te-huur/rotterdam/4de399dc/buffelstraat",
+   "price": 580,
+   "price_text": "€ 580 per maand Transparant Meer informatie",
+   "address": "3064 AB Rotterdam (Kralingseveer)",
+   "postcode": "3064 AB",
+   "wijk": "Kralingseveer",
+   "rooms": 1,
+   "surface": 14,
+   "image": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T15:28:57+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "pararius-1ad3ecffb9e2",
+   "source": "pararius",
+   "title": "Kamer Zwart Janstraat",
+   "url": "https://www.pararius.nl/kamer-te-huur/rotterdam/96641959/zwart-janstraat",
+   "price": null,
+   "price_text": "Prijs op aanvraag",
+   "address": "3035 AN Rotterdam (Oude Noorden)",
+   "postcode": "3035 AN",
+   "wijk": "Oude Noorden",
+   "rooms": 1,
+   "surface": 20,
+   "image": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T15:28:57+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "pararius-0b768e438fd9",
+   "source": "pararius",
+   "title": "Studio Jacob Catsstraat",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/fdc87cf8/jacob-catsstraat",
+   "price": 905,
+   "price_text": "€ 905 per maand",
+   "address": "3035 PH Rotterdam (Oude Noorden)",
+   "postcode": "3035 PH",
+   "wijk": "Oude Noorden",
+   "rooms": 1,
+   "surface": 46,
+   "image": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T15:28:57+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "pararius-165ef93f2e0b",
+   "source": "pararius",
+   "title": "Appartement Noorderhavenkade 103 A",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/af61c435/noorderhavenkade",
+   "price": 1088,
+   "price_text": "€ 1.088 per maand",
+   "address": "3039 RE Rotterdam (Blijdorp)",
+   "postcode": "3039 RE",
+   "wijk": "Blijdorp",
+   "rooms": 2,
+   "surface": 54,
+   "image": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "pararius-4db409f0e339",
+   "source": "pararius",
+   "title": "Studio G.H. Betzweg",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/d4749940/g-h-betzweg",
+   "price": 1491,
+   "price_text": "€ 1.491 per maand",
+   "address": "3068 AZ Rotterdam (Oosterflank)",
+   "postcode": "3068 AZ",
+   "wijk": "Oosterflank",
+   "rooms": 1,
+   "surface": 39,
+   "image": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "pararius-3e0a91940178",
+   "source": "pararius",
+   "title": "Appartement Tamboerstraat",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/6bb55247/tamboerstraat",
+   "price": 1200,
+   "price_text": "€ 1.200 per maand",
+   "address": "3034 PV Rotterdam (Oud Crooswijk)",
+   "postcode": "3034 PV",
+   "wijk": "Oud Crooswijk",
+   "rooms": 2,
+   "surface": 35,
+   "image": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
   {
    "id": "pararius-7aaf9ddc0e19",
    "source": "pararius",
@@ -51,7 +163,7 @@
    "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/b9911810-891e-5676-96fd-d75fc4bd008b/cbabc7b7-7af2-59ef-84a1-8726390f1a2d?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_68989fe5-29dc-4483-882b-af290b1b13e5%2Fmedia%2FEngelandlaan_270_05.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ182ODk4OWZlNS0yOWRjLTQ0ODMtODgyYi1hZjI5MGIxYjEzZTUvbWVkaWEvRW5nZWxhbmRsYWFuXzI3MF8wNS5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3DslvzpBheKMqskgP63KW9LsQ4erDbpDDt%252FedUGNEbaUDAdXqCl5UIRpUvMhSH1Bi7zbpioBKtmlzVUZkj2FBLwA8SZproFhYqlmZMb8w3K2Jed2fRAanaJTM6fD36r1cPxSCG3PJNwDunC%252FokP2O%252B43M6%252BGhN9rJSq%252B%252BQTuuwWw6nJf3GrK%252BHozxkx7SGtHxDNdZZ36vd2GBITEdvIMP1ZycPX1oA7GxNtj7PPZ5WAT7YB2QY7%252BIEFDECGfcyU3MAuztOxmYpC8op6%252Fmurt%252F0MfIQlp61g62gzpTJDfCDIXF3fFsJJB%252Ff7D5iI%252BuJZBz1DA5THeqB5mBFMLwjau44Ug%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=cda003603f1f8b30f4871df8e0c8ca154a907db3d7a93e5fc890a3991c5f1a50&width=600&auto=webp",
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -69,7 +181,7 @@
    "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/ea075fd8-ed86-5c53-ba8b-3123b82bb52b/50fafcaf-e6e9-5bf2-afca-b46558ba39f3?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_8ad27324-c99b-42de-8c20-92808c188eaa%2Fmedia%2FSEA-S-5.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ184YWQyNzMyNC1jOTliLTQyZGUtOGMyMC05MjgwOGMxODhlYWEvbWVkaWEvU0VBLVMtNS5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3DHxz7b7zmKaPrRmTOIReLP%252FF8SGMfEq%252BN3huVQbHceTGml3PbvHEqUtQ9foLXZt8778RpB0d%252B0XWaPzb%252BGN07gh0JXB%252F7FT5GFihWomhwbrVkdesMTWSTQq3W2BGj6p0yvTs7t9mVscaA1VTf%252B%252FXUP87nIK97MonalsDCF%252BlegiakcpR19XVSEzNqsiIpPKZo5eU2OoozJT6m48MjAwC6wQiFU%252FfuAl7t3oa%252FYGSY56CXiBJMZ01iU18uR5MUc5bYpIlfcXL1koYXEbLCkS0u1iLr0oL9lxJSGRvHPnnG9eq%252BCRkE0PnqY516LB%252BwWddjkXG7rgBNy6byKv%252BAP2MD3A%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=ccdd09fc6dc246d92833c1a1eb368862a34b7748e7a10ab907d35550909dbf96&width=600&auto=webp",
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -87,7 +199,7 @@
    "image": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -105,7 +217,7 @@
    "image": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -123,7 +235,7 @@
    "image": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -141,7 +253,7 @@
    "image": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -159,7 +271,7 @@
    "image": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -177,7 +289,349 @@
    "image": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-042d24643cb9",
+   "source": "huurwoningen",
+   "title": "Appartement Maerlantburg",
+   "url": "https://www.huurwoningen.nl/huren/gouda/13a42ed3/maerlantburg/",
+   "price": 1228,
+   "price_text": "€ 1.228 per maand",
+   "address": "2804 AD Gouda (Hoef- en Veldbuurt)",
+   "postcode": "2804 AD",
+   "wijk": "Hoef- en Veldbuurt",
+   "rooms": 3,
+   "surface": 63,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/13a42ed3-b682-51fb-8d82-76ae28947341/f42c7c60-e72e-59fb-a6c4-99603d88ff2e?original_uri=https%3A%2F%2Fxml.stienstra-online.nl%2Fimages%2F005585%2F~%252025-0047750%2520252-overzicht2%2520571625_1_1-lgo-20260202133817-SLE-20261027081028.jpg&sig=2adcbf2f1b21bd091fcc18120372982495305ffc34da9c283a078c1f90bb1cb3&width=600&auto=webp",
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-bf9540a9a990",
+   "source": "huurwoningen",
+   "title": "Appartement Zuidhoef",
+   "url": "https://www.huurwoningen.nl/huren/gouda/a081d6e9/zuidhoef/",
+   "price": 660,
+   "price_text": "€ 660 per maand",
+   "address": "2804 TC Gouda (Hoef- en Veldbuurt)",
+   "postcode": "2804 TC",
+   "wijk": "Hoef- en Veldbuurt",
+   "rooms": 2,
+   "surface": 55,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/a081d6e9-1168-5b2c-b491-57e551901634/c98ddadc-3564-57f9-af9c-65583e2eb88e?original_uri=https%3A%2F%2Fcdn.ruilwoning.nl%2Fhousings%2F9902%2Flarge%2F7922e24b705378e91e65ecea74a1ad34b58dfbe0.webp&sig=b97ce3762d5989d07f09834735ae4b0e26b5aded622c2f7502f7eda81b6f433a&width=600&auto=webp",
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-382a587aed98",
+   "source": "huurwoningen",
+   "title": "Appartement Burgemeester Jamessingel",
+   "url": "https://www.huurwoningen.nl/huren/gouda/2fa4449a/burgemeester-jamessingel/",
+   "price": 914,
+   "price_text": "€ 914 per maand",
+   "address": "2803 WV Gouda (Boerhaavekwartier)",
+   "postcode": "2803 WV",
+   "wijk": "Boerhaavekwartier",
+   "rooms": 2,
+   "surface": 56,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-914f641c2963",
+   "source": "huurwoningen",
+   "title": "Appartement Vredebest",
+   "url": "https://www.huurwoningen.nl/huren/gouda/23b91355/vredebest/",
+   "price": 895,
+   "price_text": "€ 895 per maand",
+   "address": "2801 AS Gouda (Nieuwe Park Oost)",
+   "postcode": "2801 AS",
+   "wijk": "Nieuwe Park Oost",
+   "rooms": 2,
+   "surface": 40,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-2b52ec47abb9",
+   "source": "huurwoningen",
+   "title": "Appartement de la Reylaan",
+   "url": "https://www.huurwoningen.nl/huren/gouda/d0046584/de-la-reylaan/",
+   "price": 857,
+   "price_text": "€ 857 per maand",
+   "address": "2806 DC Gouda (Kort Haarlem)",
+   "postcode": "2806 DC",
+   "wijk": "Kort Haarlem",
+   "rooms": 2,
+   "surface": 60,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-41b1df0922a8",
+   "source": "huurwoningen",
+   "title": "Appartement Gloriantplantsoen",
+   "url": "https://www.huurwoningen.nl/huren/gouda/2039682e/gloriantplantsoen/",
+   "price": 600,
+   "price_text": "€ 600 per maand",
+   "address": "2805 XC Gouda (Achterwillenseweg)",
+   "postcode": "2805 XC",
+   "wijk": "Achterwillenseweg",
+   "rooms": 4,
+   "surface": 70,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-a4c454cea4ec",
+   "source": "huurwoningen",
+   "title": "Appartement Chopinstraat",
+   "url": "https://www.huurwoningen.nl/huren/gouda/66045ae6/chopinstraat/",
+   "price": 900,
+   "price_text": "€ 900 per maand",
+   "address": "2807 PP Gouda (Componistenbuurt)",
+   "postcode": "2807 PP",
+   "wijk": "Componistenbuurt",
+   "rooms": 3,
+   "surface": 91,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-55a0c4daa917",
+   "source": "huurwoningen",
+   "title": "Kamer Raam",
+   "url": "https://www.huurwoningen.nl/huren/gouda/a61f0a51/raam/",
+   "price": 650,
+   "price_text": "€ 650 per maand",
+   "address": "2801 VR Gouda (Raam e.o.)",
+   "postcode": "2801 VR",
+   "wijk": "Raam e.o.",
+   "rooms": 1,
+   "surface": 9,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-7ef4fc9291f2",
+   "source": "huurwoningen",
+   "title": "Appartement Oosthaven",
+   "url": "https://www.huurwoningen.nl/huren/gouda/cd5239b8/oosthaven/",
+   "price": 547,
+   "price_text": "€ 547 per maand",
+   "address": "2801 PE Gouda (De Baan e.o.)",
+   "postcode": "2801 PE",
+   "wijk": "De Baan e.o.",
+   "rooms": 2,
+   "surface": 66,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-973c5f63cd85",
+   "source": "huurwoningen",
+   "title": "Appartement Koningin Wilhelminaweg",
+   "url": "https://www.huurwoningen.nl/huren/gouda/f52cdbe0/koningin-wilhelminaweg/",
+   "price": 646,
+   "price_text": "€ 646 per maand",
+   "address": "2802 HB Gouda (De Korte Akkeren Nieuw)",
+   "postcode": "2802 HB",
+   "wijk": "De Korte Akkeren Nieuw",
+   "rooms": 4,
+   "surface": 80,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-338a80bad2e8",
+   "source": "huurwoningen",
+   "title": "Appartement Vest",
+   "url": "https://www.huurwoningen.nl/huren/gouda/56a547ab/vest/",
+   "price": 1422,
+   "price_text": "€ 1.422 per maand",
+   "address": "2801 VC Gouda (Raam e.o.)",
+   "postcode": "2801 VC",
+   "wijk": "Raam e.o.",
+   "rooms": 3,
+   "surface": 84,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-e497b570e8fe",
+   "source": "huurwoningen",
+   "title": "Appartement Ridder van Catsweg",
+   "url": "https://www.huurwoningen.nl/huren/gouda/0148fe55/ridder-van-catsweg/",
+   "price": 862,
+   "price_text": "€ 862 per maand",
+   "address": "2804 RR Gouda (Hoef- en Veldbuurt)",
+   "postcode": "2804 RR",
+   "wijk": "Hoef- en Veldbuurt",
+   "rooms": 5,
+   "surface": 90,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-b31e2d3ac3bf",
+   "source": "huurwoningen",
+   "title": "Appartement Gloriantplantsoen",
+   "url": "https://www.huurwoningen.nl/huren/gouda/63d81383/gloriantplantsoen/",
+   "price": 570,
+   "price_text": "€ 570 per maand",
+   "address": "2805 XD Gouda (Achterwillenseweg)",
+   "postcode": "2805 XD",
+   "wijk": "Achterwillenseweg",
+   "rooms": 4,
+   "surface": 70,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-078a811b6e6a",
+   "source": "huurwoningen",
+   "title": "Appartement Conventstraat",
+   "url": "https://www.huurwoningen.nl/huren/gouda/bfa29bd4/conventstraat/",
+   "price": 650,
+   "price_text": "€ 650 per maand",
+   "address": "2801 EW Gouda (Kadenbuurt)",
+   "postcode": "2801 EW",
+   "wijk": "Kadenbuurt",
+   "rooms": 3,
+   "surface": 62,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-cddfedd73a05",
+   "source": "huurwoningen",
+   "title": "Appartement Raam",
+   "url": "https://www.huurwoningen.nl/huren/gouda/9e1ff474/raam/",
+   "price": 568,
+   "price_text": "€ 568 per maand",
+   "address": "2801 VS Gouda (Raam e.o.)",
+   "postcode": "2801 VS",
+   "wijk": "Raam e.o.",
+   "rooms": 1,
+   "surface": 50,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-0c884a163ce0",
+   "source": "huurwoningen",
+   "title": "Appartement Tristanstraat",
+   "url": "https://www.huurwoningen.nl/huren/gouda/01b316cd/tristanstraat/",
+   "price": 590,
+   "price_text": "€ 590 per maand",
+   "address": "2805 VE Gouda (Achterwillenseweg)",
+   "postcode": "2805 VE",
+   "wijk": "Achterwillenseweg",
+   "rooms": 2,
+   "surface": 70,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-39080539959c",
+   "source": "huurwoningen",
+   "title": "Huis Groenhovenweg",
+   "url": "https://www.huurwoningen.nl/huren/gouda/205c7ab2/groenhovenweg/",
+   "price": 1500,
+   "price_text": "€ 1.500 per maand",
+   "address": "2803 DD Gouda (De Goudse Poort)",
+   "postcode": "2803 DD",
+   "wijk": "De Goudse Poort",
+   "rooms": 2,
+   "surface": 92,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-2b9f71448840",
+   "source": "huurwoningen",
+   "title": "Appartement Jozefhof",
+   "url": "https://www.huurwoningen.nl/huren/gouda/6408208c/jozefhof/",
+   "price": 1340,
+   "price_text": "€ 1.340 per maand",
+   "address": "2805 PX Gouda (Ouwe Gouwe)",
+   "postcode": "2805 PX",
+   "wijk": "Ouwe Gouwe",
+   "rooms": 3,
+   "surface": 89,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
+   "active": true
+  },
+  {
+   "id": "huurwoningen-e3c2739a1b88",
+   "source": "huurwoningen",
+   "title": "Kamer Gildenburg",
+   "url": "https://www.huurwoningen.nl/huren/gouda/55aaf4bf/gildenburg/",
+   "price": null,
+   "price_text": "Prijs op aanvraag",
+   "address": "2804 VJ Gouda (Hoef- en Veldbuurt)",
+   "postcode": "2804 VJ",
+   "wijk": "Hoef- en Veldbuurt",
+   "rooms": 1,
+   "surface": 25,
+   "image": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-04T15:28:57+00:00",
    "active": true
   },
   {
@@ -196,7 +650,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-5428e9858c19",
@@ -214,7 +668,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-d40108718cd8",
@@ -232,7 +686,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-18ace5e68b68",
@@ -250,7 +704,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-013c9efdaf29",
@@ -268,7 +722,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-7c9092c9f638",
@@ -286,7 +740,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-584d1f8798ee",
@@ -304,7 +758,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-8dce14350383",
@@ -322,7 +776,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-c75c46be1adc",
@@ -340,7 +794,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-cea54c21311e",
@@ -358,7 +812,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-cf9a082c982a",
@@ -376,7 +830,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-02f4ee188d64",
@@ -394,7 +848,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-28818e3bc48d",
@@ -412,7 +866,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-7bb6da99e033",
@@ -430,7 +884,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-129b46596c7f",
@@ -448,7 +902,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-911102d31591",
@@ -466,7 +920,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-f23c41456dd8",
@@ -484,25 +938,7 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-042d24643cb9",
-   "source": "huurwoningen",
-   "title": "Appartement Maerlantburg",
-   "url": "https://www.huurwoningen.nl/huren/gouda/13a42ed3/maerlantburg/",
-   "price": 1228,
-   "price_text": "€ 1.228 per maand",
-   "address": "2804 AD Gouda (Hoef- en Veldbuurt)",
-   "postcode": "2804 AD",
-   "wijk": "Hoef- en Veldbuurt",
-   "rooms": 3,
-   "surface": 63,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/13a42ed3-b682-51fb-8d82-76ae28947341/f42c7c60-e72e-59fb-a6c4-99603d88ff2e?original_uri=https%3A%2F%2Fxml.stienstra-online.nl%2Fimages%2F005585%2F~%252025-0047750%2520252-overzicht2%2520571625_1_1-lgo-20260202133817-SLE-20261027081028.jpg&sig=2adcbf2f1b21bd091fcc18120372982495305ffc34da9c283a078c1f90bb1cb3&width=600&auto=webp",
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-604fb9bfbb49",
@@ -520,331 +956,7 @@
    "area": "Gouda",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-bf9540a9a990",
-   "source": "huurwoningen",
-   "title": "Appartement Zuidhoef",
-   "url": "https://www.huurwoningen.nl/huren/gouda/a081d6e9/zuidhoef/",
-   "price": 660,
-   "price_text": "€ 660 per maand",
-   "address": "2804 TC Gouda (Hoef- en Veldbuurt)",
-   "postcode": "2804 TC",
-   "wijk": "Hoef- en Veldbuurt",
-   "rooms": 2,
-   "surface": 55,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-382a587aed98",
-   "source": "huurwoningen",
-   "title": "Appartement Burgemeester Jamessingel",
-   "url": "https://www.huurwoningen.nl/huren/gouda/2fa4449a/burgemeester-jamessingel/",
-   "price": 914,
-   "price_text": "€ 914 per maand",
-   "address": "2803 WV Gouda (Boerhaavekwartier)",
-   "postcode": "2803 WV",
-   "wijk": "Boerhaavekwartier",
-   "rooms": 2,
-   "surface": 56,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-914f641c2963",
-   "source": "huurwoningen",
-   "title": "Appartement Vredebest",
-   "url": "https://www.huurwoningen.nl/huren/gouda/23b91355/vredebest/",
-   "price": 895,
-   "price_text": "€ 895 per maand",
-   "address": "2801 AS Gouda (Nieuwe Park Oost)",
-   "postcode": "2801 AS",
-   "wijk": "Nieuwe Park Oost",
-   "rooms": 2,
-   "surface": 40,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-2b52ec47abb9",
-   "source": "huurwoningen",
-   "title": "Appartement de la Reylaan",
-   "url": "https://www.huurwoningen.nl/huren/gouda/d0046584/de-la-reylaan/",
-   "price": 857,
-   "price_text": "€ 857 per maand",
-   "address": "2806 DC Gouda (Kort Haarlem)",
-   "postcode": "2806 DC",
-   "wijk": "Kort Haarlem",
-   "rooms": 2,
-   "surface": 60,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-41b1df0922a8",
-   "source": "huurwoningen",
-   "title": "Appartement Gloriantplantsoen",
-   "url": "https://www.huurwoningen.nl/huren/gouda/2039682e/gloriantplantsoen/",
-   "price": 600,
-   "price_text": "€ 600 per maand",
-   "address": "2805 XC Gouda (Achterwillenseweg)",
-   "postcode": "2805 XC",
-   "wijk": "Achterwillenseweg",
-   "rooms": 4,
-   "surface": 70,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-a4c454cea4ec",
-   "source": "huurwoningen",
-   "title": "Appartement Chopinstraat",
-   "url": "https://www.huurwoningen.nl/huren/gouda/66045ae6/chopinstraat/",
-   "price": 900,
-   "price_text": "€ 900 per maand",
-   "address": "2807 PP Gouda (Componistenbuurt)",
-   "postcode": "2807 PP",
-   "wijk": "Componistenbuurt",
-   "rooms": 3,
-   "surface": 91,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-55a0c4daa917",
-   "source": "huurwoningen",
-   "title": "Kamer Raam",
-   "url": "https://www.huurwoningen.nl/huren/gouda/a61f0a51/raam/",
-   "price": 650,
-   "price_text": "€ 650 per maand",
-   "address": "2801 VR Gouda (Raam e.o.)",
-   "postcode": "2801 VR",
-   "wijk": "Raam e.o.",
-   "rooms": 1,
-   "surface": 9,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-7ef4fc9291f2",
-   "source": "huurwoningen",
-   "title": "Appartement Oosthaven",
-   "url": "https://www.huurwoningen.nl/huren/gouda/cd5239b8/oosthaven/",
-   "price": 547,
-   "price_text": "€ 547 per maand",
-   "address": "2801 PE Gouda (De Baan e.o.)",
-   "postcode": "2801 PE",
-   "wijk": "De Baan e.o.",
-   "rooms": 2,
-   "surface": 66,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-973c5f63cd85",
-   "source": "huurwoningen",
-   "title": "Appartement Koningin Wilhelminaweg",
-   "url": "https://www.huurwoningen.nl/huren/gouda/f52cdbe0/koningin-wilhelminaweg/",
-   "price": 646,
-   "price_text": "€ 646 per maand",
-   "address": "2802 HB Gouda (De Korte Akkeren Nieuw)",
-   "postcode": "2802 HB",
-   "wijk": "De Korte Akkeren Nieuw",
-   "rooms": 4,
-   "surface": 80,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-338a80bad2e8",
-   "source": "huurwoningen",
-   "title": "Appartement Vest",
-   "url": "https://www.huurwoningen.nl/huren/gouda/56a547ab/vest/",
-   "price": 1422,
-   "price_text": "€ 1.422 per maand",
-   "address": "2801 VC Gouda (Raam e.o.)",
-   "postcode": "2801 VC",
-   "wijk": "Raam e.o.",
-   "rooms": 3,
-   "surface": 84,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-e497b570e8fe",
-   "source": "huurwoningen",
-   "title": "Appartement Ridder van Catsweg",
-   "url": "https://www.huurwoningen.nl/huren/gouda/0148fe55/ridder-van-catsweg/",
-   "price": 862,
-   "price_text": "€ 862 per maand",
-   "address": "2804 RR Gouda (Hoef- en Veldbuurt)",
-   "postcode": "2804 RR",
-   "wijk": "Hoef- en Veldbuurt",
-   "rooms": 5,
-   "surface": 90,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-b31e2d3ac3bf",
-   "source": "huurwoningen",
-   "title": "Appartement Gloriantplantsoen",
-   "url": "https://www.huurwoningen.nl/huren/gouda/63d81383/gloriantplantsoen/",
-   "price": 570,
-   "price_text": "€ 570 per maand",
-   "address": "2805 XD Gouda (Achterwillenseweg)",
-   "postcode": "2805 XD",
-   "wijk": "Achterwillenseweg",
-   "rooms": 4,
-   "surface": 70,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-078a811b6e6a",
-   "source": "huurwoningen",
-   "title": "Appartement Conventstraat",
-   "url": "https://www.huurwoningen.nl/huren/gouda/bfa29bd4/conventstraat/",
-   "price": 650,
-   "price_text": "€ 650 per maand",
-   "address": "2801 EW Gouda (Kadenbuurt)",
-   "postcode": "2801 EW",
-   "wijk": "Kadenbuurt",
-   "rooms": 3,
-   "surface": 62,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-cddfedd73a05",
-   "source": "huurwoningen",
-   "title": "Appartement Raam",
-   "url": "https://www.huurwoningen.nl/huren/gouda/9e1ff474/raam/",
-   "price": 568,
-   "price_text": "€ 568 per maand",
-   "address": "2801 VS Gouda (Raam e.o.)",
-   "postcode": "2801 VS",
-   "wijk": "Raam e.o.",
-   "rooms": 1,
-   "surface": 50,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-0c884a163ce0",
-   "source": "huurwoningen",
-   "title": "Appartement Tristanstraat",
-   "url": "https://www.huurwoningen.nl/huren/gouda/01b316cd/tristanstraat/",
-   "price": 590,
-   "price_text": "€ 590 per maand",
-   "address": "2805 VE Gouda (Achterwillenseweg)",
-   "postcode": "2805 VE",
-   "wijk": "Achterwillenseweg",
-   "rooms": 2,
-   "surface": 70,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-39080539959c",
-   "source": "huurwoningen",
-   "title": "Huis Groenhovenweg",
-   "url": "https://www.huurwoningen.nl/huren/gouda/205c7ab2/groenhovenweg/",
-   "price": 1500,
-   "price_text": "€ 1.500 per maand",
-   "address": "2803 DD Gouda (De Goudse Poort)",
-   "postcode": "2803 DD",
-   "wijk": "De Goudse Poort",
-   "rooms": 2,
-   "surface": 92,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-2b9f71448840",
-   "source": "huurwoningen",
-   "title": "Appartement Jozefhof",
-   "url": "https://www.huurwoningen.nl/huren/gouda/6408208c/jozefhof/",
-   "price": 1340,
-   "price_text": "€ 1.340 per maand",
-   "address": "2805 PX Gouda (Ouwe Gouwe)",
-   "postcode": "2805 PX",
-   "wijk": "Ouwe Gouwe",
-   "rooms": 3,
-   "surface": 89,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "huurwoningen-e3c2739a1b88",
-   "source": "huurwoningen",
-   "title": "Kamer Gildenburg",
-   "url": "https://www.huurwoningen.nl/huren/gouda/55aaf4bf/gildenburg/",
-   "price": null,
-   "price_text": "Prijs op aanvraag",
-   "address": "2804 VJ Gouda (Hoef- en Veldbuurt)",
-   "postcode": "2804 VJ",
-   "wijk": "Hoef- en Veldbuurt",
-   "rooms": 1,
-   "surface": 25,
-   "image": null,
-   "area": "Gouda",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-2efd73e48313",
@@ -862,7 +974,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-78396a0372ff",
@@ -880,7 +992,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-88a30802de18",
@@ -898,7 +1010,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-12902bf9b42c",
@@ -916,7 +1028,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-19ab615d9744",
@@ -934,7 +1046,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-be7bddf186dd",
@@ -952,7 +1064,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-29bafcca2694",
@@ -970,7 +1082,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-4839ea72c98e",
@@ -988,7 +1100,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-7961aea957c4",
@@ -1006,7 +1118,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-61f788161049",
@@ -1024,7 +1136,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-02226b7de076",
@@ -1042,7 +1154,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-0c1052b278c1",
@@ -1060,7 +1172,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-2812a11318e6",
@@ -1078,7 +1190,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-9624ce5e1b19",
@@ -1096,7 +1208,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-953c6b25fb0e",
@@ -1114,7 +1226,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-fc86a52d7090",
@@ -1132,7 +1244,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-99698c611c52",
@@ -1150,7 +1262,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-29fa4e6181a0",
@@ -1168,7 +1280,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-82c6f1966e6a",
@@ -1186,7 +1298,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-8508eb8a5b54",
@@ -1204,7 +1316,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-ec16198e7399",
@@ -1222,7 +1334,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-5bd84db81cb3",
@@ -1240,7 +1352,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-59e0940eae87",
@@ -1258,7 +1370,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-9c37eb4bc5a9",
@@ -1276,7 +1388,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-b0ad98197b93",
@@ -1294,7 +1406,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-4c9ba620a646",
@@ -1312,7 +1424,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-ac914d8dbd6f",
@@ -1330,7 +1442,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-352b1e069b65",
@@ -1348,7 +1460,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-44ee509a0409",
@@ -1366,7 +1478,7 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
+   "active": false
   },
   {
    "id": "huurwoningen-e4c395322176",
@@ -1384,60 +1496,6 @@
    "area": "Zoetermeer",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
-   "active": true
-  },
-  {
-   "id": "pararius-165ef93f2e0b",
-   "source": "pararius",
-   "title": "Appartement Noorderhavenkade 103 A",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/af61c435/noorderhavenkade",
-   "price": 1088,
-   "price_text": "€ 1.088 per maand",
-   "address": "3039 RE Rotterdam (Blijdorp)",
-   "postcode": "3039 RE",
-   "wijk": "Blijdorp",
-   "rooms": 2,
-   "surface": 54,
-   "image": null,
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-03T20:46:32+00:00",
-   "active": false
-  },
-  {
-   "id": "pararius-4db409f0e339",
-   "source": "pararius",
-   "title": "Studio G.H. Betzweg",
-   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/d4749940/g-h-betzweg",
-   "price": 1491,
-   "price_text": "€ 1.491 per maand",
-   "address": "3068 AZ Rotterdam (Oosterflank)",
-   "postcode": "3068 AZ",
-   "wijk": "Oosterflank",
-   "rooms": 1,
-   "surface": 39,
-   "image": null,
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-03T20:46:32+00:00",
-   "active": false
-  },
-  {
-   "id": "pararius-3e0a91940178",
-   "source": "pararius",
-   "title": "Appartement Tamboerstraat",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/6bb55247/tamboerstraat",
-   "price": 1200,
-   "price_text": "€ 1.200 per maand",
-   "address": "3034 PV Rotterdam (Oud Crooswijk)",
-   "postcode": "3034 PV",
-   "wijk": "Oud Crooswijk",
-   "rooms": 2,
-   "surface": 35,
-   "image": null,
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false
   },
   {
