@@ -34,6 +34,9 @@
   .tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
   .tab .n{font-weight:700;margin-left:6px}
   .tab.unread::after{content:"";position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+  .also{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);margin-top:8px;padding-top:7px}
+  .alsolink{color:var(--accent);font-weight:600;cursor:pointer}
+  .alsolink:hover{text-decoration:underline}
   .like{position:absolute;top:8px;right:8px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);cursor:pointer;display:grid;place-items:center;box-shadow:0 2px 8px rgba(0,0,0,.15);transition:transform .1s}
   .like:active{transform:scale(.88)}
   .like svg{width:20px;height:20px;fill:none;stroke:#16181d;stroke-width:2}
@@ -58,7 +61,7 @@
   .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .img .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted)}
   .img .ph svg{width:44px;height:44px;opacity:.35}
-  .badges{position:absolute;top:8px;left:8px;display:flex;gap:6px}
+  .badges{position:absolute;top:8px;left:8px;right:54px;display:flex;flex-wrap:wrap;gap:6px}
   .badge{font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:3px 7px;border-radius:6px;background:rgba(0,0,0,.65);color:#fff}
   .badge.new{background:var(--new)}
   .badge.off{background:var(--off)}
@@ -134,11 +137,54 @@ const scanLabel = iso => new Date(iso).toLocaleString("nl-NL",
   {weekday:"short", day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"});
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
+// ---- dubbele advertenties samenvoegen (zelfde woning op meerdere sites) ----
+const TYPEWORDS = /^(appartement|huis|woning|studio|kamer|flat|bovenwoning|benedenwoning|maisonnette|penthouse|eengezinswoning|tussenwoning|hoekwoning|portiekflat|galerijflat|tussenverdieping|benedenverdieping|bovenverdieping|apartment|house|room)\s+/i;
+function addrKey(l){
+  const t = (l.title || "").replace(TYPEWORDS, "").replace(TYPEWORDS, "").toLowerCase().trim();
+  const m = t.match(/^(.*?)\s+(\d+)\b/);
+  return {street: (m ? m[1] : t).replace(/[^a-z\u00c0-\u017f' ]/g, "").replace(/\s+/g, " ").trim(), num: m ? m[2] : null};
+}
+function sameHome(a, b){
+  if (a.source === b.source) return false;                 // zelfde site = echt een andere woning (bijv. complex)
+  if (a.postcode && b.postcode ? a.postcode !== b.postcode : (a.area !== b.area)) return false;
+  const ka = addrKey(a), kb = addrKey(b);
+  if (!ka.street || ka.street !== kb.street) return false;
+  if (ka.num && kb.num && ka.num !== kb.num) return false;
+  if (a.price != null && b.price != null && Math.abs(a.price - b.price) > Math.max(15, 0.02 * a.price)) return false;
+  if (a.surface && b.surface && Math.abs(a.surface - b.surface) > 2) return false;
+  if (a.price == null && b.price == null && !(a.surface && b.surface)) return false;  // te weinig info
+  return true;
+}
+function score(l){ return (l.image?4:0) + (addrKey(l).num?2:0) + (l.postcode?1:0) + (l.surface?1:0); }
+function groupListings(arr){
+  const groups = [];
+  for (const l of [...arr].sort((a,b) => a.first_seen.localeCompare(b.first_seen))) {
+    const g = groups.find(g => !g.members.some(m => m.source === l.source) && g.members.some(m => sameHome(m, l)));
+    if (g) g.members.push(l); else groups.push({members:[l]});
+  }
+  return groups.map(({members}) => {
+    const best = members.reduce((a,b) => score(b) > score(a) ? b : a);
+    const live = members.filter(m => m.active !== false);
+    return {...best,
+      members: [best, ...members.filter(m => m !== best)],
+      ids: members.map(m => m.id),
+      first_seen: members.reduce((t,m) => m.first_seen < t ? m.first_seen : t, members[0].first_seen),
+      active: live.length > 0,
+      url: (live.find(m => m === best) || live[0] || best).url,
+      image: best.image || (members.find(m => m.image) || {}).image,
+      surface: best.surface || (members.find(m => m.surface) || {}).surface,
+      rooms: best.rooms || (members.find(m => m.rooms) || {}).rooms,
+    };
+  });
+}
+let G = [];
+const isLiked = g => (g.ids || [g.id]).some(id => likes[id]);
+
 function scans(){
   // nieuwste eerst; oudere data zonder scan-lijst: afleiden uit first_seen
   let list = data.scans && data.scans.length ? data.scans.slice()
     : [...new Set(data.listings.map(l => l.first_seen))].map(t => ({time:t}));
-  list.forEach(s => s.new = data.listings.filter(l => l.first_seen === s.time).length);
+  list.forEach(s => s.new = G.filter(l => l.first_seen === s.time).length);
   return list.sort((a,b) => b.time.localeCompare(a.time));
 }
 
@@ -149,6 +195,7 @@ async function load(){
   }catch(e){
     data = {listings:[]};
   }
+  G = groupListings(data.listings || []);
   try{
     const r2 = await fetch("nieuwbouw.json?t=" + Date.now(), {cache:"no-store"});
     projects = (await r2.json()).projecten || [];
@@ -181,10 +228,12 @@ function init(){
     render();
   });
   $("grid").addEventListener("click", e => {
+    const al = e.target.closest(".alsolink");
+    if (al) { e.preventDefault(); e.stopPropagation(); window.open(al.dataset.href, "_blank", "noopener"); return; }
     const b = e.target.closest(".like"); if (!b) return;
     e.preventDefault(); e.stopPropagation();
-    const id = b.dataset.id;
-    if (likes[id]) delete likes[id];
+    const id = b.dataset.id, ids = (b.dataset.ids || id).split(",");
+    if (ids.some(i => likes[i])) ids.forEach(i => delete likes[i]);
     else { const l = data.listings.find(x => x.id === id); if (l) likes[id] = {...l, liked_at:new Date().toISOString()}; }
     saveLikes(); render();
   });
@@ -194,8 +243,8 @@ function init(){
 }
 
 function renderTabs(){
-  const all = `<button class="tab ${tab==="all"?"on":""}" data-t="all">Alle woningen<span class="n">${data.listings.filter(l=>l.active!==false).length}</span></button>`
-    + `<button class="tab fav ${tab==="liked"?"on":""}" data-t="liked">♥ Geliked<span class="n">${Object.keys(likes).length}</span></button>`
+  const all = `<button class="tab ${tab==="all"?"on":""}" data-t="all">Alle woningen<span class="n">${G.filter(l=>l.active!==false).length}</span></button>`
+    + `<button class="tab fav ${tab==="liked"?"on":""}" data-t="liked">♥ Geliked<span class="n">${groupListings(likedList()).length}</span></button>`
     + `<button class="tab ${tab==="nieuwbouw"?"on":""}" data-t="nieuwbouw">🏗 Nieuwbouw<span class="n">${projects.length}</span></button>`;
   $("tabs").innerHTML = all + scans().map(s =>
     `<button class="tab ${tab===s.time?"on":""} ${seen.has(s.time)?"":"unread"}" data-t="${s.time}">${scanLabel(s.time)}<span class="n">${s.new ? "+" + s.new : "0"}</span></button>`).join("");
@@ -208,10 +257,10 @@ function render(){
   const max = +$("max").value;
   const inLiked = tab === "liked";
   const inScan = tab !== "all" && !inLiked;
-  let list = (inLiked ? likedList() : data.listings).filter(l =>
+  let list = (inLiked ? groupListings(likedList()) : G).filter(l =>
     (inLiked || (inScan ? l.first_seen === tab : ($("showOff").checked || l.active !== false))) &&
     (!$("area").value || l.area === $("area").value) &&
-    (!$("source").value || l.source === $("source").value) &&
+    (!$("source").value || l.members.some(m => m.source === $("source").value)) &&
     (l.price == null || l.price <= max) &&
     (!q || `${l.title} ${l.address} ${l.wijk||""} ${l.area}`.toLowerCase().includes(q))
   );
@@ -220,12 +269,13 @@ function render(){
                   : s === "m2" ? (b.surface??0) - (a.surface??0)
                   : b.first_seen.localeCompare(a.first_seen));
   const unread = scans().filter(s => !seen.has(s.time) && s.new);
+  const dupes = list.filter(l => l.members.length > 1).length;
   const nUnread = unread.reduce((n,s) => n + s.new, 0);
   $("count").textContent = inLiked
     ? `${list.length} gelikete woning${list.length===1?"":"en"}`
     : inScan
     ? `${list.length} nieuwe woning${list.length===1?"":"en"} in scan van ${scanLabel(tab)}`
-    : `${list.length} woning${list.length===1?"":"en"}` + (nUnread ? ` · ${nUnread} nieuw in ${unread.length} ongelezen scan${unread.length===1?"":"s"}` : "");
+    : `${list.length} woning${list.length===1?"":"en"}` + (dupes ? ` (${dupes} op meerdere sites)` : "") + (nUnread ? ` · ${nUnread} nieuw in ${unread.length} ongelezen scan${unread.length===1?"":"s"}` : "");
   document.title = nUnread ? `(${nUnread}) HuurRadar` : "HuurRadar";
   $("grid").innerHTML = list.length ? list.map(card).join("") :
     `<div class="empty">${inLiked ? "Nog niks geliked. Tik op het hartje bij een woning om hem hier te bewaren." : inScan ? "Deze scan vond geen nieuwe woningen." : "Geen woningen gevonden met deze filters."}</div>`;
@@ -267,14 +317,14 @@ function renderProjects(){
 }
 
 function card(l){
-  const isNew = !seen.has(l.first_seen) && l.active !== false && tab !== "liked" && tab === "all";
+  const isNew = !seen.has(l.first_seen) && l.active !== false && tab === "all";
   const off = l.active === false;
   return `<a class="card ${off?"off":""}" href="${esc(l.url)}" target="_blank" rel="noopener">
     <div class="img">
       <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div>
       ${l.image ? `<img src="${esc(l.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
-      <div class="badges">${isNew?'<span class="badge new">Nieuw</span>':""}${off?'<span class="badge off">Offline</span>':""}<span class="badge">${SOURCES[l.source]||l.source}</span>${l.segment && l.segment !== "vrije sector" ? `<span class="badge seg">${l.segment === "sociaal" ? "Sociale huur" : esc(l.segment)}</span>` : ""}</div>
-      <button class="like ${likes[l.id]?"on":""}" data-id="${esc(l.id)}" aria-label="${likes[l.id]?"Niet meer liken":"Liken"}">${HEART}</button>
+      <div class="badges">${isNew?'<span class="badge new">Nieuw</span>':""}${off?'<span class="badge off">Offline</span>':""}${(l.members||[l]).map(m => `<span class="badge">${SOURCES[m.source]||m.source}</span>`).join("")}${l.segment && l.segment !== "vrije sector" ? `<span class="badge seg">${l.segment === "sociaal" ? "Sociale huur" : esc(l.segment)}</span>` : ""}</div>
+      <button class="like ${isLiked(l)?"on":""}" data-id="${esc(l.id)}" data-ids="${esc((l.ids||[l.id]).join(","))}" aria-label="${isLiked(l)?"Niet meer liken":"Liken"}">${HEART}</button>
     </div>
     <div class="body">
       <div class="p">${euro(l.price)}<span class="a"> /mnd</span></div>
@@ -286,6 +336,8 @@ function card(l){
         <span>${esc(l.area||"")}</span>
         <span style="margin-left:auto">${ago(l.first_seen)}</span>
       </div>
+      ${(l.members||[]).length > 1 ? `<div class="also">Ook op: ${l.members.slice(1).map(m =>
+        `<span class="alsolink" data-href="${esc(m.url)}">${SOURCES[m.source]||m.source}${m.price != null && m.price !== l.price ? " (" + euro(m.price) + ")" : ""}</span>`).join(" · ")}</div>` : ""}
     </div>
   </a>`;
 }
