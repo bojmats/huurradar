@@ -43,3 +43,17 @@ def test_filter():
 def test_funda():
     ls = scrape.parse_funda(FUNDA, "https://www.funda.nl")
     assert len(ls) == 1 and ls[0]["price"] == 1100 and ls[0]["postcode"] == "2801 JE" and ls[0]["surface"] == 55
+
+def test_lazy_image_and_swap():
+    from bs4 import BeautifulSoup
+    html = """<section class="listing-search-item"><wc-picture><picture>
+      <source srcset="https://casco-media-prod.global.ssl.fastly.net/a?w=300 1x, https://casco-media-prod.global.ssl.fastly.net/a?w=600 2x">
+      <img src="data:image/gif;base64,AAA" alt=""></picture></wc-picture></section>"""
+    assert scrape.pick_image(BeautifulSoup(html, "html.parser")).endswith("w=600")
+    html2 = """<section><noscript><img src="https://img.example.com/foto.jpg"></noscript></section>"""
+    assert scrape.pick_image(BeautifulSoup(html2, "html.parser")) == "https://img.example.com/foto.jpg"
+    import yaml
+    cfg = yaml.safe_load(open(scrape.CONFIG_PATH))
+    assert scrape.is_excluded({"title": "x", "image": "https://cdn/x?original_uri=woningruil.nl/1.jpg"}, cfg)
+    assert scrape.is_excluded({"title": "x", "detail_text": "Ik wil mijn woning ruilen met..."}, cfg)
+    assert not scrape.is_excluded({"title": "Appartement Bergweg", "extra": "3 kamers"}, cfg)

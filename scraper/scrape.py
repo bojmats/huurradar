@@ -93,6 +93,43 @@ def text_of(el) -> str:
     return " ".join(el.get_text(" ", strip=True).split()) if el else ""
 
 
+# ----------------------------------------------------------------- foto's
+
+IMG_URL_RE = re.compile(r"https?://[^\s\"'<>,]+?(?:\.(?:jpe?g|png|webp)|casco-media[^\s\"'<>,]+)[^\s\"'<>,]*", re.I)
+BAD_IMG = ("placeholder", "logo", "icon", "sprite", "avatar", ".svg")
+
+
+def pick_image(el) -> str | None:
+    """Zoekt de eerste echte foto: src, data-src, srcset, <source>, <noscript>..."""
+    if el is None:
+        return None
+    cands = []
+    for tag in el.find_all(["img", "source"]):
+        for attr in ("src", "data-src", "data-lazy-src", "srcset", "data-srcset"):
+            v = tag.get(attr)
+            if not v or v.startswith("data:"):
+                continue
+            # srcset: "url 1x, url 2x" -> pak de laatste (grootste)
+            parts = [p.strip().split(" ")[0] for p in v.split(",") if p.strip()]
+            cands += reversed(parts) if "srcset" in attr else parts
+    cands += IMG_URL_RE.findall(str(el))  # ook in <noscript>/<template>/data-attributen
+    for c in cands:
+        c = c.replace("&amp;", "&")
+        if c.startswith("//"):
+            c = "https:" + c
+        if c.startswith("http") and not any(b in c.lower() for b in BAD_IMG):
+            return c
+    return None
+
+
+def og_image(soup) -> str | None:
+    for sel in ("meta[property='og:image']", "meta[name='twitter:image']"):
+        m = soup.select_one(sel)
+        if m and m.get("content", "").startswith("http"):
+            return m["content"]
+    return pick_image(soup.select_one("main") or soup)
+
+
 # ----------------------------------------------------------------- parsers
 
 def parse_pararius_like(html: str, base_url: str, source: str) -> list[dict]:
@@ -111,12 +148,7 @@ def parse_pararius_like(html: str, base_url: str, source: str) -> list[dict]:
         price_txt = text_of(it.select_one("[class*='listing-search-item__price']"))
         area_txt = text_of(it.select_one("[class*='surface-area']"))
         rooms_txt = text_of(it.select_one("[class*='number-of-rooms']"))
-        img = it.select_one("img")
-        image = None
-        if img:
-            image = img.get("src") or img.get("data-src")
-            if image and image.startswith("data:"):
-                image = img.get("data-src")
+        image = pick_image(it)
         wijk = None
         m = re.search(r"\(([^)]+)\)", subtitle)
         if m:
@@ -135,6 +167,7 @@ def parse_pararius_like(html: str, base_url: str, source: str) -> list[dict]:
                 "rooms": parse_int(rooms_txt),
                 "surface": parse_int(area_txt),
                 "image": image,
+                "extra": text_of(it)[:500],
             }
         )
     return out
@@ -178,7 +211,8 @@ def parse_funda(html: str, base_url: str) -> list[dict]:
                 "wijk": None,
                 "rooms": int(rooms_m.group(1)) if rooms_m else None,
                 "surface": int(surf_m.group(1)) if surf_m else None,
-                "image": (img.get("src") or img.get("data-src")) if img else None,
+                "image": pick_image(card),
+                "extra": txt[:500],
             }
         )
     return out
@@ -258,7 +292,17 @@ def postcode_in_ranges(pc: str, ranges: list[str]) -> bool:
     return False
 
 
+def is_excluded(listing: dict, cfg: dict) -> bool:
+    words = [w.lower() for w in cfg.get("uitsluiten_woorden", [])]
+    if not words:
+        return False
+    hay = " ".join(str(listing.get(k) or "") for k in ("title", "address", "extra", "url", "image", "detail_text")).lower()
+    return any(w in hay for w in words)
+
+
 def matches(listing: dict, gebied: dict, cfg: dict) -> bool:
+    if is_excluded(listing, cfg):
+        return False
     p = listing.get("price")
     if p is not None and not (cfg.get("min_prijs", 0) <= p <= cfg["max_prijs"]):
         return False
@@ -274,6 +318,21 @@ def matches(listing: dict, gebied: dict, cfg: dict) -> bool:
     # geen postcode bekend: probeer wijknaam
     hay = f"{listing.get('wijk') or ''} {listing.get('address') or ''} {listing.get('title') or ''}".lower()
     return any(w.lower() in hay for w in gebied.get("wijken", []))
+
+
+# ----------------------------------------------------------------- detailpagina
+
+def enrich(l: dict) -> None:
+    html = fetch(l["url"])
+    l["detail_checked"] = True
+    if not html:
+        return
+    soup = BeautifulSoup(html, "html.parser")
+    if not l.get("image"):
+        l["image"] = og_image(soup)
+    desc = soup.select_one("meta[name='description'], meta[property='og:description']")
+    body = text_of(soup.select_one("[class*='listing-detail-description'], [class*='description'], main"))
+    l["detail_text"] = ((desc.get("content", "") if desc else "") + " " + body)[:1500]
 
 
 # ----------------------------------------------------------------- main
@@ -341,6 +400,16 @@ def main() -> int:
         if datetime.fromisoformat(old["last_seen"]) >= cutoff:
             old["active"] = False
             merged[lid] = old
+
+    # detailpagina's: foto ophalen en controleren op woningruil (max N per scan)
+    todo = [l for l in merged.values() if l.get("active") and not l.get("detail_checked")]
+    todo.sort(key=lambda l: (l["first_seen"] != stamp, l["first_seen"]))  # nieuwste eerst
+    limit = cfg.get("max_detailpaginas", 40)
+    for l in todo[:limit]:
+        enrich(l)
+    for lid in [lid for lid, l in merged.items() if is_excluded(l, cfg)]:
+        log(f"   - uitgesloten: {merged[lid]['title']}")
+        del merged[lid]
 
     listings = sorted(merged.values(), key=lambda l: l["first_seen"], reverse=True)
     new_count = sum(1 for l in listings if l["first_seen"] == stamp)

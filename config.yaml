@@ -9,6 +9,13 @@ min_prijs: 0
 min_kamers: 0          # 0 = geen minimum
 min_oppervlakte: 0     # in m², 0 = geen minimum
 
+# Advertenties met een van deze woorden (in titel, tekst, link of foto) worden overgeslagen
+uitsluiten_woorden:
+  - woningruil
+  - ruilwoning
+  - woning ruilen
+  - ruilen met
+
 # Welke sites doorzocht worden (true/false)
 bronnen:
   pararius: true
@@ -59,6 +66,9 @@ gebieden:
 
 # Hoeveel resultaatpagina's per site per plaats maximaal (nieuwste staan bovenaan)
 max_paginas: 3
+
+# Per scan max zoveel nieuwe woningen openen voor foto + woningruil-check
+max_detailpaginas: 40
 
 # Advertenties die niet meer online staan worden na zoveel dagen uit het overzicht gehaald
 bewaar_dagen_offline: 14

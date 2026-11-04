@@ -34,6 +34,12 @@
   .tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
   .tab .n{font-weight:700;margin-left:6px}
   .tab.unread::after{content:"";position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+  .like{position:absolute;top:8px;right:8px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);cursor:pointer;display:grid;place-items:center;box-shadow:0 2px 8px rgba(0,0,0,.15);transition:transform .1s}
+  .like:active{transform:scale(.88)}
+  .like svg{width:20px;height:20px;fill:none;stroke:#16181d;stroke-width:2}
+  .like.on svg{fill:#e5484d;stroke:#e5484d}
+  .tab.fav .n{color:#e5484d}
+  .tab.fav.on .n{color:#ff8a8d}
   main{max-width:1100px;margin:0 auto;padding:16px}
   .summary{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;color:var(--muted);font-size:14px}
   .summary button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
@@ -41,7 +47,10 @@
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .12s, box-shadow .12s}
   .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
   .card.off{opacity:.5}
-  .img{aspect-ratio:16/10;background:var(--line) center/cover no-repeat;position:relative}
+  .img{aspect-ratio:16/10;background:var(--line);position:relative;overflow:hidden}
+  .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .img .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted)}
+  .img .ph svg{width:44px;height:44px;opacity:.35}
   .badges{position:absolute;top:8px;left:8px;display:flex;gap:6px}
   .badge{font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:3px 7px;border-radius:6px;background:rgba(0,0,0,.65);color:#fff}
   .badge.new{background:var(--new)}
@@ -95,6 +104,14 @@ let data = null;
 let tab = "all";                       // "all" of de tijd van een scan
 let seen = new Set(JSON.parse(store.get("hr_seen_scans") || "[]"));
 const saveSeen = () => store.set("hr_seen_scans", JSON.stringify([...seen]));
+// geliked: id -> momentopname van de woning (blijft zichtbaar als hij offline gaat)
+let likes = JSON.parse(store.get("hr_likes") || "{}");
+const saveLikes = () => store.set("hr_likes", JSON.stringify(likes));
+const HEART = '<svg viewBox="0 0 24 24"><path d="M12 20.5s-7.5-4.6-9.3-9.4C1.5 7.8 3.6 4.5 7 4.5c2 0 3.4 1.1 5 3 1.6-1.9 3-3 5-3 3.4 0 5.5 3.3 4.3 6.6-1.8 4.8-9.3 9.4-9.3 9.4z"/></svg>';
+function likedList(){
+  const cur = Object.fromEntries(data.listings.map(l => [l.id, l]));
+  return Object.entries(likes).map(([id, snap]) => cur[id] || {...snap, active:false});
+}
 
 const euro = n => n == null ? "Prijs onbekend" : "€ " + n.toLocaleString("nl-NL");
 const ago = iso => {
@@ -148,8 +165,16 @@ function init(){
   $("tabs").addEventListener("click", e => {
     const b = e.target.closest(".tab"); if (!b) return;
     tab = b.dataset.t;
-    if (tab !== "all") { seen.add(tab); saveSeen(); }
+    if (tab !== "all" && tab !== "liked") { seen.add(tab); saveSeen(); }
     render();
+  });
+  $("grid").addEventListener("click", e => {
+    const b = e.target.closest(".like"); if (!b) return;
+    e.preventDefault(); e.stopPropagation();
+    const id = b.dataset.id;
+    if (likes[id]) delete likes[id];
+    else { const l = data.listings.find(x => x.id === id); if (l) likes[id] = {...l, liked_at:new Date().toISOString()}; }
+    saveLikes(); render();
   });
   // open meteen de nieuwste ongelezen scan
   const firstUnread = scans().find(s => !seen.has(s.time) && s.new);
@@ -157,7 +182,8 @@ function init(){
 }
 
 function renderTabs(){
-  const all = `<button class="tab ${tab==="all"?"on":""}" data-t="all">Alle woningen<span class="n">${data.listings.filter(l=>l.active!==false).length}</span></button>`;
+  const all = `<button class="tab ${tab==="all"?"on":""}" data-t="all">Alle woningen<span class="n">${data.listings.filter(l=>l.active!==false).length}</span></button>`
+    + `<button class="tab fav ${tab==="liked"?"on":""}" data-t="liked">♥ Geliked<span class="n">${Object.keys(likes).length}</span></button>`;
   $("tabs").innerHTML = all + scans().map(s =>
     `<button class="tab ${tab===s.time?"on":""} ${seen.has(s.time)?"":"unread"}" data-t="${s.time}">${scanLabel(s.time)}<span class="n">${s.new ? "+" + s.new : "0"}</span></button>`).join("");
 }
@@ -166,9 +192,10 @@ function render(){
   renderTabs();
   const q = $("q").value.toLowerCase().trim();
   const max = +$("max").value;
-  const inScan = tab !== "all";
-  let list = data.listings.filter(l =>
-    (inScan ? l.first_seen === tab : ($("showOff").checked || l.active !== false)) &&
+  const inLiked = tab === "liked";
+  const inScan = tab !== "all" && !inLiked;
+  let list = (inLiked ? likedList() : data.listings).filter(l =>
+    (inLiked || (inScan ? l.first_seen === tab : ($("showOff").checked || l.active !== false))) &&
     (!$("area").value || l.area === $("area").value) &&
     (!$("source").value || l.source === $("source").value) &&
     (l.price == null || l.price <= max) &&
@@ -180,20 +207,25 @@ function render(){
                   : b.first_seen.localeCompare(a.first_seen));
   const unread = scans().filter(s => !seen.has(s.time) && s.new);
   const nUnread = unread.reduce((n,s) => n + s.new, 0);
-  $("count").textContent = inScan
+  $("count").textContent = inLiked
+    ? `${list.length} gelikete woning${list.length===1?"":"en"}`
+    : inScan
     ? `${list.length} nieuwe woning${list.length===1?"":"en"} in scan van ${scanLabel(tab)}`
     : `${list.length} woning${list.length===1?"":"en"}` + (nUnread ? ` · ${nUnread} nieuw in ${unread.length} ongelezen scan${unread.length===1?"":"s"}` : "");
   document.title = nUnread ? `(${nUnread}) HuurRadar` : "HuurRadar";
   $("grid").innerHTML = list.length ? list.map(card).join("") :
-    `<div class="empty">${inScan ? "Deze scan vond geen nieuwe woningen." : "Geen woningen gevonden met deze filters."}</div>`;
+    `<div class="empty">${inLiked ? "Nog niks geliked. Tik op het hartje bij een woning om hem hier te bewaren." : inScan ? "Deze scan vond geen nieuwe woningen." : "Geen woningen gevonden met deze filters."}</div>`;
 }
 
 function card(l){
-  const isNew = !seen.has(l.first_seen) && l.active !== false && tab === "all";
+  const isNew = !seen.has(l.first_seen) && l.active !== false && tab !== "liked" && tab === "all";
   const off = l.active === false;
   return `<a class="card ${off?"off":""}" href="${esc(l.url)}" target="_blank" rel="noopener">
-    <div class="img" style="${l.image ? `background-image:url('${esc(l.image)}')` : ""}">
+    <div class="img">
+      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div>
+      ${l.image ? `<img src="${esc(l.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
       <div class="badges">${isNew?'<span class="badge new">Nieuw</span>':""}${off?'<span class="badge off">Offline</span>':""}<span class="badge">${SOURCES[l.source]||l.source}</span></div>
+      <button class="like ${likes[l.id]?"on":""}" data-id="${esc(l.id)}" aria-label="${likes[l.id]?"Niet meer liken":"Liken"}">${HEART}</button>
     </div>
     <div class="body">
       <div class="p">${euro(l.price)}<span class="a"> /mnd</span></div>
