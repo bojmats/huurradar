@@ -1,0 +1,65 @@
+[
+ {
+  "i": 0,
+  "url": "https://wrf-prod-app-api-gateway.azurewebsites.net/api/portfolio/api/v3/woonstad/offering/vsh?size=50",
+  "final": "https://wrf-prod-app-api-gateway.azurewebsites.net/api/portfolio/api/v3/woonstad/offering/vsh?size=50",
+  "status": 200,
+  "bytes": 74602
+ },
+ {
+  "i": 1,
+  "url": "https://wrf-prod-app-api-gateway.azurewebsites.net/api/portfolio/api/v3/woonstad/offering/sh?size=5",
+  "final": "https://wrf-prod-app-api-gateway.azurewebsites.net/api/portfolio/api/v3/woonstad/offering/sh?size=5",
+  "status": 400,
+  "bytes": 251
+ },
+ {
+  "i": 2,
+  "url": "https://www.vesteda.com/api/units/search/facet",
+  "final": "https://www.vesteda.com/api/units/search/facet",
+  "status": 400,
+  "bytes": 386
+ },
+ {
+  "i": 3,
+  "url": "https://middenholland.mijndak.nl/DAKWP/scripts/DAKWP.Overzicht.Woningaanbod.mvc.js",
+  "final": "https://middenholland.mijndak.nl/DAKWP/scripts/DAKWP.Overzicht.Woningaanbod.mvc.js",
+  "status": 200,
+  "bytes": 171332
+ },
+ {
+  "i": 4,
+  "url": "https://middenholland.mijndak.nl/DAKWP/scripts/DAKWP.Overzicht.WoningOverzicht.mvc.js",
+  "final": "https://middenholland.mijndak.nl/DAKWP/scripts/DAKWP.Overzicht.WoningOverzicht.mvc.js",
+  "status": 200,
+  "bytes": 241855
+ },
+ {
+  "i": 5,
+  "url": "https://middenholland.mijndak.nl/DAKWP/scripts/DAKWP.Overzicht.WoningOverzichtList.mvc.js",
+  "final": "https://middenholland.mijndak.nl/DAKWP/scripts/DAKWP.Overzicht.WoningOverzichtList.mvc.js",
+  "status": 200,
+  "bytes": 26691
+ },
+ {
+  "i": 6,
+  "url": "https://middenholland.mijndak.nl/DAKWP/scripts/WRB_WoningenOphalen_IS.model.js",
+  "final": "https://middenholland.mijndak.nl/DAKWP/scripts/WRB_WoningenOphalen_IS.model.js",
+  "status": 200,
+  "bytes": 3011
+ },
+ {
+  "i": 7,
+  "url": "https://vbtverhuurmakelaars.nl/woningen/2",
+  "final": "https://vbtverhuurmakelaars.nl/woningen/2",
+  "status": 200,
+  "bytes": 782793
+ },
+ {
+  "i": 8,
+  "url": "https://www.vesteda.com/api/units/getgeo?placeId=55",
+  "final": "https://www.vesteda.com/api/units/getgeo?placeId=55",
+  "status": 200,
+  "bytes": 4
+ }
+]
