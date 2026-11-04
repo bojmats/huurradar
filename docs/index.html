@@ -40,6 +40,13 @@
   .like.on svg{fill:#e5484d;stroke:#e5484d}
   .tab.fav .n{color:#e5484d}
   .tab.fav.on .n{color:#ff8a8d}
+  .badge.seg{background:#6d4ad8}
+  .proj .status{display:inline-block;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px;background:var(--line);color:var(--ink);width:max-content}
+  .proj .status.live{background:#1f9d55;color:#fff}
+  .proj .status.soon{background:#e8a317;color:#16181d}
+  .proj .status.plan{background:#3b82f6;color:#fff}
+  .proj .txt{color:var(--muted);font-size:13px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .proj .more{margin-top:auto;padding-top:8px;font-weight:600;color:var(--accent);font-size:14px}
   main{max-width:1100px;margin:0 auto;padding:16px}
   .summary{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;color:var(--muted);font-size:14px}
   .summary button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
@@ -94,7 +101,8 @@
 </main>
 
 <script>
-const SOURCES = {pararius:"Pararius", huurwoningen:"Huurwoningen.nl", funda:"Funda"};
+const SOURCES = {pararius:"Pararius", huurwoningen:"Huurwoningen.nl", funda:"Funda", vesteda:"Vesteda", woonstad:"Woonstad", vbt:"vb&t", huispedia:"Huispedia", mijndak:"WoningNet MH", handmatig:"Eigen lijst"};
+let projects = [];
 const $ = id => document.getElementById(id);
 const store = {
   get(k){ try{ return localStorage.getItem(k) }catch(e){ return null } },
@@ -141,6 +149,10 @@ async function load(){
   }catch(e){
     data = {listings:[]};
   }
+  try{
+    const r2 = await fetch("nieuwbouw.json?t=" + Date.now(), {cache:"no-store"});
+    projects = (await r2.json()).projecten || [];
+  }catch(e){ projects = []; }
   $("updated").textContent = data.updated ? "Laatste scan " + ago(data.updated) : "Nog geen scan gedraaid";
   // eerste bezoek: alle bestaande scans behalve de nieuwste als gezien markeren
   if (!store.get("hr_seen_scans")) { scans().slice(1).forEach(s => seen.add(s.time)); saveSeen(); }
@@ -154,7 +166,7 @@ function init(){
     `<span class="dot ${v.ok ? "" : "bad"}" title="${v.ok ? "werkt" : "geblokkeerd of fout bij laatste scan"}">${SOURCES[s]||s}</span>`).join("");
   if (inited) return;
   inited = true;
-  const areas = [...new Set(data.listings.map(l => l.area).filter(Boolean))].sort();
+  const areas = [...new Set(data.listings.map(l => l.area).concat(projects.map(p => p.area)).filter(Boolean))].sort();
   areas.forEach(a => $("area").add(new Option(a, a)));
   Object.entries(SOURCES).forEach(([k,v]) => $("source").add(new Option(v, k)));
   const max = data.criteria?.max_prijs || 1500;
@@ -165,7 +177,7 @@ function init(){
   $("tabs").addEventListener("click", e => {
     const b = e.target.closest(".tab"); if (!b) return;
     tab = b.dataset.t;
-    if (tab !== "all" && tab !== "liked") { seen.add(tab); saveSeen(); }
+    if (tab !== "all" && tab !== "liked" && tab !== "nieuwbouw") { seen.add(tab); saveSeen(); }
     render();
   });
   $("grid").addEventListener("click", e => {
@@ -183,13 +195,15 @@ function init(){
 
 function renderTabs(){
   const all = `<button class="tab ${tab==="all"?"on":""}" data-t="all">Alle woningen<span class="n">${data.listings.filter(l=>l.active!==false).length}</span></button>`
-    + `<button class="tab fav ${tab==="liked"?"on":""}" data-t="liked">♥ Geliked<span class="n">${Object.keys(likes).length}</span></button>`;
+    + `<button class="tab fav ${tab==="liked"?"on":""}" data-t="liked">♥ Geliked<span class="n">${Object.keys(likes).length}</span></button>`
+    + `<button class="tab ${tab==="nieuwbouw"?"on":""}" data-t="nieuwbouw">🏗 Nieuwbouw<span class="n">${projects.length}</span></button>`;
   $("tabs").innerHTML = all + scans().map(s =>
     `<button class="tab ${tab===s.time?"on":""} ${seen.has(s.time)?"":"unread"}" data-t="${s.time}">${scanLabel(s.time)}<span class="n">${s.new ? "+" + s.new : "0"}</span></button>`).join("");
 }
 
 function render(){
   renderTabs();
+  if (tab === "nieuwbouw") return renderProjects();
   const q = $("q").value.toLowerCase().trim();
   const max = +$("max").value;
   const inLiked = tab === "liked";
@@ -217,6 +231,41 @@ function render(){
     `<div class="empty">${inLiked ? "Nog niks geliked. Tik op het hartje bij een woning om hem hier te bewaren." : inScan ? "Deze scan vond geen nieuwe woningen." : "Geen woningen gevonden met deze filters."}</div>`;
 }
 
+function statusClass(st){
+  st = (st||"").toLowerCase();
+  if (st.includes("binnenkort")) return "soon";
+  if (st.includes("verhuur") || st.includes("beschikbaar")) return "live";
+  if (st.includes("plan") || st.includes("aanbouw") || st.includes("bouw")) return "plan";
+  return "";
+}
+function renderProjects(){
+  const q = $("q").value.toLowerCase().trim();
+  const order = {soon:0, live:1, plan:2, "":3};
+  let list = projects.filter(p =>
+    (!$("area").value || p.area === $("area").value) &&
+    (!q || `${p.name} ${p.wijk||""} ${p.city||""} ${p.text||""}`.toLowerCase().includes(q)));
+  list.sort((a,b) => order[statusClass(a.status)] - order[statusClass(b.status)] || (a.area||"").localeCompare(b.area||""));
+  $("count").textContent = `${list.length} nieuwbouwproject${list.length===1?"":"en"} in je gebieden`;
+  const firstEver = projects.reduce((m,p) => p.first_seen < m ? p.first_seen : m, "9999");
+  $("grid").innerHTML = list.length ? list.map(p => {
+    const fresh = p.first_seen > firstEver && (Date.now() - new Date(p.first_seen)) < 4*864e5 && p.source !== "handmatig";
+    return `<a class="card proj" href="${esc(p.url||"#")}" target="_blank" rel="noopener">
+      <div class="img">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+        ${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+        <div class="badges">${fresh?'<span class="badge new">Nieuw</span>':""}<span class="badge">${SOURCES[p.source]||p.source}</span></div>
+      </div>
+      <div class="body">
+        <span class="status ${statusClass(p.status)}">${esc(p.status||"Status onbekend")}</span>
+        <div class="t">${esc(p.name)}</div>
+        <div class="a">${esc([p.wijk, p.city].filter(Boolean).join(" · "))}${p.segment ? " · " + esc(p.segment) : ""}</div>
+        ${p.price ? `<div class="a"><b>${esc(p.price)}</b> p/m</div>` : ""}
+        ${p.text ? `<div class="txt">${esc(p.text)}</div>` : ""}
+        <div class="more">Bekijk project →</div>
+      </div></a>`;
+  }).join("") : `<div class="empty">Nog geen nieuwbouwprojecten gevonden in je gebieden.</div>`;
+}
+
 function card(l){
   const isNew = !seen.has(l.first_seen) && l.active !== false && tab !== "liked" && tab === "all";
   const off = l.active === false;
@@ -224,7 +273,7 @@ function card(l){
     <div class="img">
       <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div>
       ${l.image ? `<img src="${esc(l.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
-      <div class="badges">${isNew?'<span class="badge new">Nieuw</span>':""}${off?'<span class="badge off">Offline</span>':""}<span class="badge">${SOURCES[l.source]||l.source}</span></div>
+      <div class="badges">${isNew?'<span class="badge new">Nieuw</span>':""}${off?'<span class="badge off">Offline</span>':""}<span class="badge">${SOURCES[l.source]||l.source}</span>${l.segment && l.segment !== "vrije sector" ? `<span class="badge seg">${l.segment === "sociaal" ? "Sociale huur" : esc(l.segment)}</span>` : ""}</div>
       <button class="like ${likes[l.id]?"on":""}" data-id="${esc(l.id)}" aria-label="${likes[l.id]?"Niet meer liken":"Liken"}">${HEART}</button>
     </div>
     <div class="body">

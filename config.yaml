@@ -21,6 +21,11 @@ bronnen:
   pararius: true
   huurwoningen: true
   funda: true          # Funda blokkeert bots vaak; mislukt dit, dan gaan de andere gewoon door
+  vesteda: true        # grote verhuurder, ook nieuwbouwprojecten
+  woonstad: true       # Woonstad Rotterdam vrije sector + nieuwbouwprojecten
+  vbt: true            # vb&t Verhuurmakelaars (o.a. Bouwinvest)
+  huispedia: true
+  mijndak: true        # WoningNet regio Midden-Holland (sociale huur, Gouda e.o.)
 
 # Gebieden. Per plaats:
 #   slug      = plaatsnaam zoals in de URL van de sites
@@ -75,3 +80,15 @@ bewaar_dagen_offline: 14
 
 # Hoeveel scans als los tabblad in het overzicht blijven staan
 bewaar_scans: 30
+
+# ---------------- Nieuwbouw-tabblad ----------------
+# Extra woorden waarmee een project als "in jouw gebied" herkend wordt (naast de wijken hierboven)
+nieuwbouw_extra_trefwoorden:
+  rotterdam: [gerdesiaweg, van de leckestraat, marinus van der stoepstraat, kralinger esch, de esch, toepad,
+              "'s-gravenland", ringvaartplas, ommoord, zevenkamp, oosterflank, crooswijk]
+# Kaartvakken [zuid, west, noord, oost] voor projecten zonder postcode (Rotterdam)
+nieuwbouw_kaartvakken:
+  rotterdam:
+    - [51.925, 4.455, 51.950, 4.495]   # Rotterdam Noord
+    - [51.912, 4.495, 51.940, 4.545]   # Kralingen
+    - [51.940, 4.520, 51.990, 4.620]   # Prins Alexander, Ommoord, Zevenkamp, Nesselande

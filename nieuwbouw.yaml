@@ -1,0 +1,73 @@
+# ============================================================
+#  Handmatige lijst nieuwbouwprojecten (huur) in je gebieden
+#  Deze komen naast de automatisch gevonden projecten (Vesteda, Woonstad)
+#  in het tabblad "Nieuwbouw". Voeg gerust projecten toe of pas de status aan.
+#
+#  status: In planning | In aanbouw | Binnenkort in verhuur | In verhuur | Opgeleverd
+# ============================================================
+projecten:
+  - naam: Nieuw Kralingen (deelplannen F en Q)
+    plaats: Rotterdam
+    wijk: Kralingen-Crooswijk
+    status: In planning
+    type: Nog niet bekend
+    link: https://www.rotterdam.nl/media/7471
+    notitie: Nieuwbouw-appartementen aan de Gijs van Wijkstraat en Johanna van Muijlwijkstraat. Plannen besproken bij de commissie omgevingskwaliteit (april 2026), nog in conceptfase.
+
+  - naam: Prinsendock
+    plaats: Rotterdam
+    wijk: "'s-Gravenland (Kralingen)"
+    status: In verhuur
+    type: Vrije sector (gemeubileerd, short stay)
+    prijs: "vanaf ca. € 2.400"
+    link: https://www.funda.nl/detail/huur/rotterdam/appartement-s-gravenweg-659-k/89605005/
+    notitie: Nieuw complex aan de 's-Gravenweg, vooral gemeubileerde short-stay appartementen. Boven je budget.
+
+  - naam: Buitenhuys Kralingen
+    plaats: Rotterdam
+    wijk: Kralingen-Oost
+    status: In verhuur
+    type: Vrije sector
+    prijs: "vanaf ca. € 1.295"
+    link: https://www.funda.nl/en/detail/huur/rotterdam/appartement-louise-de-colignylaan-438/89601759/
+    notitie: Complex aan de Louise de Colignylaan met 2- en 3-kamerwoningen (ca. 50-111 m²) en gedeelde voorzieningen. Komen regelmatig vrij.
+
+  - naam: Finesse / Common Green Nesselande
+    plaats: Rotterdam
+    wijk: Nesselande
+    status: Status onbekend, check de link
+    type: Sociale huur / Vrije sector
+    link: https://www.woonstadrotterdam.nl/themas/nieuwbouw
+    notitie: Woonstad-project met 3 woontorens aan de Wollefoppenweg / Siciliëboulevard. 54 driekamerwoningen in de vrije sector en 62 sociale huurwoningen. De bouw stond gepland vanaf 2022.
+
+  - naam: Engelandlaan 270
+    plaats: Zoetermeer
+    wijk: Engelse buurt (Centrum)
+    status: In verhuur
+    type: Vrije sector / Middenhuur
+    link: https://www.huurwoningen.nl/in/zoetermeer/
+    notitie: Nieuw complex in het centrum. Op Huurwoningen.nl en Pararius staan veel woningen met postcode 2711 DZ uit dit project. Die staan ook al in je gewone overzicht.
+
+  - naam: SAM (Italiëlaan)
+    plaats: Zoetermeer
+    wijk: Centrum-Oost
+    status: In verhuur
+    type: Sociale huur / Middenhuur / Vrije sector
+    link: https://www.funda.nl/en/detail/huur/zoetermeer/appartement-italielaan-29-3/43136749
+    notitie: Nieuwbouw met studio's tot 4-kamerappartementen in alle huursegmenten.
+
+  - naam: Lavendel (Zuidplaspolder)
+    plaats: Zevenhuizen
+    wijk: Zuidplaspolder
+    status: In verhuur
+    type: Sociale huur / Middenhuur
+    link: https://www.funda.nl/detail/huur/zevenhuizen-zh/appartement-lavendel-1/44493107/
+    notitie: Nieuwbouwproject waarbij doorstromers met een grote sociale huurwoning in Zevenhuizen of Zuidplas voorrang krijgen.
+
+  - naam: Westergouwe – woontoren bij Voorzieningencluster
+    plaats: Gouda
+    wijk: Westergouwe
+    status: In aanbouw
+    type: Nog niet bekend
+    link: https://www.tenderned.nl/papi/tenderned-rs-tns/v2/publicaties/302203/documenten/9716310/content
+    notitie: Gemeente Gouda bouwt in nieuwbouwwijk Westergouwe een voorzieningencluster met een woontoren (gegund in 2023). Hou de verhuur in de gaten.

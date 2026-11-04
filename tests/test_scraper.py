@@ -57,3 +57,13 @@ def test_lazy_image_and_swap():
     assert scrape.is_excluded({"title": "x", "image": "https://cdn/x?original_uri=woningruil.nl/1.jpg"}, cfg)
     assert scrape.is_excluded({"title": "x", "detail_text": "Ik wil mijn woning ruilen met..."}, cfg)
     assert not scrape.is_excluded({"title": "Appartement Bergweg", "extra": "3 kamers"}, cfg)
+
+
+def test_nieuwbouw_area():
+    import yaml, sources
+    cfg = yaml.safe_load(open(scrape.CONFIG_PATH))
+    rdam = cfg["gebieden"][0]
+    assert not sources.in_area({"name": "Baljuw", "wijk": "Wijk 02 Rhoon-Noord", "lat": 51.857, "lng": 4.41}, rdam, cfg)
+    assert sources.in_area({"name": "Parktoren", "wijk": "Prins Alexander", "lat": 51.952, "lng": 4.553}, rdam, cfg)
+    assert sources.in_area({"name": "Woonstad", "text": "Nieuwbouw aan de Gerdesiaweg"}, rdam, cfg)
+    assert not sources.in_area({"name": "Atlas Hillesluis", "text": "Colosseumweg"}, rdam, cfg)

@@ -33,6 +33,8 @@ except ImportError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config.yaml"
 OUTPUT_PATH = ROOT / "docs" / "listings.json"
+NIEUWBOUW_PATH = ROOT / "docs" / "nieuwbouw.json"
+NIEUWBOUW_HANDMATIG = ROOT / "nieuwbouw.yaml"
 
 HEADERS = {
     "User-Agent": (
@@ -343,6 +345,45 @@ def enrich(l: dict) -> bool:
 
 # ----------------------------------------------------------------- main
 
+def write_nieuwbouw(cfg: dict, sources, stamp: str) -> None:
+    if cfg.get("bronnen", {}).get("woonstad"):
+        sources.woonstad_nieuwbouw(cfg)
+    projects = dict(sources.NIEUWBOUW)
+    if NIEUWBOUW_HANDMATIG.exists():
+        for p in yaml.safe_load(NIEUWBOUW_HANDMATIG.read_text()).get("projecten", []) or []:
+            pid = make_id("handmatig", p.get("link") or p["naam"])
+            projects[pid] = {"id": pid, "source": "handmatig", "name": p["naam"], "city": p.get("plaats"),
+                             "wijk": p.get("wijk"), "area": p.get("plaats"), "url": p.get("link"), "status": p.get("status"),
+                             "segment": p.get("type"), "price": p.get("prijs", ""), "text": p.get("notitie", ""),
+                             "image": p.get("foto")}
+    old = {}
+    if NIEUWBOUW_PATH.exists():
+        try:
+            old = {p["id"]: p for p in json.loads(NIEUWBOUW_PATH.read_text()).get("projecten", [])}
+        except json.JSONDecodeError:
+            pass
+    fetched = 0
+    for pid, p in projects.items():
+        o = old.get(pid, {})
+        p["first_seen"] = o.get("first_seen", stamp)
+        p["last_seen"] = stamp
+        if not p.get("image"):
+            p["image"] = o.get("image")
+        if not p.get("image") and p.get("url") and p["source"] != "handmatig" and fetched < 10:
+            fetched += 1
+            html = fetch(p["url"])
+            if html:
+                p["image"] = og_image(BeautifulSoup(html, "html.parser"))
+    # projecten die even niet terugkwamen (bron tijdelijk onbereikbaar) 30 dagen bewaren
+    cutoff = datetime.now(timezone.utc) - timedelta(days=30)
+    for pid, o in old.items():
+        if pid not in projects and o.get("source") != "handmatig" and datetime.fromisoformat(o["last_seen"]) >= cutoff:
+            projects[pid] = o
+    out = sorted(projects.values(), key=lambda p: (p.get("area") or "", p.get("name") or ""))
+    NIEUWBOUW_PATH.write_text(json.dumps({"updated": stamp, "projecten": out}, ensure_ascii=False, indent=1))
+    log(f"Nieuwbouw: {len(out)} projecten in je gebieden")
+
+
 def load_existing() -> dict:
     if OUTPUT_PATH.exists():
         try:
@@ -353,8 +394,14 @@ def load_existing() -> dict:
 
 
 def main() -> int:
+    sys.modules.setdefault("scrape", sys.modules[__name__])  # sources.py gebruikt dezelfde module
+    sys.path.insert(0, str(Path(__file__).parent))
+    import sources
+    SCRAPERS.update(sources.EXTRA_SCRAPERS)
+
     cfg = yaml.safe_load(CONFIG_PATH.read_text())
     existing = {l["id"]: l for l in load_existing().get("listings", [])}
+    sources.EXISTING.update(existing)
     stamp = now_iso()
     found: dict[str, dict] = {}
     status = {}
@@ -370,7 +417,7 @@ def main() -> int:
             except Exception as e:
                 log(f"   ! {source}/{gebied['naam']} mislukt: {e}")
                 continue
-            if results:
+            if results or source in sources.SOURCE_OK:
                 ok = True
             for l in results:
                 if matches(l, gebied, cfg):
@@ -452,6 +499,10 @@ def main() -> int:
         )
     )
     log(f"\nKlaar: {len(listings)} woningen in overzicht, {new_count} nieuw. Status: {status}")
+    try:
+        write_nieuwbouw(cfg, sources, stamp)
+    except Exception as e:  # nieuwbouw mag de rest nooit breken
+        log(f"   ! nieuwbouw mislukt: {e}")
     return 0
 
 

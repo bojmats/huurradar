@@ -1,6 +1,6 @@
 # HuurRadar
 
-Checkt twee keer per dag (08:17 en 18:17) Pararius, Huurwoningen.nl en Funda op nieuwe huurwoningen
+Checkt twee keer per dag (08:17 en 18:17) Pararius, Huurwoningen.nl, Funda, Vesteda, Woonstad, vb&t, Huispedia en WoningNet Midden-Holland Pararius, Huurwoningen.nl en Funda op nieuwe huurwoningen
 in jouw gebieden en onder jouw maximumprijs, en zet ze in een overzichtspagina.
 Draait gratis op GitHub, ook als je laptop uit staat.
 
