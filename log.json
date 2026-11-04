@@ -1,0 +1,56 @@
+[
+ {
+  "i": 0,
+  "url": "https://ikwilhuren.nu/aanbod/",
+  "final": "https://ikwilhuren.nu/aanbod/",
+  "status": 200,
+  "bytes": 195676
+ },
+ {
+  "i": 1,
+  "url": "https://aanbod.vastgoednederland.nl/huurwoningen/rotterdam",
+  "final": "https://www.vastgoednederland.nl/huurwoningen/rotterdam",
+  "status": 200,
+  "bytes": 151835
+ },
+ {
+  "i": 2,
+  "url": "https://www.huurstunt.nl/huren/rotterdam/",
+  "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.huurstunt.nl/huren/rotterdam/\", waiting until \"networkidle\"\n"
+ },
+ {
+  "i": 3,
+  "url": "https://kamernet.nl/huren/huurwoningen-rotterdam",
+  "final": "https://kamernet.nl/huren/huurwoningen-rotterdam",
+  "status": 200,
+  "bytes": 385076
+ },
+ {
+  "i": 4,
+  "url": "https://www.verra.nl/nl/woningaanbod",
+  "final": "https://www.verra.nl/nl/woningaanbod",
+  "status": 200,
+  "bytes": 178614
+ },
+ {
+  "i": 5,
+  "url": "https://househunting.nl/woningaanbod/",
+  "final": "https://househunting.nl/woningaanbod/",
+  "status": 200,
+  "bytes": 214800
+ },
+ {
+  "i": 6,
+  "url": "https://interhouse.nl/huurwoningen/",
+  "final": "https://interhouse.nl/aanbod/?offer=huur",
+  "status": 200,
+  "bytes": 146341
+ },
+ {
+  "i": 7,
+  "url": "https://www.verra.nl/nl/woningaanbod/woning/rotterdam/oostmaaslaan-175-b/69aa2d3fa1082fd79f9bc6bd",
+  "final": "https://www.verra.nl/nl/woningaanbod/woning/rotterdam/oostmaaslaan-175-b/69aa2d3fa1082fd79f9bc6bd",
+  "status": 200,
+  "bytes": 254670
+ }
+]
