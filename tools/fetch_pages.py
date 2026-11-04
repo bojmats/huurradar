@@ -7,7 +7,13 @@ log = []
 for i, item in enumerate(u.strip() for u in sys.argv[1].split() if u.strip()):
     url = item
     try:
-        if item.startswith("POST:"):  # POST:<url>::<json zonder spaties>
+        if item.startswith("REQ64:"):  # base64 van {"url","method","body","headers"}
+            import base64
+            spec = json.loads(base64.b64decode(item[6:]))
+            url = spec["url"]
+            r = http.request(spec.get("method", "POST"), url, headers={**H, **spec.get("headers", {})},
+                             data=spec.get("body"), timeout=30, impersonate="chrome")
+        elif item.startswith("POST:"):  # POST:<url>::<json zonder spaties>
             url, body = item[5:].split("::", 1)
             r = http.post(url, headers={**H, "Content-Type": "application/json", "Accept": "application/json"},
                           data=body, timeout=30, impersonate="chrome")
