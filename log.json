@@ -1,0 +1,72 @@
+[
+ {
+  "i": 0,
+  "url": "https://www.vesteda.com/nl/huurwoningen-rotterdam",
+  "final": "https://www.vesteda.com/nl/huurwoningen-rotterdam",
+  "status": 200,
+  "bytes": 94543
+ },
+ {
+  "i": 1,
+  "url": "https://www.vesteda.com/en/rotterdam-houses-for-rent",
+  "final": "https://www.vesteda.com/en/rotterdam-houses-for-rent",
+  "status": 200,
+  "bytes": 93935
+ },
+ {
+  "i": 2,
+  "url": "https://www.vesteda.com/en/zoetermeer-houses-for-rent",
+  "final": "https://www.vesteda.com/en/zoetermeer-houses-for-rent",
+  "status": 200,
+  "bytes": 89332
+ },
+ {
+  "i": 3,
+  "url": "https://vbtverhuurmakelaars.nl/woningen",
+  "final": "https://vbtverhuurmakelaars.nl/woningen",
+  "status": 200,
+  "bytes": 782662
+ },
+ {
+  "i": 4,
+  "url": "https://vbtverhuurmakelaars.nl/en/huurwoningen-rotterdam",
+  "final": "https://vbtverhuurmakelaars.nl/en/huurwoningen-rotterdam",
+  "status": 200,
+  "bytes": 533703
+ },
+ {
+  "i": 5,
+  "url": "https://huispedia.nl/huurwoningen/rotterdam",
+  "final": "https://huispedia.nl/huurwoningen/rotterdam",
+  "status": 200,
+  "bytes": 420388
+ },
+ {
+  "i": 6,
+  "url": "https://www.woonnetrijnmond.nl/",
+  "final": "https://www.woonnetrijnmond.nl/",
+  "status": 403,
+  "bytes": 5978
+ },
+ {
+  "i": 7,
+  "url": "https://www.woningnetregiomiddenholland.nl/",
+  "final": "https://middenholland.mijndak.nl/",
+  "status": 200,
+  "bytes": 2322
+ },
+ {
+  "i": 8,
+  "url": "https://www.woonstadrotterdam.nl/aanbod/vrijesector-huurwoningen",
+  "final": "https://www.woonstadrotterdam.nl/aanbod/vrije-sector-huurwoning",
+  "status": 200,
+  "bytes": 274993
+ },
+ {
+  "i": 9,
+  "url": "https://www.woonstadrotterdam.nl/nieuwbouw",
+  "final": "https://www.woonstadrotterdam.nl/themas/nieuwbouw",
+  "status": 200,
+  "bytes": 295971
+ }
+]
