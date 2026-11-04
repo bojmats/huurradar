@@ -1,0 +1,57 @@
+[
+ {
+  "i": 0,
+  "url": "https://www.verra.nl/nl/realtime-listings/consumer",
+  "final": "https://www.verra.nl/nl/realtime-listings/consumer",
+  "status": 200,
+  "bytes": 2185321
+ },
+ {
+  "i": 1,
+  "url": "https://househunting.nl/woningaanbod/?type=for-rent&filter_location=Rotterdam&lat=51.9225&lng=4.47917&km=10&min-price=&max-price=1500",
+  "final": "https://househunting.nl/woningaanbod/?type=for-rent&filter_location=Rotterdam&lat=51.9225&lng=4.47917&km=10&min-price=&max-price=1500",
+  "status": 200,
+  "bytes": 206118
+ },
+ {
+  "i": 2,
+  "url": "https://ikwilhuren.nu/aanbod/?objSearch=Rotterdam&selAfstand=10",
+  "final": "https://ikwilhuren.nu/aanbod/?objSearch=Rotterdam&selAfstand=10",
+  "status": 200,
+  "bytes": 195710
+ },
+ {
+  "i": 3,
+  "url": "https://ikwilhuren.nu/huurwoningen/rotterdam/",
+  "final": "https://ikwilhuren.nu/login",
+  "status": 200,
+  "bytes": 26948
+ },
+ {
+  "i": 4,
+  "url": "https://interhouse.nl/aanbod/?offer=huur",
+  "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://interhouse.nl/aanbod/?offer=huur\", waiting until \"networkidle\"\n"
+ },
+ {
+  "i": 5,
+  "url": "https://www.vastgoednederland.nl/huurwoningen/zoetermeer",
+  "final": "https://www.vastgoednederland.nl/huurwoningen/zoetermeer",
+  "status": 200,
+  "bytes": 112433
+ },
+ {
+  "i": 6,
+  "url": "https://kamernet.nl/huren/appartement-rotterdam/bergweg/appartement-2414817",
+  "final": "https://kamernet.nl/huren/appartement-rotterdam/bergweg/appartement-2414817",
+  "status": 404,
+  "bytes": 235116
+ },
+ {
+  "i": 7,
+  "url": "https://ikwilhuren.nu/aanbod/",
+  "final": "https://ikwilhuren.nu/aanbod/",
+  "status": 200,
+  "bytes": 215179,
+  "xhr": 2
+ }
+]
