@@ -1,0 +1,219 @@
+[
+ {
+  "i": 0,
+  "url": "https://www.vesteda.com/static/vue/dist/js/app.js",
+  "final": "https://www.vesteda.com/static/vue/dist/js/app.js",
+  "status": 200,
+  "bytes": 88118
+ },
+ {
+  "i": 1,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/40om-41acuis5.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/40om-41acuis5.js",
+  "status": 200,
+  "bytes": 34142
+ },
+ {
+  "i": 2,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/3t9xba5-zxmc6.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/3t9xba5-zxmc6.js",
+  "status": 200,
+  "bytes": 233253
+ },
+ {
+  "i": 3,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/2z6ynfrxvsjia.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/2z6ynfrxvsjia.js",
+  "status": 200,
+  "bytes": 153428
+ },
+ {
+  "i": 4,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/turbopack-3l6w6p2-1g_dr.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/turbopack-3l6w6p2-1g_dr.js",
+  "status": 200,
+  "bytes": 10990
+ },
+ {
+  "i": 5,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/35rdz5s-8zwek.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/35rdz5s-8zwek.js",
+  "status": 200,
+  "bytes": 9163
+ },
+ {
+  "i": 6,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/2yycz0oipszrf.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/2yycz0oipszrf.js",
+  "status": 200,
+  "bytes": 28264
+ },
+ {
+  "i": 7,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/24y0-g2ovvepe.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/24y0-g2ovvepe.js",
+  "status": 200,
+  "bytes": 495747
+ },
+ {
+  "i": 8,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/3v2r0jie9iec7.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/3v2r0jie9iec7.js",
+  "status": 200,
+  "bytes": 10622
+ },
+ {
+  "i": 9,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/34945egxm6ox1.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/34945egxm6ox1.js",
+  "status": 200,
+  "bytes": 34905
+ },
+ {
+  "i": 10,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/37ww9ir7e2hod.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/37ww9ir7e2hod.js",
+  "status": 200,
+  "bytes": 190617
+ },
+ {
+  "i": 11,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/3muz35elwtzbg.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/3muz35elwtzbg.js",
+  "status": 200,
+  "bytes": 819586
+ },
+ {
+  "i": 12,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/0qtsqzaj4d99t.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/0qtsqzaj4d99t.js",
+  "status": 200,
+  "bytes": 274768
+ },
+ {
+  "i": 13,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/0zpolz_tp_ijd.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/0zpolz_tp_ijd.js",
+  "status": 200,
+  "bytes": 143056
+ },
+ {
+  "i": 14,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/3ts65p1_hviq8.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/3ts65p1_hviq8.js",
+  "status": 200,
+  "bytes": 924854
+ },
+ {
+  "i": 15,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/0a1to8foh7uqz.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/0a1to8foh7uqz.js",
+  "status": 200,
+  "bytes": 103302
+ },
+ {
+  "i": 16,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/2jyq10wkzbnry.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/2jyq10wkzbnry.js",
+  "status": 200,
+  "bytes": 1554
+ },
+ {
+  "i": 17,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/11se2bpp-urkc.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/11se2bpp-urkc.js",
+  "status": 200,
+  "bytes": 336
+ },
+ {
+  "i": 18,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/2v1svi7_lysqb.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/2v1svi7_lysqb.js",
+  "status": 200,
+  "bytes": 638
+ },
+ {
+  "i": 19,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/42fly7d3-hpj4.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/42fly7d3-hpj4.js",
+  "status": 200,
+  "bytes": 441
+ },
+ {
+  "i": 20,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/0cz1d0mv5g_q7.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/0cz1d0mv5g_q7.js",
+  "status": 200,
+  "bytes": 112541
+ },
+ {
+  "i": 21,
+  "url": "https://www.woonstadrotterdam.nl/_next/static/chunks/1b369lax-2rgz.js",
+  "final": "https://www.woonstadrotterdam.nl/_next/static/chunks/1b369lax-2rgz.js",
+  "status": 200,
+  "bytes": 8641
+ },
+ {
+  "i": 22,
+  "url": "https://huispedia.nl/huurwoningen/rotterdam?page=2",
+  "final": "https://huispedia.nl/huurwoningen/rotterdam?page=2",
+  "status": 200,
+  "bytes": 420390
+ },
+ {
+  "i": 23,
+  "url": "https://huispedia.nl/huurwoningen/zoetermeer",
+  "final": "https://huispedia.nl/huurwoningen/zoetermeer",
+  "status": 200,
+  "bytes": 137183
+ },
+ {
+  "i": 24,
+  "url": "https://huispedia.nl/huurwoningen/gouda",
+  "final": "https://huispedia.nl/huurwoningen/gouda",
+  "status": 200,
+  "bytes": 171235
+ },
+ {
+  "i": 25,
+  "url": "https://vbtverhuurmakelaars.nl/huurwoningen-rotterdam",
+  "final": "https://vbtverhuurmakelaars.nl/huurwoningen-rotterdam",
+  "status": 200,
+  "bytes": 787680
+ },
+ {
+  "i": 26,
+  "url": "https://www.woonnetrijnmond.nl/aanbod",
+  "final": "https://www.woonnetrijnmond.nl/aanbod",
+  "status": 403,
+  "bytes": 5996
+ },
+ {
+  "i": 27,
+  "url": "https://middenholland.mijndak.nl/HuurwoningenAanbod",
+  "final": "https://middenholland.mijndak.nl/HuurwoningenAanbod",
+  "status": 404,
+  "bytes": 9
+ },
+ {
+  "i": 28,
+  "url": "https://middenholland.mijndak.nl/moduleservices/moduleinfo",
+  "final": "https://middenholland.mijndak.nl/moduleservices/moduleinfo",
+  "status": 200,
+  "bytes": 201876
+ },
+ {
+  "i": 29,
+  "url": "https://middenholland.mijndak.nl/scripts/DAKWP.appDefinition.js",
+  "final": "https://middenholland.mijndak.nl/scripts/DAKWP.appDefinition.js",
+  "status": 200,
+  "bytes": 669
+ },
+ {
+  "i": 30,
+  "url": "https://middenholland.mijndak.nl/scripts/DAKWP.index.js",
+  "final": "https://middenholland.mijndak.nl/scripts/DAKWP.index.js",
+  "status": 200,
+  "bytes": 1354
+ }
+]
