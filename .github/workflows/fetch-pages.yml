@@ -23,7 +23,7 @@ jobs:
       - run: python tools/fetch_pages.py "${{ inputs.urls }}"
       - name: Op aparte branch zetten
         run: |
-          cd out
+          cd out && gzip -9 *.html
           git init -q -b "devpages-${{ github.run_id }}"
           git config user.name "huurradar-bot"; git config user.email "huurradar-bot@users.noreply.github.com"
           git add -A && git commit -qm "pages"
