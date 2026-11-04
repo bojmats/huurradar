@@ -405,6 +405,7 @@ def main() -> int:
     stamp = now_iso()
     found: dict[str, dict] = {}
     status = {}
+    scanned: set[tuple[str, str]] = set()  # (bron, gebied) die deze run echt resultaten gaven
 
     for source, enabled in cfg.get("bronnen", {}).items():
         if not enabled or source not in SCRAPERS:
@@ -419,6 +420,8 @@ def main() -> int:
                 continue
             if results or source in sources.SOURCE_OK:
                 ok = True
+            if results:
+                scanned.add((source, gebied["naam"]))
             for l in results:
                 if matches(l, gebied, cfg):
                     l["area"] = gebied["naam"]
@@ -434,6 +437,7 @@ def main() -> int:
         l["first_seen"] = old["first_seen"] if old else stamp
         l["last_seen"] = stamp
         l["active"] = True
+        l["missed"] = 0
         merged[lid] = l
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=cfg.get("bewaar_dagen_offline", 14))
@@ -446,12 +450,15 @@ def main() -> int:
         g = gebied_by_name.get(old.get("area"))
         if g is None or not matches(old, g, cfg):
             continue
-        # als een bron deze run faalde, gooien we zijn advertenties niet weg
-        if old["source"] in failed_sources:
+        # bron/gebied niet (volledig) gescand, bijv. geblokkeerd: niets veranderen
+        if old["source"] in failed_sources or (old["source"], old.get("area")) not in scanned:
             merged[lid] = old
             continue
-        if datetime.fromisoformat(old["last_seen"]) >= cutoff:
+        # pas offline na 2 geslaagde scans waarin hij ontbrak (blokkades op losse pagina's)
+        old["missed"] = old.get("missed", 0) + 1
+        if old["missed"] >= 2:
             old["active"] = False
+        if datetime.fromisoformat(old["last_seen"]) >= cutoff:
             merged[lid] = old
 
     # detailpagina's: foto ophalen en controleren op woningruil (max N per scan)
