@@ -1,0 +1,49 @@
+[
+ {
+  "i": 0,
+  "url": "https://middenholland.mijndak.nl/DAKWP/Woningaanbod",
+  "final": "https://middenholland.mijndak.nl/DAKWP/Woningaanbod",
+  "status": 200,
+  "bytes": 149232,
+  "xhr": 39
+ },
+ {
+  "i": 1,
+  "url": "https://www.woonnetrijnmond.nl/",
+  "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.woonnetrijnmond.nl/\", waiting until \"networkidle\"\n"
+ },
+ {
+  "i": 2,
+  "url": "https://vbtverhuurmakelaars.nl/woning/rotterdam-brede-hilledijk-438-d",
+  "error": "Failed to perform, curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+ },
+ {
+  "i": 3,
+  "url": "https://huispedia.nl/huurwoningen/nieuwerkerk-aan-den-ijssel",
+  "final": "https://huispedia.nl/huurwoningen/nieuwerkerk-aan-den-ijssel",
+  "status": 200,
+  "bytes": 121031
+ },
+ {
+  "i": 4,
+  "url": "https://huispedia.nl/huurwoningen/zevenhuizen",
+  "final": "https://huispedia.nl/huurwoningen/zevenhuizen",
+  "status": 200,
+  "bytes": 130515
+ },
+ {
+  "i": 5,
+  "url": "https://vbtverhuurmakelaars.nl/woningen/3",
+  "error": "Failed to perform, curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+ },
+ {
+  "i": 6,
+  "url": "https://vbtverhuurmakelaars.nl/woningen/4",
+  "error": "Failed to perform, curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+ },
+ {
+  "i": 7,
+  "url": "https://vbtverhuurmakelaars.nl/woningen/5",
+  "error": "Failed to perform, curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+ }
+]
