@@ -342,3 +342,213 @@ def add_project(p: dict, gebied: dict | None, cfg: dict) -> None:
         return
     p["area"] = gebied["naam"]
     NIEUWBOUW.setdefault(p["id"], p)
+
+
+# ------------------------------------------------------------------ adres -> postcode (PDOK, gratis overheids-API)
+
+PDOK = "https://api.pdok.nl/bzk/locatieserver/search/v3_1/free"
+
+
+def geocode(street: str, city: str) -> dict:
+    """Zoekt postcode en coördinaten bij een adres of straat. Resultaat wordt per run gecachet."""
+    key = f"geo:{street}|{city}".lower()
+    if key in _CACHE:
+        return _CACHE[key]
+    res = {}
+    q = f"{street} {city}".strip()
+    try:
+        r = core.http.get(PDOK, params={"q": q, "rows": 1, "fq": f"woonplaatsnaam:{city}",
+                                        "fl": "type,postcode,centroide_ll,weergavenaam,wijknaam,buurtnaam"},
+                          headers={"Accept": "application/json"}, timeout=20, **core.IMPERSONATE)
+        docs = r.json().get("response", {}).get("docs", []) if r.status_code == 200 else []
+    except Exception:
+        docs = []
+    if docs:
+        d = docs[0]
+        m = re.search(r"POINT\(([\d.]+) ([\d.]+)\)", d.get("centroide_ll") or "")
+        res = {"postcode": core.find_postcode(d.get("postcode") or ""), "wijk": d.get("wijknaam") or d.get("buurtnaam"),
+               "lat": float(m.group(2)) if m else None, "lng": float(m.group(1)) if m else None}
+    _CACHE[key] = res
+    return res
+
+
+def with_location(l: dict, street: str, city: str, gebied: dict) -> dict:
+    """Vul postcode/coördinaten aan als het gebied op postcode filtert en de bron er geen geeft."""
+    if l.get("postcode") or not gebied.get("postcodes"):
+        return l
+    old = EXISTING.get(l["id"])
+    if old and (old.get("postcode") or old.get("lat")):
+        l.update({k: old.get(k) for k in ("postcode", "lat", "lng", "wijk") if old.get(k)})
+        return l
+    g = geocode(street, city)
+    for k in ("postcode", "lat", "lng"):
+        if g.get(k):
+            l[k] = g[k]
+    l["wijk"] = l.get("wijk") or g.get("wijk")
+    return l
+
+
+# ------------------------------------------------------------------ Verra Makelaars (OGonline-platform)
+
+def scrape_verra(gebied: dict, cfg: dict) -> list[dict]:
+    if "verra" not in _CACHE:
+        data = _http_json("GET", "https://www.verra.nl/nl/realtime-listings/consumer")
+        _CACHE["verra"] = data if isinstance(data, list) else []
+        if _CACHE["verra"]:
+            SOURCE_OK.add("verra")
+    out = []
+    for o in _CACHE["verra"]:
+        if not o.get("isRentals") or (o.get("statusOrig") or "") not in ("available", "new", ""):
+            continue
+        if (o.get("mainType") or "apartment") not in ("apartment", "house"):  # geen parkeerplaatsen/bedrijfsruimte
+            continue
+        if (o.get("city") or "").lower() != gebied["naam"].lower():
+            continue
+        url = urljoin("https://www.verra.nl", o.get("url") or "")
+        out.append(_listing("verra", url, f"{o.get('type') or 'Woning'} {o.get('address')}", o.get("rentalsPrice"),
+                            f"{o.get('zipcode', '')} {o.get('city', '')}", postcode=o.get("zipcode"),
+                            wijk=o.get("district") or o.get("neighbourhood"), rooms=o.get("rooms"),
+                            surface=o.get("livingSurface"), image=o.get("photo"),
+                            extra=f"{o.get('decoration') or ''} beschikbaar {o.get('acceptance') or ''}"))
+    return out
+
+
+# ------------------------------------------------------------------ Vastgoed Nederland (voorheen VBO)
+
+def scrape_vastgoednl(gebied: dict, cfg: dict) -> list[dict]:
+    out = []
+    for page in range(1, cfg.get("max_paginas", 3) + 1):
+        url = f"https://www.vastgoednederland.nl/huurwoningen/{gebied['slug']}" + (f"?p={page}" if page > 1 else "")
+        html = core.fetch(url)
+        if not html:
+            break
+        SOURCE_OK.add("vastgoednl")
+        soup = BeautifulSoup(html, "html.parser")
+        cards = soup.select("a.propertyLink")
+        for a in cards:
+            street = core.text_of(a.select_one(".street"))
+            city = core.text_of(a.select_one(".city"))
+            if city.lower() != gebied["naam"].lower():
+                continue
+            lis = [core.text_of(li) for li in a.select(".bottom li")]
+            img = a.select_one("img")
+            l = _listing("vastgoednl", a["href"], street, core.parse_int(core.text_of(a.select_one(".price"))),
+                         f"{street}, {city}", surface=core.parse_int(lis[0]) if lis else None,
+                         rooms=core.parse_int(lis[1]) if len(lis) > 1 else None, image=img.get("src") if img else None,
+                         extra=f"makelaar: {core.text_of(a.select_one('.broker'))}")
+            out.append(with_location(l, street, city, gebied))
+        if len(cards) < 15:
+            break
+    return out
+
+
+# ------------------------------------------------------------------ HouseHunting
+
+def scrape_househunting(gebied: dict, cfg: dict) -> list[dict]:
+    lat, lng, radius = COORDS.get(gebied["slug"], (None, None, None))
+    if lat is None:
+        return []
+    url = (f"https://househunting.nl/woningaanbod/?type=for-rent&filter_location={gebied['naam']}"
+           f"&lat={lat}&lng={lng}&km={max(5, radius)}&min-price=&max-price={cfg['max_prijs']}")
+    html = core.fetch(url)
+    if not html:
+        return []
+    SOURCE_OK.add("househunting")
+    out = []
+    for c in BeautifulSoup(html, "html.parser").select("li.location"):
+        a = c.select_one("a[href]")
+        street = core.text_of(c.select_one(".location_street"))
+        city = core.text_of(c.select_one(".location_city"))
+        if not a or city.lower() != gebied["naam"].lower():
+            continue
+        img = c.select_one("img.location_image")
+        l = _listing("househunting", a["href"], street, core.parse_int(core.text_of(c.select_one(".location_price"))),
+                     f"{street}, {city}", image=img.get("src") if img else None, extra=core.text_of(c))
+        out.append(with_location(l, street, city, gebied))
+    return out
+
+
+# ------------------------------------------------------------------ Kamernet
+
+KAMERNET_TYPES = {1: "kamer", 2: "appartement", 4: "studio", 8: "anti-kraak"}
+
+
+def scrape_kamernet(gebied: dict, cfg: dict) -> list[dict]:
+    html = core.fetch(f"https://kamernet.nl/huren/huurwoningen-{gebied['slug']}")
+    if not html:
+        return []
+    soup = BeautifulSoup(html, "html.parser")
+    tag = soup.find("script", id="__NEXT_DATA__")
+    try:
+        resp = json.loads(tag.string)["props"]["pageProps"]["targetPageProps"]["findListingsResponse"]
+    except (AttributeError, KeyError, TypeError, ValueError):
+        return []
+    SOURCE_OK.add("kamernet")
+    out = []
+    for x in (resp.get("listings") or []) + (resp.get("topAdListings") or []):
+        typ = KAMERNET_TYPES.get(x.get("listingType"), "woning")
+        if typ == "kamer" and not cfg.get("kamers", False):
+            continue
+        if (x.get("city") or "").lower() != gebied["naam"].lower():
+            continue
+        url = f"https://kamernet.nl/huren/{typ}-{x.get('citySlug')}/{x.get('streetSlug')}/{typ}-{x.get('listingId')}"
+        l = _listing("kamernet", url, f"{typ.capitalize()} {x.get('street')}", x.get("totalRentalPrice"),
+                     f"{x.get('street')}, {x.get('city')}", surface=x.get("surfaceArea"),
+                     image=x.get("resizedFullPreviewImageUrl") or x.get("thumbnailUrl"),
+                     extra=f"{typ} beschikbaar vanaf {(x.get('availabilityStartDate') or '')[:10]}")
+        out.append(with_location(l, x.get("street") or "", x.get("city") or "", gebied))
+    return out
+
+
+# ------------------------------------------------------------------ ikwilhuren.nu (MVGM)
+
+def _ikwilhuren_all(cfg: dict) -> list[dict]:
+    if "ikw" in _CACHE:
+        return _CACHE["ikw"]
+    items = []
+    for page in range(1, cfg.get("ikwilhuren_paginas", 8) + 1):  # landelijk, nieuwste eerst
+        html = core.fetch(f"https://ikwilhuren.nu/aanbod/?page={page}")
+        if not html:
+            break
+        SOURCE_OK.add("ikwilhuren")
+        soup = BeautifulSoup(html, "html.parser")
+        seen = set()
+        for a in soup.find_all("a", href=re.compile(r"^/object/")):
+            href = a["href"]
+            if href in seen:
+                continue
+            seen.add(href)
+            card = a
+            for _ in range(6):
+                if card.parent and len(card.parent.get_text(" ", strip=True)) < 400:
+                    card = card.parent
+            txt = core.text_of(card)
+            m = re.match(r"/object/(.+?)-(\d{4}[a-z]{2})-", href)
+            city = m.group(1).replace("-", " ") if m else ""
+            pc = core.find_postcode(m.group(2).upper()) if m else None
+            img = card.find("img")
+            src = (img.get("src") or img.get("data-src") or "") if img else ""
+            pm = re.search(r"€\s?([\d.]+)", txt)
+            sm = re.search(r"(\d+)\s*m\s?2", txt)
+            l = _listing("ikwilhuren", urljoin("https://ikwilhuren.nu", href),
+                         re.sub(r"^Te huur\s+", "", txt.split(m.group(2).upper())[0] if m else txt)[:90],
+                         core.parse_int(pm.group(1)) if pm else None, txt[:160], postcode=pc,
+                         surface=int(sm.group(1)) if sm else None, image=("https:" + src) if src.startswith("//") else src or None,
+                         extra=txt)
+            l["city"] = city
+            items.append(l)
+    _CACHE["ikw"] = items
+    return items
+
+
+def scrape_ikwilhuren(gebied: dict, cfg: dict) -> list[dict]:
+    return [l for l in _ikwilhuren_all(cfg) if l["city"].lower() == gebied["naam"].lower()]
+
+
+EXTRA_SCRAPERS.update({
+    "verra": scrape_verra,
+    "vastgoednl": scrape_vastgoednl,
+    "househunting": scrape_househunting,
+    "kamernet": scrape_kamernet,
+    "ikwilhuren": scrape_ikwilhuren,
+})

@@ -322,6 +322,11 @@ def matches(listing: dict, gebied: dict, cfg: dict) -> bool:
         return True  # hele plaats
     if listing.get("postcode"):
         return postcode_in_ranges(listing["postcode"], ranges)
+    # geen postcode, wel coördinaten: kaartvakken van het gebied
+    lat, lng = listing.get("lat"), listing.get("lng")
+    boxes = cfg.get("nieuwbouw_kaartvakken", {}).get(gebied.get("slug"), [])
+    if lat and lng and boxes:
+        return any(b[0] <= lat <= b[2] and b[1] <= lng <= b[3] for b in boxes)
     # geen postcode bekend: probeer wijknaam
     hay = f"{listing.get('wijk') or ''} {listing.get('address') or ''} {listing.get('title') or ''}".lower()
     return any(w.lower() in hay for w in gebied.get("wijken", []))

@@ -67,3 +67,12 @@ def test_nieuwbouw_area():
     assert sources.in_area({"name": "Parktoren", "wijk": "Prins Alexander", "lat": 51.952, "lng": 4.553}, rdam, cfg)
     assert sources.in_area({"name": "Woonstad", "text": "Nieuwbouw aan de Gerdesiaweg"}, rdam, cfg)
     assert not sources.in_area({"name": "Atlas Hillesluis", "text": "Colosseumweg"}, rdam, cfg)
+
+
+def test_coordinate_fallback():
+    import yaml
+    cfg = yaml.safe_load(open(scrape.CONFIG_PATH))
+    rdam = cfg["gebieden"][0]
+    base = {"price": 1100, "postcode": None, "title": "Bergweg", "address": "Bergweg, Rotterdam"}
+    assert scrape.matches({**base, "lat": 51.935, "lng": 4.475}, rdam, cfg)      # Noord
+    assert not scrape.matches({**base, "lat": 51.885, "lng": 4.49}, rdam, cfg)   # Zuid

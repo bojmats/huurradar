@@ -26,6 +26,16 @@ bronnen:
   vbt: true            # vb&t Verhuurmakelaars (o.a. Bouwinvest)
   huispedia: true
   mijndak: true        # WoningNet regio Midden-Holland (sociale huur, Gouda e.o.)
+  verra: true          # Verra Makelaars (Rotterdam, Gouda e.o.)
+  vastgoednl: true     # Vastgoed Nederland / VBO-makelaars
+  househunting: true
+  kamernet: true
+  ikwilhuren: true     # MVGM (ikwilhuren.nu)
+
+# Kamers (gedeelde woningen) van Kamernet meenemen?
+kamers: false
+# ikwilhuren.nu heeft geen plaatsfilter: zoveel pagina's (10 woningen p/p, nieuwste eerst) per scan
+ikwilhuren_paginas: 8
 
 # Gebieden. Per plaats:
 #   slug      = plaatsnaam zoals in de URL van de sites
@@ -86,7 +96,7 @@ bewaar_scans: 30
 nieuwbouw_extra_trefwoorden:
   rotterdam: [gerdesiaweg, van de leckestraat, marinus van der stoepstraat, kralinger esch, de esch, toepad,
               "'s-gravenland", ringvaartplas, ommoord, zevenkamp, oosterflank, crooswijk]
-# Kaartvakken [zuid, west, noord, oost] voor projecten zonder postcode (Rotterdam)
+# Kaartvakken [zuid, west, noord, oost] voor woningen/projecten zonder postcode (Rotterdam)
 nieuwbouw_kaartvakken:
   rotterdam:
     - [51.925, 4.455, 51.950, 4.495]   # Rotterdam Noord
