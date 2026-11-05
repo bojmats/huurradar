@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T22:38:53+00:00",
+ "updated": "2026-11-05T15:32:29+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -14,11 +14,11 @@
  "status": {
   "pararius": {
    "ok": true,
-   "count": 8
+   "count": 18
   },
   "huurwoningen": {
    "ok": true,
-   "count": 27
+   "count": 6
   },
   "funda": {
    "ok": false,
@@ -54,11 +54,11 @@
   },
   "househunting": {
    "ok": true,
-   "count": 2
+   "count": 1
   },
   "kamernet": {
    "ok": true,
-   "count": 0
+   "count": 2
   },
   "ikwilhuren": {
    "ok": true,
@@ -93,9 +93,128 @@
   {
    "time": "2026-11-04T22:38:53+00:00",
    "new": 3
+  },
+  {
+   "time": "2026-11-05T15:32:29+00:00",
+   "new": 5
   }
  ],
  "listings": [
+  {
+   "id": "pararius-625e2126cab7",
+   "source": "pararius",
+   "title": "Kamer Sint Anthoniestraat",
+   "url": "https://www.pararius.nl/kamer-te-huur/gouda/9f3098f5/sint-anthoniestraat",
+   "price": 492,
+   "price_text": "€ 492 per maand",
+   "address": "2801 GT Gouda (Nieuwe Markt e.o.)",
+   "postcode": "2801 GT",
+   "wijk": "Nieuwe Markt e.o.",
+   "rooms": 1,
+   "surface": 32,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/9f3098f5-db9b-5bb0-a0a4-9cdeb4490272/e1e7475e-4ea0-550c-8616-a2216a102033?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10251%2Ffiles%2Fphotos%2Foriginals%2F0ad473db.jpg&sig=dcd2416ce3c8c4308cef266699050e0af5defaef34e39789a08c45460e8c8cb6&width=1200&auto=webp",
+   "extra": "Nieuw Kamer Sint Anthoniestraat Bewaar als favoriet 2801 GT Gouda (Nieuwe Markt e.o.) € 492 per maand 32 m² 1 kamer Gestoffeerd Rotsvast Gouda",
+   "area": "Gouda",
+   "first_seen": "2026-11-05T15:32:29+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Kamer te huur Sint Anthoniestraat, Gouda te huur voor € 492, 32 m². Kamer huren aan de Sint Anthoniestraat in Gouda? Kijk op Pararius. Huur Gouda Binnenstad Nieuwe Markt e.o. Sint Anthoniestraat Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Plattegrond Nieuw Te huur: Kamer Sint Anthoniestraat in Gouda Bekijk kaart 2801 GT (Nieuwe Markt e.o.) € 492 per maand 32 m² 1 kamer Gestoffeerd Meer info Beschrijving BEPAALDE TIJDSOVEREENKOMST - UITSLUITEND VOOR STUDENTEN Aan de Sint Anthoniestraat te Gouda vindt u deze ruime kamer in dit complex van 4 wooneenheden. Op de 1e verdieping inclusief gemeenschappelijk badkamer en keuken vindt u deze ruime kamer aan de Sint Anthoniestraat. Vanwege de aangenomen Wet vaste huurcontracten is deze huurovereenkomst uitsluitend toegestaan voor de volgende doelgroepen: Groepen voor wie de uitzondering geldt: Studenten (U dient bewijs aan te tonen middels een inschrijving van studie, indien u met partner huurt dient u beide voltijd student te zijn) Urgent woningzoekenden (urgentieverklaring nodig, welk verstrekt moet worden door de gemeente) Huurders die in aanmerking willen komen voor deze huurwoning, dienen bewijs aan te leveren dat zij voldoen aan gestelde voorwaarden. Over het appartement : Middels de gang in de steeg aan de Sint Anthoniestraat te Gouda v"
+  },
+  {
+   "id": "huurwoningen-224aae901738",
+   "source": "huurwoningen",
+   "title": "Appartement Admiraal de Ruyterweg",
+   "url": "https://www.huurwoningen.nl/huren/rotterdam/b862492d/admiraal-de-ruyterweg/",
+   "price": 1153,
+   "price_text": "€ 1.153 per maand",
+   "address": "3031 AA Rotterdam (Rubroek)",
+   "postcode": "3031 AA",
+   "wijk": "Rubroek",
+   "rooms": 3,
+   "surface": 63,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/b862492d-daa0-5344-995d-07f14411620a/55f96cae-6728-5abb-bc37-15577057cc42?original_uri=https%3A%2F%2Fvst-web-prod-cdn-remote-media-endpoint-a4eufkf7anbjhkab.z03.azurefd.net%2Fverhuuroffice.nl%2Fmedia%2F01%2F01e68e5671df4adebf22074c9f6e7f56%2Fo%2F10568-linker-rottekade-type-c-png960.png&sig=2017eb9b35fb740f09c877b45fcc7512709a1072f9c003030b78808286c010b9&width=1200&auto=webp",
+   "extra": "Nieuw Appartement Admiraal de Ruyterweg Bewaar als favoriet 3031 AA Rotterdam (Rubroek) € 1.153 per maand 63 m² 3 kamers 1986",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-05T15:32:29+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "vesteda-619aa3ea9b56",
+   "source": "vesteda",
+   "title": "Appartement Admiraal De Ruyterweg 135",
+   "url": "https://www.vesteda.com/nl/huurwoningen-rotterdam/linker-rottekade/admiraal-de-ruyterweg-135-rotterdam-1833",
+   "price": 1153,
+   "price_text": "",
+   "address": "3031 AA Rotterdam (Linker Rottekade)",
+   "postcode": "3031 AA",
+   "wijk": "Linker Rottekade",
+   "rooms": 3,
+   "surface": 63,
+   "image": "https://www.vesteda.com/static/images/vesteda_logo.png",
+   "extra": "Vesteda complex Linker Rottekade",
+   "segment": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-05T15:32:29+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bent u direct op zoek naar een fijn huurappartement? Deze woning met twee slaapkamers wordt misschien wel uw nieuwe thuis. \r\n\r\nDe woning beschikt over twee slaapkamers en een lichte woonkamer en een open keuken. Vanuit de woonkamer stapt u zo het balkon op: een fijne plek om de dag te beginnen of even te ontspannen aan het einde van de middag.\r\n\r\nDe ligging is rustig, maar toch ben je zo in het centrum. De supermarkt, het openbaar vervoer en leuke cafés in Crooswijk en Kralingen zijn allemaal op loopafstand. Ook het Kralingse Bos, Station Rotterdam Blaak en de Binnenrotte zijn makkelijk te bereiken. Voor wie de stad uit moet, zijn er goede verbindingen richting de snelweg.\r\n\r\nSchrijf u gratis in voor deze huurwoning  en wie weet is dit binnenkort uw nieuwe thuis! Home Huurwoningen Rotterdam Linker Rottekade Admiraal De Ruyterweg 135 Rotterdam Admiraal De Ruyterweg 135 Rotterdam Linker Rottekade € 1153,- huurprijs p.m. 2 slaapkamer(s) 63 m² oppervlakte Delen Admiraal De Ruyterweg 135, Rotterdam Sluiten Deel deze pagina via Facebook Deel deze pagina via Twitter Deel deze pagina via LinkedIn Deel deze pagina via e-mail Link kopiëren Deel deze pagina via X Bewaren en later inschrijven Inschrijven & Bezichtigen Inschrijven Sluiten Bedankt voor uw interesse in deze woning! De volgende stap is om u in te schrijven voor de woning, een bezichtiging aan te vragen en uw documenten aan leveren. Direct inschrijven Hierna volgt een stap om in te loggen of een account aan te maken. Kan ik d"
+  },
+  {
+   "id": "kamernet-37b2654b35ca",
+   "source": "kamernet",
+   "title": "Appartement Zevenkampse Ring",
+   "url": "https://kamernet.nl/huren/appartement-rotterdam/zevenkampse-ring/appartement-2416599",
+   "price": 1270,
+   "price_text": "",
+   "address": "Zevenkampse Ring, Rotterdam",
+   "postcode": null,
+   "wijk": null,
+   "rooms": null,
+   "surface": 95,
+   "image": "https://resources.kamernet.nl/image/61f82f01-ae49-4ae9-a53c-e761a3d75099/resize/422-225",
+   "extra": "appartement beschikbaar vanaf 2026-11-08",
+   "segment": null,
+   "lat": 51.96371742,
+   "lng": 4.57088899,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-05T15:32:29+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Appartement te huur €1270 euro Zevenkampse Ring, Rotterdam. Vind Appartement te huur in Zevenkampse Ring, Rotterdam voor €1270/maand via Kamernet. Plan vandaag nog een bezichtiging! Kamernet > Appartementen Rotterdam > Appartementen Zevenkampse Ring > Appartement 2416599 Zevenkampse Ring Gemeubileerd Appartement te huur • Zevenkampse Ring, Rotterdam • 0 uur geleden geplaatst Delen Bewaren Toon alles Over de woonruimte 95 m² Gemeubileerd appartement Beschikbaar vanaf 8 nov 2026 Onbepaalde tijd Bezichtiging mogelijk Vraag de verhuurder om een bezichtiging Ontdek deze ruime en comfortabele woning van 95 m² aan de Zevenkampse Ring in Rotterdam. De woning beschikt over 2 slaapkamers, 1 badkamer en een lichte woonkamer. Ideaal voor stellen, gezinnen of werkende professionals. Gelegen in een rustige, groene buurt, dichtbij winkels, supermarkten, metrostation Nieuw Verlaat en het strand van Nesselande, met uitstekende verbindingen naar het centrum van Rotterdam. Wat je krijgt Privé woonkamer Privé keuken Privé badkamer Privé toilet Internet beschikbaar Energielabel B Huisdieren toegestaan Wat je betaalt Huur (exclusief vaste lasten) € 1.270 Borg € 1.270 Extra kosten --- Waar je woont Zevenkampse Ring, Rotterdam Verhuurders ideale huurder Aantal huurders 4 personen Leeftijd 16 - 99 jaar Geslacht Niet belangrijk Bezigheid Student , Werkende student , Werkend Gesproken talen Iedereen welkom Verblijfsduur 6 maanden Over de verhuurder Van Den Elshout Je moet ingelogd zijn om meer details "
+  },
+  {
+   "id": "kamernet-aaa710e11696",
+   "source": "kamernet",
+   "title": "Studio Bergweg",
+   "url": "https://kamernet.nl/huren/studio-rotterdam/bergweg/studio-2416489",
+   "price": 1500,
+   "price_text": "",
+   "address": "Bergweg, Rotterdam",
+   "postcode": null,
+   "wijk": null,
+   "rooms": null,
+   "surface": 40,
+   "image": "https://resources.kamernet.nl/image/50f0ed4a-dfdc-4f0e-95fa-01010b5db632/resize/422-225",
+   "extra": "studio beschikbaar vanaf 2026-11-05",
+   "segment": null,
+   "lat": 51.93682958,
+   "lng": 4.47769026,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-05T15:32:29+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Studio te huur €1500 euro Bergweg, Rotterdam. Vind Studio te huur in Bergweg, Rotterdam voor €1500/maand via Kamernet. Plan vandaag nog een bezichtiging! Kamernet > Studios Rotterdam > Studios Bergweg > Studio 2416489 Bergweg Gemeubileerd Studio te huur • Bergweg, Rotterdam • 6 uur geleden geplaatst Delen Bewaren Toon alles Over de woonruimte 40 m² Gemeubileerd studio Beschikbaar vanaf 5 nov 2026 Onbepaalde tijd Bezichtiging mogelijk Vraag de verhuurder om een bezichtiging ben je op zoek naar een gemeubileerde studio voor min 6 maanden en max 24 maanden? lees dan verder. wij bieden een short stay studio aan met alle benodigde meubels, zoals een bed, kast, tafel koelkast enz - min 6 maanden max 24 maanden - koppels toegestaan, alleen 1 inschrijving - inschrijving mogelijk Wat je krijgt Privé woonkamer Privé keuken Privé badkamer Privé toilet Internet beschikbaar Onbekend energielabel Huisdieren toegestaan Wat je betaalt Huur (inclusief vaste lasten) € 1.500 Borg € 3.000 Extra kosten --- Waar je woont Bergweg, Rotterdam Verhuurders ideale huurder Aantal huurders Niet belangrijk Leeftijd 16 - 99 jaar Geslacht Niet belangrijk Bezigheid Student , Werkende student , Werkend Gesproken talen Nederlands , Engels Verblijfsduur 6 maanden Over de verhuurder Ilyas Je moet ingelogd zijn om meer details te zien Account maken Inloggen € 1.500 /maand Incl. vaste lasten · Deposit € 3.000 (2 maanden) Ilyas Particuliere verhuurder • Laatst gezien op 5 nov 2026 Contacteer verhuurder Weet wanneer "
+  },
   {
    "id": "vastgoednl-a87906a86fee",
    "source": "vastgoednl",
@@ -115,11 +234,9 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Bekijk het actuele aanbod huurwoningen van makelaars aangesloten bij Vastgoed Nederland en vind snel een passende huurwoning. "
+   "missed": 0
   },
   {
    "id": "househunting-3086f428740a",
@@ -140,11 +257,9 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… URL Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
+   "missed": 0
   },
   {
    "id": "househunting-f674d4ecfa83",
@@ -167,30 +282,9 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": true,
-   "missed": 0,
+   "missed": 1,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
-  },
-  {
-   "id": "vesteda-c8b8ee8f3774",
-   "source": "vesteda",
-   "title": "Appartement Grote Beer 15 B-20",
-   "url": "https://www.vesteda.com/nl/huurwoningen-rotterdam/grote-beer/grote-beer-15b-20-rotterdam-186239",
-   "price": 1309,
-   "price_text": "",
-   "address": "3067 TR Rotterdam (Grote Beer)",
-   "postcode": "3067 TR",
-   "wijk": "Prins Alexander",
-   "rooms": 3,
-   "surface": 74,
-   "image": null,
-   "extra": "Vesteda complex Grote Beer",
-   "segment": null,
-   "area": "Rotterdam",
-   "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
-   "active": true,
-   "missed": 0
   },
   {
    "id": "vesteda-5b703ae5a20a",
@@ -204,14 +298,16 @@
    "wijk": "Kralingen-Crooswijk",
    "rooms": 3,
    "surface": 82,
-   "image": null,
+   "image": "https://vst-web-prod-cdn-remote-media-endpoint-a4eufkf7anbjhkab.z03.azurefd.net/verhuuroffice.nl/media/c6/c69ed0ab45bcd9f374cbb0b1823097de/o/complex-foto.jpg?rmode=pad&width=1080&height=720&bgcolor=fff&hmac=a0597b378d4a77c5d05a96760a11aef527830217679de1b2e1739b021ba3e5b7",
    "extra": "Vesteda complex Watertorenweg",
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bent u op zoek naar een fijn appartement in Rotterdam? Dan wordt dit misschien wel uw nieuwe thuis!\r\n\r\nBij binnenkomst komt u uit in de hal die toegang biedt tot de verschillende vertrekken. De woonkamer vormt samen met de halfopen keuken een gezellige leefruimte. Door de halfopen keuken blijft u tijdens het koken gezellig in contact met uw gasten. Vanuit de woonkamer heeft u toegang tot de loggia, een fijne plek waar u het hele jaar door kunt genieten. Het appartement beschikt daarnaast over twee slaapkamers die naar wens kunnen worden ingericht als slaap-, werk- of hobbykamer. Ook is er een praktische berging aanwezig, ideaal voor het opbergen van spullen die u niet dagelijks gebruikt.\r\n\r\nDe woning ligt in Rotterdam-IJsselmonde, een wijk waar rust en voorzieningen goed samenkomen. Voor uw dagelijkse boodschappen zijn diverse winkels en supermarkten in de omgeving aanwezig. In de buurt vindt u ook verschillende scholen, sportverenigingen en horecagelegenheden. Liefhebbers van groen kunnen terecht in het nabijgelegen Park De Twee Heuvels, een fijne plek om te wandelen, sporten of ontspannen. Ook de Oude Maas en het recreatiegebied rondom de Brienenoord bieden mogelijkheden voor een wandeling of fietstocht. Met het openbaar vervoer en de uitvalswegen in de directe omgeving bent u bovendien snel op weg naar het centrum van Rotterdam of andere bestemmingen in de regio.\r\n\r\nZiet u zichzelf al wonen in dit appartement op een goed bereikbare locatie in Rotterdam? Verzamel dan snel d"
   },
   {
    "id": "vesteda-279fa1654a61",
@@ -225,35 +321,16 @@
    "wijk": "Kralingen-Crooswijk",
    "rooms": 3,
    "surface": 81,
-   "image": null,
+   "image": "https://vst-web-prod-cdn-remote-media-endpoint-a4eufkf7anbjhkab.z03.azurefd.net/verhuuroffice.nl/media/ec/ecf3c2a4c6d19e75d9d04197c0caf83a/o/buitenbassinweg-306-19.jpg?rmode=pad&width=1080&height=720&bgcolor=fff&hmac=f59a0a1a0dbc3f8208718f5c6c043d8e003df7d917e4dae27cc86e2a421edf19",
    "extra": "Vesteda complex Buitenbassinweg",
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0
-  },
-  {
-   "id": "woonstad-9704b6916d08",
-   "source": "woonstad",
-   "title": "Appartement Jeruzalemstraat 99",
-   "url": "https://www.woonstadrotterdam.nl/aanbod/vrije-sector-huurwoning/5ced4ce35fae9815d4732d5d-jeruzalemstraat-99",
-   "price": 1228,
-   "price_text": "",
-   "address": "3061 GM Rotterdam (Kralingen-West)",
-   "postcode": "3061 GM",
-   "wijk": "Kralingen-West",
-   "rooms": 4,
-   "surface": 87,
-   "image": "https://wrfprodstorage.blob.core.windows.net/wrm-media/media/5ced4ce35fae9815d4732d5d/f13539fa-9e0a-436e-b9d1-d715f520540d.jpg",
-   "extra": "Fraai 4-kamer appartement in het gewilde Kralingen. Grijp je kans en reageer snel op deze woning!",
-   "segment": "vrije sector",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
-   "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bent u direct op zoek naar een vrije sector huurappartement met 2 slaapkamers? Dan gaat u zich vast thuis voelen in dit appartement. \r\n\r\nDe woning beschikt over een woonkamer met halfopen keuken, hierdoor blijft u tijdens het koken gezellig in contact me uw gasten. Er zijn twee slaapkamers aanwezig waardoor de woning geschikt is voor een alleenstaande, een stel of voor woningdelers! Vanuit de woonkamer heeft u toegang tot de loggia, een fijne plek om te genieten van het uitzicht en de omgeving.\r\n\r\nIn de buurt van Buitenbassinweg vind je diverse voorzieningen. Zo kun je heerlijk wandelen langs de Nieuwe Maas en genieten van het groen in Kralinger-Esch. Ook zijn er gezellige cafés en restaurants in de omgeving. Kortom, een ideale plek voor een bewoner die van rust, natuur en stadsleven houdt!\r\n\r\nSchrijf u gratis in voor deze huurwoning in Rotterdam en wie weet is dit binnenkort uw nieuwe thuis! Home Huurwoningen Rotterdam Buitenbassinweg Buitenbassinweg 320 Rotterdam Buitenbassinweg 320 Rotterdam Buitenbassinweg € 1450,- huurprijs p.m. 2 slaapkamer(s) 81 m² oppervlakte Delen Buitenbassinweg 320, Rotterdam Sluiten Deel deze pagina via Facebook Deel deze pagina via Twitter Deel deze pagina via LinkedIn Deel deze pagina via e-mail Link kopiëren Deel deze pagina via X Bewaren en later inschrijven Inschrijven & Bezichtigen Inschrijven Sluiten Bedankt voor uw interesse in deze woning! De volgende stap is om u in te schrijven voor de woning, een bezichtiging aan te vragen en uw docume"
   },
   {
    "id": "woonstad-368ec3ef5176",
@@ -272,9 +349,34 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Vlakbij het strand van Nesselande vind je dit fraaie, in 2025 opgeleverde 3-kamer appartement. Reageer snel! Aanbod vrije sector huurwoningen Pianosapad 58 3059 PX ROTTERDAM (Nesselande) € 1.263,07 Per maand Appartement Reacties gesloten Appartement 1e verdieping 68m² 3 Kamers Omschrijving Vlakbij het strand van Nesselande vind je dit fraaie, in 2025 opgeleverde 3-kamer appartement. Reageer snel! De woning ligt centraal in Nesselande: een gezellige buitenwijk met veel ruimte voor recreatie. De grote Zevenhuizerplas biedt volop mogelijkheden voor zwemmen, varen of suppen. Het strandje is bij mooi weer een heerlijke uitvalsbasis voor wie verkoeling zoekt. Liever geen natte voeten? Haal dan een ijsje op de boulevard. Hier heb je de keuze uit verschillende cafés en restaurants die het hele jaar open zijn. Winkels, sportverenigingen en andere voorzieningen vind je ook vlakbij. Indeling : - Woonkamer inclusief keuken: ca. 30 m² - 2 slaapkamers: ca. 11 m² en 8 m² - Bad met douche en wastafel - Berging - Eigen parkeerplaats Bijzonderheden : - De huurprijs is zonder servicekosten. De servicekosten bedragen ongeveer € 72,80 per maand, zijn indicatief en kunnen afwijken. - De getoonde foto's in de advertentie zijn impressie foto's. De werkelijkheid kan afwijken. Huurvoorwaarden : - De inkomenseis voor een huishouden bestaande één persoon is: een geregistreerd jaarinkomen over 2024 bij de Belastingdienst of laatste 12 maanden geregistreerd door het UWV van minimaal € 59.504 en maximaal €"
+  },
+  {
+   "id": "woonstad-9704b6916d08",
+   "source": "woonstad",
+   "title": "Appartement Jeruzalemstraat 99",
+   "url": "https://www.woonstadrotterdam.nl/aanbod/vrije-sector-huurwoning/5ced4ce35fae9815d4732d5d-jeruzalemstraat-99",
+   "price": 1228,
+   "price_text": "",
+   "address": "3061 GM Rotterdam (Kralingen-West)",
+   "postcode": "3061 GM",
+   "wijk": "Kralingen-West",
+   "rooms": 4,
+   "surface": 87,
+   "image": "https://wrfprodstorage.blob.core.windows.net/wrm-media/media/5ced4ce35fae9815d4732d5d/f13539fa-9e0a-436e-b9d1-d715f520540d.jpg",
+   "extra": "Fraai 4-kamer appartement in het gewilde Kralingen. Grijp je kans en reageer snel op deze woning!",
+   "segment": "vrije sector",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T21:41:50+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Fraai 4-kamer appartement in het gewilde Kralingen. Grijp je kans en reageer snel op deze woning! Aanbod vrije sector huurwoningen Jeruzalemstraat 99 3061 GM ROTTERDAM (Kralingen-West) € 1.228,07 Per maand Appartement Reacties gesloten Appartement 1e verdieping 87m² 4 Kamers Omschrijving Fraai 4-kamer appartement in het gewilde Kralingen. Grijp je kans en reageer snel op deze woning! Wonen aan de Jeruzalemstraat betekent genieten van alles wat Kralingen te bieden heeft. Deze gezellige zijstraat van de Oudedijk ligt op korte afstand van diverse winkels, waaronder een XL Albert Heijn, en een ruim aanbod aan gezellige cafés en eetgelegenheden. Zin in ontspanning of beweging? Het prachtige Kralingse Bos ligt dichtbij en biedt volop mogelijkheden om te wandelen, hard te lopen of te recreëren. Daarnaast is de bereikbaarheid uitstekend: met tram, metro en bus ben je snel in het stadscentrum en andere delen van Rotterdam. Indeling: - Woonkamer inclusief keuken: ca. 47m² - 3 slaapkamers: ca. 12 m², 8 m² en 6 m² - Badkamer met douche en wastafel - Berging Bijzonderheden: - De huurprijs is zonder servicekosten. De servicekosten bedragen ongeveer € 60,35 per maand. Deze zijn indicatief en kunnen afwijken. Huurvoorwaarden : - De inkomenseis voor een huishouden bestaande uit twee personen of meer is: een geregistreerd jaarinkomen over 2025 bij de Belastingdienst of laatste 12 maanden geregistreerd door het UWV van minimaal € 68.858 en maximaal € 93.531. - De woning is bestemd voor minimaal"
   },
   {
    "id": "vbt-b9558488989d",
@@ -294,9 +396,11 @@
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "vb&t Verhuurmakelaars: Appartement Vest 7 Gouda te huur ✓ Bouwjaar 2018 ✓ NVM Makelaar ✓ Beschikbaar 6+ Vest 7-D 2801 VC Gouda Ruim driekamerappartement in Gouda! Indeling: Entree Je kan met de trap of met de lift naar de woning toe gaan! In de woning aangekomen, kom je als eerst in de hal. Vanuit de hal heb je toegang tot alle vertrekken in de woning! Denk aan een berging toilet, badkamer, de twee slaapkamers en de woonkamer. Berging De berging zit bij binnenkomst direct aan je rechter hand. In de berging zitten de aansluitingen voor de wasmachine en de droger. Ook heb je hier de CV-ketel en de installatie van de mechanische ventilatie. Uiteraard is er voldoende plek over om je spulletjes op te bergen! Toilet Naast de berging zit het afzonderlijk toilet. Deze is in zijn geheel betegeld en heeft een fonteintje, om de handen te wassen. Badkamer In de badkamer heb je een dubbele wastafel met spiegel en een inloopdouche. Door de mengkranen is de temperatuur erg gemakkelijk in te stellen! Net zoals het toilet is de badkamer in zijn geheel betegeld. Slaapkamers De woning telt twee slaapkamers. Deze zijn ongeveer 15 m² en 12 m². Woonkamer Last but not least, de woonkamer van het appartement! Het is een hele grote woonkamer, meer dan 80 m²! Wat gelijk opvalt is de hoekvormige keuken die je hier hebt. De keuken heeft alle potentie om een heerlijke maaltijd te bereiden. Denk aan inbouwapparatuur zoals: - Vaatwasser - Combi oven - Kookgelegenheid - Afzuigkap - Koelkast en vriezer Balko"
   },
   {
    "id": "huispedia-3b8308e35382",
@@ -315,9 +419,11 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "(!) VOORWAARDEN OM TE HUREN:\n- 45 jaar of ouder;\n- Geen meeverhuizende kinderen óf huisdieren;\n- Inkomen van minima Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-454321aa8f60",
@@ -336,9 +442,11 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Nieuwbouwappartementen voor 55-plussers in Zevenhuizen\n\nComfortabel, duurzaam en toekomstbestendig wonen in nieuwbouwproje Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-99e3c5b29526",
@@ -357,7 +465,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
    "missed": 0
   },
@@ -378,7 +486,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
    "missed": 0
   },
@@ -399,7 +507,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
    "missed": 0
   },
@@ -420,7 +528,88 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "vesteda-c8b8ee8f3774",
+   "source": "vesteda",
+   "title": "Appartement Grote Beer 15 B-20",
+   "url": "https://www.vesteda.com/nl/huurwoningen-rotterdam/grote-beer/grote-beer-15b-20-rotterdam-186239",
+   "price": 1309,
+   "price_text": "",
+   "address": "3067 TR Rotterdam (Grote Beer)",
+   "postcode": "3067 TR",
+   "wijk": "Prins Alexander",
+   "rooms": 3,
+   "surface": 74,
+   "image": null,
+   "extra": "Vesteda complex Grote Beer",
+   "segment": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
+   "active": true,
+   "missed": 1
+  },
+  {
+   "id": "pararius-dc9f5c90296a",
+   "source": "pararius",
+   "title": "Appartement Luzacstraat 9 A 01",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/510645c3/luzacstraat",
+   "price": 1212,
+   "price_text": "€ 1.212 per maand",
+   "address": "3038 VT Rotterdam (Bergpolder)",
+   "postcode": "3038 VT",
+   "wijk": "Bergpolder",
+   "rooms": 3,
+   "surface": 73,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/510645c3-2d98-56a2-950b-5f9cfc895492/5a69aaa1-bcae-5c60-b942-1c9f35ed5f19?original_uri=https%3A%2F%2Fcdn.prd.osre.eu%2F81c42f8e-3c0a-4179-84bf-46a8af3d1d92%2F55fb5530-ea4b-4300-a5f4-02276fd65abd%2Ffc024751-caa7-4d35-9418-3782b811ff5e&sig=31498f8080e5a9aeb10aea267bd7d77334ed051d17137b1169eeef86c9822c46&width=1200&auto=webp",
+   "extra": "Nieuw Appartement Luzacstraat 9 A 01 Bewaar als favoriet 3038 VT Rotterdam (Bergpolder) € 1.212 per maand 73 m² 3 kamers Gestoffeerd Woonzeker Rentals",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T21:07:17+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-e6e7d470acfb",
+   "source": "pararius",
+   "title": "Appartement Maerlantburg 70",
+   "url": "https://www.pararius.nl/appartement-te-huur/gouda/5ac9c176/maerlantburg",
+   "price": 1228,
+   "price_text": "€ 1.228 per maand",
+   "address": "2804 AD Gouda (Hoef- en Veldbuurt)",
+   "postcode": "2804 AD",
+   "wijk": "Hoef- en Veldbuurt",
+   "rooms": 3,
+   "surface": 63,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/5ac9c176-a6a7-542d-93a4-1b7f97b04493/f42c7c60-e72e-59fb-a6c4-99603d88ff2e?original_uri=https%3A%2F%2Fxml.stienstra-online.nl%2Fimages%2F005585%2F~%252025-0047750%2520252-overzicht2%2520571625_1_1-lgo-20260202133817-SLE-20261027081028.jpg&sig=2adcbf2f1b21bd091fcc18120372982495305ffc34da9c283a078c1f90bb1cb3&width=1200&auto=webp",
+   "extra": "Appartement Maerlantburg 70 Bewaar als favoriet 2804 AD Gouda (Hoef- en Veldbuurt) € 1.228 per maand 63 m² 3 kamers Kaal Stienstra",
+   "area": "Gouda",
+   "first_seen": "2026-11-04T21:07:17+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-fd299d93c2fd",
+   "source": "pararius",
+   "title": "Kamer Raam 224",
+   "url": "https://www.pararius.nl/kamer-te-huur/gouda/7eb7af38/raam",
+   "price": 650,
+   "price_text": "€ 650 per maand",
+   "address": "2801 VR Gouda (Raam e.o.)",
+   "postcode": "2801 VR",
+   "wijk": "Raam e.o.",
+   "rooms": 1,
+   "surface": 9,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/7eb7af38-9b1f-5c33-af5e-acb69dd84fce/5994eb68-0380-5f1f-a38b-d677357b082a?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F16598%2Ffiles%2Fphotos%2Foriginals%2Fe07ad1d0.jpg&sig=8e9d12b861a97f14447e0e1bd60b989a5779cc286b5e8b7f77471eded164f2c7&width=1200&auto=webp",
+   "extra": "Kamer Raam 224 Bewaar als favoriet 2801 VR Gouda (Raam e.o.) € 650 per maand 9 m² 1 kamer Gestoffeerd Aperta Estate Management",
+   "area": "Gouda",
+   "first_seen": "2026-11-04T21:07:17+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
    "missed": 0
   },
@@ -440,7 +629,7 @@
    "extra": "Nieuw Appartement Luzacstraat Bewaar als favoriet 3038 VT Rotterdam (Bergpolder) € 1.212 per maand 73 m² 3 kamers Gestoffeerd",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:07:17+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
    "missed": 0
   },
@@ -457,10 +646,10 @@
    "rooms": 2,
    "surface": 83,
    "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/666d41e1-3f27-5808-a397-7c87b4890f21/5c3c1e2c-8c6b-5dd6-ba78-f7cc42b261f5?original_uri=https%3A%2F%2Fikwilhuren.nu%2Fmedia%2F4e%2F4e22f9cd3365745cc5ce1c8085967c75%2F1600%2F13559-10-rotterdam-oostplein-dsc-3674.jpg&sig=c9c6f0c8d7db34aeda7d48dc942e54f25fc833955ec37334f5db1923b82c566e&width=1200&auto=webp",
-   "extra": "Nieuw Appartement Oostplein Bewaar als favoriet 3031 EP Rotterdam (Rubroek) € 1.300 per maand 83 m² 2 kamers 1991",
+   "extra": "Appartement Oostplein Bewaar als favoriet 3031 EP Rotterdam (Rubroek) € 1.300 per maand 83 m² 2 kamers 1991",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:07:17+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
    "active": true,
    "missed": 0
   },
@@ -585,65 +774,6 @@
    "missed": 0
   },
   {
-   "id": "pararius-dc9f5c90296a",
-   "source": "pararius",
-   "title": "Appartement Luzacstraat 9 A 01",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/510645c3/luzacstraat",
-   "price": 1212,
-   "price_text": "€ 1.212 per maand",
-   "address": "3038 VT Rotterdam (Bergpolder)",
-   "postcode": "3038 VT",
-   "wijk": "Bergpolder",
-   "rooms": 3,
-   "surface": 73,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/510645c3-2d98-56a2-950b-5f9cfc895492/5a69aaa1-bcae-5c60-b942-1c9f35ed5f19?original_uri=https%3A%2F%2Fcdn.prd.osre.eu%2F81c42f8e-3c0a-4179-84bf-46a8af3d1d92%2F55fb5530-ea4b-4300-a5f4-02276fd65abd%2Ffc024751-caa7-4d35-9418-3782b811ff5e&sig=31498f8080e5a9aeb10aea267bd7d77334ed051d17137b1169eeef86c9822c46&width=1200&auto=webp",
-   "extra": "Nieuw Appartement Luzacstraat 9 A 01 Bewaar als favoriet 3038 VT Rotterdam (Bergpolder) € 1.212 per maand 73 m² 3 kamers Gestoffeerd Woonzeker Rentals",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-04T21:07:17+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true
-  },
-  {
-   "id": "pararius-e6e7d470acfb",
-   "source": "pararius",
-   "title": "Appartement Maerlantburg 70",
-   "url": "https://www.pararius.nl/appartement-te-huur/gouda/5ac9c176/maerlantburg",
-   "price": 1228,
-   "price_text": "€ 1.228 per maand",
-   "address": "2804 AD Gouda (Hoef- en Veldbuurt)",
-   "postcode": "2804 AD",
-   "wijk": "Hoef- en Veldbuurt",
-   "rooms": 3,
-   "surface": 63,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/5ac9c176-a6a7-542d-93a4-1b7f97b04493/f42c7c60-e72e-59fb-a6c4-99603d88ff2e?original_uri=https%3A%2F%2Fxml.stienstra-online.nl%2Fimages%2F005585%2F~%252025-0047750%2520252-overzicht2%2520571625_1_1-lgo-20260202133817-SLE-20261027081028.jpg&sig=2adcbf2f1b21bd091fcc18120372982495305ffc34da9c283a078c1f90bb1cb3&width=1200&auto=webp",
-   "extra": "Appartement Maerlantburg 70 Bewaar als favoriet 2804 AD Gouda (Hoef- en Veldbuurt) € 1.228 per maand 63 m² 3 kamers Kaal Stienstra",
-   "area": "Gouda",
-   "first_seen": "2026-11-04T21:07:17+00:00",
-   "last_seen": "2026-11-04T21:41:50+00:00",
-   "active": true,
-   "missed": 1
-  },
-  {
-   "id": "pararius-fd299d93c2fd",
-   "source": "pararius",
-   "title": "Kamer Raam 224",
-   "url": "https://www.pararius.nl/kamer-te-huur/gouda/7eb7af38/raam",
-   "price": 650,
-   "price_text": "€ 650 per maand",
-   "address": "2801 VR Gouda (Raam e.o.)",
-   "postcode": "2801 VR",
-   "wijk": "Raam e.o.",
-   "rooms": 1,
-   "surface": 9,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/7eb7af38-9b1f-5c33-af5e-acb69dd84fce/5994eb68-0380-5f1f-a38b-d677357b082a?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F16598%2Ffiles%2Fphotos%2Foriginals%2Fe07ad1d0.jpg&sig=8e9d12b861a97f14447e0e1bd60b989a5779cc286b5e8b7f77471eded164f2c7&width=1200&auto=webp",
-   "extra": "Kamer Raam 224 Bewaar als favoriet 2801 VR Gouda (Raam e.o.) € 650 per maand 9 m² 1 kamer Gestoffeerd Aperta Estate Management",
-   "area": "Gouda",
-   "first_seen": "2026-11-04T21:07:17+00:00",
-   "last_seen": "2026-11-04T21:41:50+00:00",
-   "active": true,
-   "missed": 1
-  },
-  {
    "id": "pararius-8cebf08eb617",
    "source": "pararius",
    "title": "Kamer Buffelstraat",
@@ -659,8 +789,9 @@
    "extra": "Kamer Buffelstraat Bewaar als favoriet 3064 AB Rotterdam (Kralingseveer) € 580 per maand Transparant Meer informatie 14 m² 1 kamer Gemeubileerd De Bloois Vastgoed",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T15:28:57+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
   },
   {
    "id": "pararius-1ad3ecffb9e2",
@@ -678,8 +809,9 @@
    "extra": "Kamer Zwart Janstraat Bewaar als favoriet 3035 AN Rotterdam (Oude Noorden) Prijs op aanvraag 20 m² 1 kamer Gemeubileerd Smartkey Housing",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T15:28:57+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
   },
   {
    "id": "pararius-0b768e438fd9",
@@ -697,8 +829,289 @@
    "extra": "Studio Jacob Catsstraat Bewaar als favoriet 3035 PH Rotterdam (Oude Noorden) € 905 per maand 46 m² 1 kamer Kaal Beethoven Beheer",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T15:28:57+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-165ef93f2e0b",
+   "source": "pararius",
+   "title": "Appartement Noorderhavenkade 103 A",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/af61c435/noorderhavenkade",
+   "price": 1088,
+   "price_text": "€ 1.088 per maand",
+   "address": "3039 RE Rotterdam (Blijdorp)",
+   "postcode": "3039 RE",
+   "wijk": "Blijdorp",
+   "rooms": 2,
+   "surface": 54,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/af61c435-5002-5f7a-838d-eb5111d6bf3f/b5fefc6d-c38c-58d2-adcd-18afd49628b2?original_uri=https%3A%2F%2Fvenumfilestore.blob.core.windows.net%2Fpub%2Feddded19%2Fd3b5%2F466e%2Fbdab%2F260eb41a7cfc%2F%24l%2F1.jpeg&sig=a1c7a85d73df6957f909385f6adb871dc787766c91bdfa09c2850a15f501034f&width=1200&auto=webp",
+   "extra": "Appartement Noorderhavenkade 103 A Bewaar als favoriet 3039 RE Rotterdam (Blijdorp) € 1.088 per maand 54 m² 2 kamers Kaal Rental Rotterdam",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-4db409f0e339",
+   "source": "pararius",
+   "title": "Studio G.H. Betzweg",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/d4749940/g-h-betzweg",
+   "price": 1491,
+   "price_text": "€ 1.491 per maand",
+   "address": "3068 AZ Rotterdam (Oosterflank)",
+   "postcode": "3068 AZ",
+   "wijk": "Oosterflank",
+   "rooms": 1,
+   "surface": 39,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/d4749940-2b62-5756-abcb-a4ab7e6379ea/23367b35-e5f1-5a33-ba50-4754085f012f?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_e29dda98-2275-40cd-aad1-dadd3129f86a%2Fmedia%2FBTZ-A-5.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ19lMjlkZGE5OC0yMjc1LTQwY2QtYWFkMS1kYWRkMzEyOWY4NmEvbWVkaWEvQlRaLUEtNS5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3DLBKqnMCMnXZ%252F7HdLorkFcAPh3MOPazxqJJ5gJls8wBIrqG4HqKPihg0h3P%252FsT7oPOvBtiXzUb6rilfYPHbfMHkOHOaqOdZ%252FxFXB5eAIiHzmbe3NEm%252FjNsxvuHL9vol%252F8cJ58A7QmkqwTQF3BlGHEnxIPYUZ6kHeO5DgC4sFOVzjYGa0HEetoecOXlRKStUuv6TIOrCGSXLRG%252FCOWIJs5gZJeTLACvhoLjtV8cccQ1iDAFjXXiLLDxDL7znHllGUcIy50Vtt%252BRGKR%252FAY%252FeTCmByNFyFnXMvcpOeqLdKwk%252F71lE0%252F2ZYpwScz%252FIUlWXF4qTpPOJxu0lwgeXofje5xaBQ%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=cee2a71395a11525ca0d1b3e37c5a1dc0812f81bc0b658d093015b4b2d696a43&width=1200&auto=webp",
+   "extra": "Studio G.H. Betzweg Bewaar als favoriet 3068 AZ Rotterdam (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Living in Holland",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-3e0a91940178",
+   "source": "pararius",
+   "title": "Appartement Tamboerstraat",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/6bb55247/tamboerstraat",
+   "price": 1200,
+   "price_text": "€ 1.200 per maand",
+   "address": "3034 PV Rotterdam (Oud Crooswijk)",
+   "postcode": "3034 PV",
+   "wijk": "Oud Crooswijk",
+   "rooms": 2,
+   "surface": 35,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/6bb55247-6611-54b2-9073-2c560aaa636f/04bc8cf4-202f-5e81-bf2e-3441ba03c7d2?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_eadb91f4-5018-45d9-95f7-6df7fea6c3db%2Flistings%2Flisting_9e085b5b-c1af-470f-a5b5-d44d17768dd6%2Fmedia%2Fimage00010.jpeg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb19lYWRiOTFmNC01MDE4LTQ1ZDktOTVmNy02ZGY3ZmVhNmMzZGIvbGlzdGluZ3MvbGlzdGluZ185ZTA4NWI1Yi1jMWFmLTQ3MGYtYTViNS1kNDRkMTc3NjhkZDYvbWVkaWEvaW1hZ2UwMDAxMC5qcGVnIiwgIkNvbmRpdGlvbiI6IHsiRGF0ZUxlc3NUaGFuIjogeyJBV1M6RXBvY2hUaW1lIjogMjE0NzQ4MzY0N319fV19%26Signature%3DlzEO2ijCPiL6e0tmpuk%252FkpDs7nJfvBtfHD4nJg7ljk4MnhL0wQxQQMC%252FhMfiqQvTpXeQmuEUcsJPFFwM7%252ByIVy74wWMvxsSRlgMlDoosFi9n2luq8tbBYgGtjh7jwwyLgwbi01jt4nO8PRWDEDyaL0Tkw%252FBjykXxFrgUZ2wIOX9aN3%252FUqyjo%252BY7bf%252FTlLYjZJ0Pa3D1gxpn0RLGka%252BBVWfhN5T7MHWxV3D8XMI2d3NV3QbsW1AbkVDch1Zyz%252FQh5DRZZDmy7wnuF4uYfQmYqSkET%252Bu7OEM%252Bn0S1QJ%252B0REiwgnqU%252FwOBao6Ob3GaxyCEEt3%252FnaVV7eRN4OPLmhVfk2Q%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=aa621c589a8c64ec851ed50ba1dfbf3c23c40c781df0ea173d57be1e5c6e063c&width=1200&auto=webp",
+   "extra": "Appartement Tamboerstraat Bewaar als favoriet 3034 PV Rotterdam (Oud Crooswijk) € 1.200 per maand 35 m² 2 kamers Gemeubileerd HouseHunting Randstad",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-82e75e207076",
+   "source": "pararius",
+   "title": "Appartement Frits Ruysstraat",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/7c111558/frits-ruysstraat",
+   "price": 995,
+   "price_text": "€ 995 per maand",
+   "address": "3061 MC Rotterdam (Kralingen West)",
+   "postcode": "3061 MC",
+   "wijk": "Kralingen West",
+   "rooms": 3,
+   "surface": 50,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/7c111558-06d5-56f9-b02e-c4f21903f2e0/58baf4d5-661d-5277-95e2-dda5dec7144d?original_uri=https%3A%2F%2Fvenumfilestore.blob.core.windows.net%2Fpub%2Fe0c3807f%2F02cf%2F477e%2F849f%2Ff4541e16320d%2F%24l%2F1.jpg&sig=4d0aea8f69e95d8d79c2f44141bcf62817f4d64e8bf388a0ea30b625866ad66b&width=1200&auto=webp",
+   "extra": "Appartement Frits Ruysstraat Bewaar als favoriet 3061 MC Rotterdam (Kralingen West) € 995 per maand 50 m² 3 kamers Gemeubileerd Rent an Apartment",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-2f9d1e77fe36",
+   "source": "pararius",
+   "title": "Studio G.H. Betzweg",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/00e731fd/g-h-betzweg",
+   "price": 1500,
+   "price_text": "€ 1.500 per maand",
+   "address": "3068 AZ Rotterdam (Oosterflank)",
+   "postcode": "3068 AZ",
+   "wijk": "Oosterflank",
+   "rooms": 1,
+   "surface": 43,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/00e731fd-9baf-5eb7-a9f0-514690644ee7/ec81ca98-0256-5ed1-99ce-991b02f3e0ab?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_855a3022-e2c3-4cce-9024-e685a7d65f60%2Fmedia%2FBTZ-A-2.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ184NTVhMzAyMi1lMmMzLTRjY2UtOTAyNC1lNjg1YTdkNjVmNjAvbWVkaWEvQlRaLUEtMi5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3Dh1oDqoobrfiBMbav9kjnnR66eSAWFxq6hob9DhjwHZKUHbq0LbzLwg8VgzG6T60AY9tMVlBVLRJe1NY4aILJKrl6KsV8wym6k3zYicuA345KAZm2WDQuOQU4QFCif3k9bRdEGdidtYqY0C2hay6qKFx3wOm%252FABGTRqNZaLVxSxVUwGLoYmH2ur3hjc9duaYSzA%252BC%252FHKj3My%252BiTrcyiF8ovQHIy%252Fx5%252Fup5oBUbQiGEz72aBCuZYw25F%252BdEysg6EvjUvvILCZW2mlxMpLPQ%252BorLYnUoG2lylWZzajfF1EKBuK4Gp0EcDXlNz4bRHbxZDrs2ieZ0QuVFCbPVdcukWaDUA%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=1fb910170318c5fae67750526a00c816d8432e9e63dd4e119b59271570f64e91&width=1200&auto=webp",
+   "extra": "Studio G.H. Betzweg Bewaar als favoriet 3068 AZ Rotterdam (Oosterflank) € 1.500 per maand 43 m² 1 kamer Gemeubileerd Living in Holland",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-2eb0082ef075",
+   "source": "pararius",
+   "title": "Appartement Gravin Adélastraat 84",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/e17768c5/gravin-adelastraat",
+   "price": 1500,
+   "price_text": "€ 1.500 per maand",
+   "address": "3032 HA Rotterdam (Oude Noorden)",
+   "postcode": "3032 HA",
+   "wijk": "Oude Noorden",
+   "rooms": 2,
+   "surface": 62,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/e17768c5-c5e2-570a-ace5-a8da5651c896/539a51c6-ee30-594d-8113-afffef16ec5e?original_uri=https%3A%2F%2Fvenumfilestore.blob.core.windows.net%2Fpub%2F5ebe3077%2Fd726%2F400b%2Fbbac%2F6272d3a93a62%2F%24l%2F100.jpg&sig=9468fd63b50b50d37d72aa7e19051da6a78734e637ec448d48d5c60ac476b1e7&width=1200&auto=webp",
+   "extra": "Appartement Gravin Adélastraat 84 Bewaar als favoriet 3032 HA Rotterdam (Oude Noorden) € 1.500 per maand 62 m² 2 kamers Gemeubileerd Rental Rotterdam",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-722a48e84c33",
+   "source": "pararius",
+   "title": "Studio G.H. Betzweg",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/601a3111/g-h-betzweg",
+   "price": 1491,
+   "price_text": "€ 1.491 per maand",
+   "address": "3068 AZ Rotterdam (Oosterflank)",
+   "postcode": "3068 AZ",
+   "wijk": "Oosterflank",
+   "rooms": 1,
+   "surface": 39,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/601a3111-476d-5093-9ea8-3665cac54efa/c20ed99c-e6fa-57b1-a75a-e4769cf63def?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_0840a4ee-fb56-4eda-9dfb-2f9e3863c7cb%2Fmedia%2FBTZ-A-8.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ18wODQwYTRlZS1mYjU2LTRlZGEtOWRmYi0yZjllMzg2M2M3Y2IvbWVkaWEvQlRaLUEtOC5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3DH%252BGrYtrHmHYXWIKLS1Cn3BZcnQqxeGty4vY6yByariawQ9VFrzEEscNZuLM5c7bR928yJ5GDfTdXb2k25S5Ip%252FuOUqwMvTgw3VRQWndZN1T9ZVEDY0xZRVfNImLAUXNTsWN1bndwEROldE4n84IbF%252BtedYoO85lAoIBegWA4rTqRYiiuYcq2KPNkjKrLckhSb91OUDfIN3upKezzSVjUZ8UzhUHIIWK%252FNqCWiWP%252Fvt3%252FsGlD7TLnIQSkZIB38WsS2TJ0OPDA1qP4W6%252B3NB0%252BvtKAYBcohH3g8HxN2dtubjqjlrCfRup1hVFK9H7jzsVq8D2p898F5UREPatiJmaYLQ%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=089979a5504df31096dc18320c3fba8f3beb652166965667faa420e75143b47f&width=1200&auto=webp",
+   "extra": "Studio G.H. Betzweg Bewaar als favoriet 3068 AZ Rotterdam (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Living in Holland",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-6e415e153c10",
+   "source": "pararius",
+   "title": "Kamer Bergweg",
+   "url": "https://www.pararius.nl/kamer-te-huur/rotterdam/3b27684d/bergweg",
+   "price": null,
+   "price_text": "Prijs op aanvraag",
+   "address": "3036 BK Rotterdam (Oude Noorden)",
+   "postcode": "3036 BK",
+   "wijk": "Oude Noorden",
+   "rooms": 1,
+   "surface": 15,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/3b27684d-546f-5a1d-80ad-596d5a5a6f42/399c146f-8bce-5a2d-a57c-0262be511aa4?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10467%2Ffiles%2Fphotos%2Foriginals%2Fdb70871c.jpg&sig=e347a036302b689dfa8750a2c0a60ebb42fafbc6c6af3dec79fab2645d534db1&width=1200&auto=webp",
+   "extra": "Kamer Bergweg Bewaar als favoriet 3036 BK Rotterdam (Oude Noorden) Prijs op aanvraag 15 m² 1 kamer Gestoffeerd Max Rental",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-4ace4371ba48",
+   "source": "pararius",
+   "title": "Appartement Abraham Kuyperlaan",
+   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/549056a0/abraham-kuyperlaan",
+   "price": 1112,
+   "price_text": "€ 1.112 per maand",
+   "address": "3038 PN Rotterdam (Bergpolder)",
+   "postcode": "3038 PN",
+   "wijk": "Bergpolder",
+   "rooms": 2,
+   "surface": 56,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/549056a0-a2a2-53ca-b4be-0719daa8eb1e/e5666001-38b2-54f2-9a62-a26a9dd9b1c2?original_uri=https%3A%2F%2Fathomevastgoed.nl%2Fimage%3Fid%3D217236%26wm%3D1%26size%3Dlarge&sig=7b2b6f173b46dba99e8d40f95887f22c8a7fc46a3b6effaca5e91adf0c95b738&width=1200&auto=webp",
+   "extra": "Appartement Abraham Kuyperlaan Bewaar als favoriet 3038 PN Rotterdam (Bergpolder) € 1.112 per maand 56 m² 2 kamers Gestoffeerd At Home Vastgoed Beheer BV",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-c706f1449527",
+   "source": "pararius",
+   "title": "Studio Oudedijk",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/94d31c5f/oudedijk",
+   "price": 1350,
+   "price_text": "€ 1.350 per maand",
+   "address": "3061 AB Rotterdam (Kralingen West)",
+   "postcode": "3061 AB",
+   "wijk": "Kralingen West",
+   "rooms": 1,
+   "surface": 34,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/94d31c5f-6062-5999-87b8-a05a83f5294a/af5cb24f-4e01-5d0d-983a-8ec49cb30dfd?original_uri=https%3A%2F%2Free.rotterdamapartments.com%2Fstorage%2Fobject_photos%2F10398%2Flarge%2F3.jpg&sig=2993d365864dad5f9fd0c7769d94ea4b1eb89ba887fc178fb60dd8b9d404ce73&width=1200&auto=webp",
+   "extra": "Studio Oudedijk Bewaar als favoriet 3061 AB Rotterdam (Kralingen West) € 1.350 per maand 34 m² 1 kamer Gemeubileerd Rotterdam Apartments",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "pararius-9aa2e7d71e18",
+   "source": "pararius",
+   "title": "Studio Oudedijk",
+   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/d2949fba/oudedijk",
+   "price": 1295,
+   "price_text": "€ 1.295 per maand",
+   "address": "3061 AB Rotterdam (Kralingen West)",
+   "postcode": "3061 AB",
+   "wijk": "Kralingen West",
+   "rooms": 1,
+   "surface": 20,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/d2949fba-56e2-51a9-8f7f-948088e35f4d/aa6bedef-63c7-5c3e-bbce-7afebe70895a?original_uri=https%3A%2F%2Free.rotterdamapartments.com%2Fstorage%2Fobject_photos%2F4984%2Flarge%2F15.jpg&sig=fabd67c388c6fcf6a991dd54b2dcdd9f3114201feaaceacf7f86837e2a85f3d4&width=1200&auto=webp",
+   "extra": "Studio Oudedijk Bewaar als favoriet 3061 AB Rotterdam (Kralingen West) € 1.295 per maand 20 m² 1 kamer Gemeubileerd Rotterdam Apartments",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "huurwoningen-5428e9858c19",
+   "source": "huurwoningen",
+   "title": "Kamer Buffelstraat",
+   "url": "https://www.huurwoningen.nl/huren/rotterdam/06aff871/buffelstraat/",
+   "price": 580,
+   "price_text": "Kale huurprijs € 580 per maand Totale huurprijs Transparant € 700 per maand",
+   "address": "3064 AB Rotterdam (Kralingseveer)",
+   "postcode": "3064 AB",
+   "wijk": "Kralingseveer",
+   "rooms": 1,
+   "surface": 14,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/06aff871-7a49-5aa2-9ada-1ff3581961be/42b6906e-bf83-5dcd-a55f-ccb765a0e9dc?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10117%2Ffiles%2Fphotos%2Foriginals%2F1ba9cd2e.jpg&sig=45f0db7e21ac989239bafdbf73e54e1849297b258cceaee5b1ced082443405d8&width=1200&auto=webp",
+   "extra": "Kamer Buffelstraat Bewaar als favoriet 3064 AB Rotterdam (Kralingseveer) Kale huurprijs € 580 per maand Totale huurprijs Transparant € 700 per maand 14 m² 1 kamer Gemeubileerd",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "huurwoningen-d40108718cd8",
+   "source": "huurwoningen",
+   "title": "Kamer Zwart Janstraat",
+   "url": "https://www.huurwoningen.nl/huren/rotterdam/4486d5dc/zwart-janstraat/",
+   "price": null,
+   "price_text": "Prijs op aanvraag",
+   "address": "3035 AN Rotterdam (Oude Noorden)",
+   "postcode": "3035 AN",
+   "wijk": "Oude Noorden",
+   "rooms": 1,
+   "surface": 20,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/4486d5dc-5bdc-5884-b6b8-6fd232c084a1/3b1bd11b-926a-557f-83f7-95b293d2d9c4?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10572%2Ffiles%2Fphotos%2Foriginals%2F2f1ac6e3.jpg&sig=868152f359c7a6398d80541726483bd5ebbb2de3378dcec64cf56bbea1f10a71&width=1200&auto=webp",
+   "extra": "Kamer Zwart Janstraat Bewaar als favoriet 3035 AN Rotterdam (Oude Noorden) Prijs op aanvraag 20 m² 1 kamer Gemeubileerd",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "huurwoningen-ea4a181d39c9",
+   "source": "huurwoningen",
+   "title": "Appartement Kleinpolderlaan",
+   "url": "https://www.huurwoningen.nl/huren/nieuwerkerk-aan-den-ijssel/51baf4ca/kleinpolderlaan/",
+   "price": 823,
+   "price_text": "€ 823 per maand",
+   "address": "2911 PA Nieuwerkerk aan den IJssel (Kleinpolder)",
+   "postcode": "2911 PA",
+   "wijk": "Kleinpolder",
+   "rooms": 1,
+   "surface": 26,
+   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/51baf4ca-a540-58ea-8320-795e7deb558c/fcc962d3-400e-54f4-b9c9-38e142fc6b7a?original_uri=https%3A%2F%2Fedelwonen.mijnklantdossier.nl%2Fwoningfotos%2F5%2F1%2F8%2F5%2F51853234_Hoofdfoto.jpg&sig=7df488fe7551c1fc7263717373483bbaa9ac9e214cdcbd2e086a42e71eabd162&width=1200&auto=webp",
+   "extra": "Appartement Kleinpolderlaan Bewaar als favoriet 2911 PA Nieuwerkerk aan den IJssel (Kleinpolder) € 823 per maand 26 m² 1 kamer 2019",
+   "area": "Nieuwerkerk aan den IJssel",
+   "first_seen": "2026-11-03T20:46:32+00:00",
+   "last_seen": "2026-11-05T15:32:29+00:00",
+   "active": true,
+   "missed": 0
   },
   {
    "id": "pararius-7aaf9ddc0e19",
@@ -873,48 +1286,6 @@
    "missed": 0
   },
   {
-   "id": "huurwoningen-5428e9858c19",
-   "source": "huurwoningen",
-   "title": "Kamer Buffelstraat",
-   "url": "https://www.huurwoningen.nl/huren/rotterdam/06aff871/buffelstraat/",
-   "price": 580,
-   "price_text": "Kale huurprijs € 580 per maand Totale huurprijs Transparant € 700 per maand",
-   "address": "3064 AB Rotterdam (Kralingseveer)",
-   "postcode": "3064 AB",
-   "wijk": "Kralingseveer",
-   "rooms": 1,
-   "surface": 14,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/06aff871-7a49-5aa2-9ada-1ff3581961be/42b6906e-bf83-5dcd-a55f-ccb765a0e9dc?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10117%2Ffiles%2Fphotos%2Foriginals%2F1ba9cd2e.jpg&sig=45f0db7e21ac989239bafdbf73e54e1849297b258cceaee5b1ced082443405d8&width=1200&auto=webp",
-   "extra": "Kamer Buffelstraat Bewaar als favoriet 3064 AB Rotterdam (Kralingseveer) Kale huurprijs € 580 per maand Totale huurprijs Transparant € 700 per maand 14 m² 1 kamer Gemeubileerd",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
-   "active": true,
-   "missed": 0
-  },
-  {
-   "id": "huurwoningen-d40108718cd8",
-   "source": "huurwoningen",
-   "title": "Kamer Zwart Janstraat",
-   "url": "https://www.huurwoningen.nl/huren/rotterdam/4486d5dc/zwart-janstraat/",
-   "price": null,
-   "price_text": "Prijs op aanvraag",
-   "address": "3035 AN Rotterdam (Oude Noorden)",
-   "postcode": "3035 AN",
-   "wijk": "Oude Noorden",
-   "rooms": 1,
-   "surface": 20,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/4486d5dc-5bdc-5884-b6b8-6fd232c084a1/3b1bd11b-926a-557f-83f7-95b293d2d9c4?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10572%2Ffiles%2Fphotos%2Foriginals%2F2f1ac6e3.jpg&sig=868152f359c7a6398d80541726483bd5ebbb2de3378dcec64cf56bbea1f10a71&width=1200&auto=webp",
-   "extra": "Kamer Zwart Janstraat Bewaar als favoriet 3035 AN Rotterdam (Oude Noorden) Prijs op aanvraag 20 m² 1 kamer Gemeubileerd",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T22:38:53+00:00",
-   "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Kamer te huur Zwart Janstraat Rotterdam: huur p/m prijs op aanvraag, - 1 kamer - 20 m² - kamer. Kamer huren aan de Zwart Janstraat in Rotterdam Zoek Home Rotterdam Noord Noord Oude Noorden Zwart Janstraat Vorige afbeelding Volgende afbeelding 7 foto's Bewaar als favoriet Kamer Zwart Janstraat in Rotterdam Bekijk kaart 3035 AN (Oude Noorden) Prijs op aanvraag 20 m² 1 kamer Gemeubileerd Meer info Over deze woning Op de Zwart Janstraat in het Oude Noorden is per direct een kamer beschikbaar voor studenten die bij voorkeur richting het afronden van hun studie gaan. Ook starters op de arbeidsmarkt genieten de voorkeur. De kamer is geschikt voor maximaal 1 huurder, niet voor koppels of meerdere personen. De ... Meer informatie? Of direct contact met de verhuurder? Overdracht Huurprijs Prijs op aanvraag Aangeboden sinds 02-11-2026 Status Te huur Beschikbaar Per direct Contractvorm Onbepaalde tijd Borg € 2.200 Meer info Interieur Gemeubileerd Meer info Onderhoudsstaat Zeer goed Oppervlakte en inhoud Woonoppervlakte 20 m² Bouw Type woning Kamer Bekijk alle kamers in Rotterdam Soort woning Kamer Ligging Nabij het openbaar vervoer Indeling Aantal kamers 1 Gedeelde voorzieningen Aantal huisgenoten 2 Geslacht huisgenoten Gemengd Keuken Gedeeld Badkamer Gedeeld Toilet Gedeeld Bergruimte Schuur/Berging Niet aanwezig Parkeergelegenheid Aanwezig Nee Garage Aanwezig Nee Huurvoorwaarden Roken toegestaan Nee Huisdieren toegestaan Niet toegestaan Doelgroep Werkende, Student, Werkende student Door"
-  },
-  {
    "id": "huurwoningen-18ace5e68b68",
    "source": "huurwoningen",
    "title": "Studio G.H. Betzweg",
@@ -932,7 +1303,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": true,
-   "missed": 0,
+   "missed": 1,
    "detail_checked": true,
    "detail_text": "Studio te huur G.H. Betzweg Rotterdam: huur p/m € 1.491, - 1 kamer - 39 m² - Studio. Studio huren aan de G.H. Betzweg in Rotterdam Zoek Home Rotterdam Oost Prins Alexander Oosterflank G.H. Betzweg Vorige afbeelding Volgende afbeelding 14 foto's Bewaar als favoriet Studio G.H. Betzweg in Rotterdam Bekijk kaart 3068 AZ (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Meer info Over deze woning Volledig gemeubileerde short-stay Studio te huur in de buurt van Rotterdam Alexander! Belangrijk: uitsluitend bedoeld voor urgente huisvesting zoals diegene naar Rotterdam verhuizen i.v.m. werk en tijdelijke huisvesting nodig hebben, in een echtscheidingsprocedure zitten, hun huis verkopen of ... Meer informatie? Of direct contact met de verhuurder? Overdracht Huurprijs € 1.491 per maand Prijs per m² € 38 Aangeboden sinds 28-10-2026 Status Te huur Beschikbaar Per 08-12-2026 Contractvorm Tijdelijke verhuur Huurperiode Maximaal 6 maanden Interieur Gemeubileerd Meer info Oppervlakte en inhoud Woonoppervlakte 39 m² Bouw Type woning Studio Bekijk alle studio's in Rotterdam Soort woning Studio Soort bouw Bestaande bouw Bouwjaar 1992 Indeling Aantal kamers 1 Aantal slaapkamers 1 Aantal badkamers 1 Energie Energielabel A+ Door aanbieder geplaatst met beschikbaarheidscontrole . Hoe is de buurt? Op basis van CBS-data en Leefbaarometer 3.0 (RIGO Research). CBS StatLine Groene buurt Sport dichtbij Goed bereikbaar Wie woont er in Oosterflank? Gemiddelde leeftijd 44 jaar Huishoudtype Voorname"
   },
@@ -954,7 +1325,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "huurwoningen-584d1f8798ee",
@@ -974,7 +1345,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "huurwoningen-8dce14350383",
@@ -994,7 +1365,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "huurwoningen-2efd73e48313",
@@ -1257,261 +1628,6 @@
    "missed": 0
   },
   {
-   "id": "pararius-165ef93f2e0b",
-   "source": "pararius",
-   "title": "Appartement Noorderhavenkade 103 A",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/af61c435/noorderhavenkade",
-   "price": 1088,
-   "price_text": "€ 1.088 per maand",
-   "address": "3039 RE Rotterdam (Blijdorp)",
-   "postcode": "3039 RE",
-   "wijk": "Blijdorp",
-   "rooms": 2,
-   "surface": 54,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/af61c435-5002-5f7a-838d-eb5111d6bf3f/b5fefc6d-c38c-58d2-adcd-18afd49628b2?original_uri=https%3A%2F%2Fvenumfilestore.blob.core.windows.net%2Fpub%2Feddded19%2Fd3b5%2F466e%2Fbdab%2F260eb41a7cfc%2F%24l%2F1.jpeg&sig=a1c7a85d73df6957f909385f6adb871dc787766c91bdfa09c2850a15f501034f&width=1200&auto=webp",
-   "extra": "Appartement Noorderhavenkade 103 A Bewaar als favoriet 3039 RE Rotterdam (Blijdorp) € 1.088 per maand 54 m² 2 kamers Kaal Rental Rotterdam",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Appartement te huur Noorderhavenkade 103 A, Rotterdam te huur voor € 1.088, 54 m². Appartement huren aan de Noorderhavenkade 103 A in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Noord Blijdorp Noorderhavenkade Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Plattegrond Te huur: Appartement Noorderhavenkade 103 A in Rotterdam Bekijk kaart 3039 RE (Blijdorp) € 1.088 per maand 54 m² 2 kamers Kaal Meer info Beschrijving ROTTERDAM BLIJDORP: 2-kamerappartement met tuin, gelegen op een fantastische locatie. De woning is geschikt voor één persoon of een stel en is per direct beschikbaar! BEZICHTIGING VOL. REACTIES WORDEN NIET MEER VERWERKT Interesse? Reageer dan via de contactknoppen naast deze beschrijving BELANGRIJKSTE KENMERKEN: • Woning wordt kaal verhuurd • Woonoppervlakte van ca. 54 m2 • Dicht bij een schat aan voorzieningen en vervoersverbindingen • De woning is geschikt voor iemand alleen of een stel OMGEVING: De populaire buurt Blijdorp is zeer centraal gelegen en staat garant voor plezierig wonen. Hier wonen betekent groen en rust om je heen gecombineerd met alle dagelijkse voorzieningen in de nabije omgeving. Denk hierbij aan supermarkten, speciaalzaken, restaurants, cafés, scholen en sportfaciliteiten. In de buurt bevindt zich het bekende Vroesenpark, de (tweede) favoriete ac"
-  },
-  {
-   "id": "pararius-4db409f0e339",
-   "source": "pararius",
-   "title": "Studio G.H. Betzweg",
-   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/d4749940/g-h-betzweg",
-   "price": 1491,
-   "price_text": "€ 1.491 per maand",
-   "address": "3068 AZ Rotterdam (Oosterflank)",
-   "postcode": "3068 AZ",
-   "wijk": "Oosterflank",
-   "rooms": 1,
-   "surface": 39,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/d4749940-2b62-5756-abcb-a4ab7e6379ea/23367b35-e5f1-5a33-ba50-4754085f012f?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_e29dda98-2275-40cd-aad1-dadd3129f86a%2Fmedia%2FBTZ-A-5.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ19lMjlkZGE5OC0yMjc1LTQwY2QtYWFkMS1kYWRkMzEyOWY4NmEvbWVkaWEvQlRaLUEtNS5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3DLBKqnMCMnXZ%252F7HdLorkFcAPh3MOPazxqJJ5gJls8wBIrqG4HqKPihg0h3P%252FsT7oPOvBtiXzUb6rilfYPHbfMHkOHOaqOdZ%252FxFXB5eAIiHzmbe3NEm%252FjNsxvuHL9vol%252F8cJ58A7QmkqwTQF3BlGHEnxIPYUZ6kHeO5DgC4sFOVzjYGa0HEetoecOXlRKStUuv6TIOrCGSXLRG%252FCOWIJs5gZJeTLACvhoLjtV8cccQ1iDAFjXXiLLDxDL7znHllGUcIy50Vtt%252BRGKR%252FAY%252FeTCmByNFyFnXMvcpOeqLdKwk%252F71lE0%252F2ZYpwScz%252FIUlWXF4qTpPOJxu0lwgeXofje5xaBQ%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=cee2a71395a11525ca0d1b3e37c5a1dc0812f81bc0b658d093015b4b2d696a43&width=1200&auto=webp",
-   "extra": "Studio G.H. Betzweg Bewaar als favoriet 3068 AZ Rotterdam (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Living in Holland",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Studio te huur G.H. Betzweg, Rotterdam te huur voor € 1.491, 39 m². Studio huren aan de G.H. Betzweg in Rotterdam? Kijk op Pararius. Huur Rotterdam Oost Prins Alexander Oosterflank G.H. Betzweg Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Studio G.H. Betzweg in Rotterdam Bekijk kaart 3068 AZ (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Meer info Beschrijving Volledig gemeubileerde short-stay Studio te huur in de buurt van Rotterdam Alexander! Belangrijk: uitsluitend bedoeld voor urgente huisvesting zoals diegene naar Rotterdam verhuizen i.v.m. werk en tijdelijke huisvesting nodig hebben, in een echtscheidingsprocedure zitten, hun huis verkopen of renoveren. Als je momenteel binnen een straal van 50 km van Rotterdam woont, kom je helaas niet in aanmerking. Living in Holland presenteert: moderne appartementen/studio's voor korte verblijven in Rotterdam Alexander, een duurzaam en onlangs gerenoveerd appartementencomplex in Rotterdam Alexander. Deze appartementen zijn ideaal voor expats en werkende professionals die tijdelijke huisvesting nodig hebben in of rond Rotterdam. Type: Studio Locatie: Rotterdam Alexander Oppervlakte: 39,1 m2 Prijs: € 1.491 (excl.) Kamers: 1 kamer Beschikbaar vanaf: 08-12-2026 Huurperiode: Tijdelijk (maximaal 6 maanden) Borg: 1 maand huur"
-  },
-  {
-   "id": "pararius-3e0a91940178",
-   "source": "pararius",
-   "title": "Appartement Tamboerstraat",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/6bb55247/tamboerstraat",
-   "price": 1200,
-   "price_text": "€ 1.200 per maand",
-   "address": "3034 PV Rotterdam (Oud Crooswijk)",
-   "postcode": "3034 PV",
-   "wijk": "Oud Crooswijk",
-   "rooms": 2,
-   "surface": 35,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/6bb55247-6611-54b2-9073-2c560aaa636f/04bc8cf4-202f-5e81-bf2e-3441ba03c7d2?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_eadb91f4-5018-45d9-95f7-6df7fea6c3db%2Flistings%2Flisting_9e085b5b-c1af-470f-a5b5-d44d17768dd6%2Fmedia%2Fimage00010.jpeg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb19lYWRiOTFmNC01MDE4LTQ1ZDktOTVmNy02ZGY3ZmVhNmMzZGIvbGlzdGluZ3MvbGlzdGluZ185ZTA4NWI1Yi1jMWFmLTQ3MGYtYTViNS1kNDRkMTc3NjhkZDYvbWVkaWEvaW1hZ2UwMDAxMC5qcGVnIiwgIkNvbmRpdGlvbiI6IHsiRGF0ZUxlc3NUaGFuIjogeyJBV1M6RXBvY2hUaW1lIjogMjE0NzQ4MzY0N319fV19%26Signature%3DlzEO2ijCPiL6e0tmpuk%252FkpDs7nJfvBtfHD4nJg7ljk4MnhL0wQxQQMC%252FhMfiqQvTpXeQmuEUcsJPFFwM7%252ByIVy74wWMvxsSRlgMlDoosFi9n2luq8tbBYgGtjh7jwwyLgwbi01jt4nO8PRWDEDyaL0Tkw%252FBjykXxFrgUZ2wIOX9aN3%252FUqyjo%252BY7bf%252FTlLYjZJ0Pa3D1gxpn0RLGka%252BBVWfhN5T7MHWxV3D8XMI2d3NV3QbsW1AbkVDch1Zyz%252FQh5DRZZDmy7wnuF4uYfQmYqSkET%252Bu7OEM%252Bn0S1QJ%252B0REiwgnqU%252FwOBao6Ob3GaxyCEEt3%252FnaVV7eRN4OPLmhVfk2Q%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=aa621c589a8c64ec851ed50ba1dfbf3c23c40c781df0ea173d57be1e5c6e063c&width=1200&auto=webp",
-   "extra": "Appartement Tamboerstraat Bewaar als favoriet 3034 PV Rotterdam (Oud Crooswijk) € 1.200 per maand 35 m² 2 kamers Gemeubileerd HouseHunting Randstad",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Appartement te huur Tamboerstraat, Rotterdam te huur voor € 1.200, 35 m². Appartement huren aan de Tamboerstraat in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Oud Crooswijk Tamboerstraat Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Appartement Tamboerstraat in Rotterdam Bekijk kaart 3034 PV (Oud Crooswijk) € 1.200 per maand 35 m² 2 kamers Gemeubileerd Meer info Beschrijving Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd – Levendige en groene omgeving – Energielabel B – Ideaal als tijdelijke woonoplossing De woning: U betreedt de woning via de hal, die toegang biedt tot de woonkamer. Vanuit de woonkamer bereikt u de comfortabele slaapkamer en de badkamer, welke is voorzien van een toilet, douche, wastafel en wasmachine. De keuken is uitgerust met diverse inbouwapparatuur en biedt voldoende werk- en opbergruimte. Dankzij de open indeling vormt de woonkamer een aangename leefruimte met veel natuurlijk licht. Dankzij de praktische"
-  },
-  {
-   "id": "huurwoningen-ea4a181d39c9",
-   "source": "huurwoningen",
-   "title": "Appartement Kleinpolderlaan",
-   "url": "https://www.huurwoningen.nl/huren/nieuwerkerk-aan-den-ijssel/51baf4ca/kleinpolderlaan/",
-   "price": 823,
-   "price_text": "€ 823 per maand",
-   "address": "2911 PA Nieuwerkerk aan den IJssel (Kleinpolder)",
-   "postcode": "2911 PA",
-   "wijk": "Kleinpolder",
-   "rooms": 1,
-   "surface": 26,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/51baf4ca-a540-58ea-8320-795e7deb558c/fcc962d3-400e-54f4-b9c9-38e142fc6b7a?original_uri=https%3A%2F%2Fedelwonen.mijnklantdossier.nl%2Fwoningfotos%2F5%2F1%2F8%2F5%2F51853234_Hoofdfoto.jpg&sig=7df488fe7551c1fc7263717373483bbaa9ac9e214cdcbd2e086a42e71eabd162&width=1200&auto=webp",
-   "extra": "Appartement Kleinpolderlaan Bewaar als favoriet 2911 PA Nieuwerkerk aan den IJssel (Kleinpolder) € 823 per maand 26 m² 1 kamer 2019",
-   "area": "Nieuwerkerk aan den IJssel",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:46:11+00:00",
-   "active": true
-  },
-  {
-   "id": "pararius-82e75e207076",
-   "source": "pararius",
-   "title": "Appartement Frits Ruysstraat",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/7c111558/frits-ruysstraat",
-   "price": 995,
-   "price_text": "€ 995 per maand",
-   "address": "3061 MC Rotterdam (Kralingen West)",
-   "postcode": "3061 MC",
-   "wijk": "Kralingen West",
-   "rooms": 3,
-   "surface": 50,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/7c111558-06d5-56f9-b02e-c4f21903f2e0/58baf4d5-661d-5277-95e2-dda5dec7144d?original_uri=https%3A%2F%2Fvenumfilestore.blob.core.windows.net%2Fpub%2Fe0c3807f%2F02cf%2F477e%2F849f%2Ff4541e16320d%2F%24l%2F1.jpg&sig=4d0aea8f69e95d8d79c2f44141bcf62817f4d64e8bf388a0ea30b625866ad66b&width=1200&auto=webp",
-   "extra": "Appartement Frits Ruysstraat Bewaar als favoriet 3061 MC Rotterdam (Kralingen West) € 995 per maand 50 m² 3 kamers Gemeubileerd Rent an Apartment",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "missed": 1
-  },
-  {
-   "id": "pararius-2f9d1e77fe36",
-   "source": "pararius",
-   "title": "Studio G.H. Betzweg",
-   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/00e731fd/g-h-betzweg",
-   "price": 1500,
-   "price_text": "€ 1.500 per maand",
-   "address": "3068 AZ Rotterdam (Oosterflank)",
-   "postcode": "3068 AZ",
-   "wijk": "Oosterflank",
-   "rooms": 1,
-   "surface": 43,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/00e731fd-9baf-5eb7-a9f0-514690644ee7/ec81ca98-0256-5ed1-99ce-991b02f3e0ab?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_855a3022-e2c3-4cce-9024-e685a7d65f60%2Fmedia%2FBTZ-A-2.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ184NTVhMzAyMi1lMmMzLTRjY2UtOTAyNC1lNjg1YTdkNjVmNjAvbWVkaWEvQlRaLUEtMi5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3Dh1oDqoobrfiBMbav9kjnnR66eSAWFxq6hob9DhjwHZKUHbq0LbzLwg8VgzG6T60AY9tMVlBVLRJe1NY4aILJKrl6KsV8wym6k3zYicuA345KAZm2WDQuOQU4QFCif3k9bRdEGdidtYqY0C2hay6qKFx3wOm%252FABGTRqNZaLVxSxVUwGLoYmH2ur3hjc9duaYSzA%252BC%252FHKj3My%252BiTrcyiF8ovQHIy%252Fx5%252Fup5oBUbQiGEz72aBCuZYw25F%252BdEysg6EvjUvvILCZW2mlxMpLPQ%252BorLYnUoG2lylWZzajfF1EKBuK4Gp0EcDXlNz4bRHbxZDrs2ieZ0QuVFCbPVdcukWaDUA%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=1fb910170318c5fae67750526a00c816d8432e9e63dd4e119b59271570f64e91&width=1200&auto=webp",
-   "extra": "Studio G.H. Betzweg Bewaar als favoriet 3068 AZ Rotterdam (Oosterflank) € 1.500 per maand 43 m² 1 kamer Gemeubileerd Living in Holland",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "missed": 1
-  },
-  {
-   "id": "pararius-2eb0082ef075",
-   "source": "pararius",
-   "title": "Appartement Gravin Adélastraat 84",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/e17768c5/gravin-adelastraat",
-   "price": 1500,
-   "price_text": "€ 1.500 per maand",
-   "address": "3032 HA Rotterdam (Oude Noorden)",
-   "postcode": "3032 HA",
-   "wijk": "Oude Noorden",
-   "rooms": 2,
-   "surface": 62,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/e17768c5-c5e2-570a-ace5-a8da5651c896/539a51c6-ee30-594d-8113-afffef16ec5e?original_uri=https%3A%2F%2Fvenumfilestore.blob.core.windows.net%2Fpub%2F5ebe3077%2Fd726%2F400b%2Fbbac%2F6272d3a93a62%2F%24l%2F100.jpg&sig=9468fd63b50b50d37d72aa7e19051da6a78734e637ec448d48d5c60ac476b1e7&width=1200&auto=webp",
-   "extra": "Appartement Gravin Adélastraat 84 Bewaar als favoriet 3032 HA Rotterdam (Oude Noorden) € 1.500 per maand 62 m² 2 kamers Gemeubileerd Rental Rotterdam",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "missed": 1
-  },
-  {
-   "id": "pararius-722a48e84c33",
-   "source": "pararius",
-   "title": "Studio G.H. Betzweg",
-   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/601a3111/g-h-betzweg",
-   "price": 1491,
-   "price_text": "€ 1.491 per maand",
-   "address": "3068 AZ Rotterdam (Oosterflank)",
-   "postcode": "3068 AZ",
-   "wijk": "Oosterflank",
-   "rooms": 1,
-   "surface": 39,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/601a3111-476d-5093-9ea8-3665cac54efa/c20ed99c-e6fa-57b1-a75a-e4769cf63def?original_uri=https%3A%2F%2Fd1rf1jwua027xh.cloudfront.net%2Fportfolio_4f989e2d-7d2d-45d1-8f5f-2fcf935105f1%2Flistings%2Flisting_0840a4ee-fb56-4eda-9dfb-2f9e3863c7cb%2Fmedia%2FBTZ-A-8.jpg%3FPolicy%3DeyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb180Zjk4OWUyZC03ZDJkLTQ1ZDEtOGY1Zi0yZmNmOTM1MTA1ZjEvbGlzdGluZ3MvbGlzdGluZ18wODQwYTRlZS1mYjU2LTRlZGEtOWRmYi0yZjllMzg2M2M3Y2IvbWVkaWEvQlRaLUEtOC5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%253D%26Signature%3DH%252BGrYtrHmHYXWIKLS1Cn3BZcnQqxeGty4vY6yByariawQ9VFrzEEscNZuLM5c7bR928yJ5GDfTdXb2k25S5Ip%252FuOUqwMvTgw3VRQWndZN1T9ZVEDY0xZRVfNImLAUXNTsWN1bndwEROldE4n84IbF%252BtedYoO85lAoIBegWA4rTqRYiiuYcq2KPNkjKrLckhSb91OUDfIN3upKezzSVjUZ8UzhUHIIWK%252FNqCWiWP%252Fvt3%252FsGlD7TLnIQSkZIB38WsS2TJ0OPDA1qP4W6%252B3NB0%252BvtKAYBcohH3g8HxN2dtubjqjlrCfRup1hVFK9H7jzsVq8D2p898F5UREPatiJmaYLQ%253D%253D%26Key-Pair-Id%3DK194587S03REZY&sig=089979a5504df31096dc18320c3fba8f3beb652166965667faa420e75143b47f&width=1200&auto=webp",
-   "extra": "Studio G.H. Betzweg Bewaar als favoriet 3068 AZ Rotterdam (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Living in Holland",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Studio te huur G.H. Betzweg, Rotterdam te huur voor € 1.491, 39 m². Studio huren aan de G.H. Betzweg in Rotterdam? Kijk op Pararius. Huur Rotterdam Oost Prins Alexander Oosterflank G.H. Betzweg Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Studio G.H. Betzweg in Rotterdam Bekijk kaart 3068 AZ (Oosterflank) € 1.491 per maand 39 m² 1 kamer Gemeubileerd Meer info Beschrijving Volledig gemeubileerd Short-Stay Studio te huur in de buurt van Rotterdam Alexander! Living in Holland presenteert: moderne appartementen voor korte verblijven in Rotterdam Alexander, een duurzaam en onlangs gerenoveerd appartementencomplex in Rotterdam Alexander. Deze appartementen zijn ideaal voor expats en werkende professionals die tijdelijke huisvesting nodig hebben in of rond Rotterdam. Belangrijk: uitsluitend bedoeld voor urgente huisvesting zoals diegene naar Rotterdam verhuizen i.v.m. werk en tijdelijke huisvesting nodig hebben, in een echtscheidingsprocedure zitten, hun huis verkopen of renoveren. Als je momenteel binnen een straal van 50 km van Rotterdam woont, kom je helaas niet in aanmerking. Type: Appartement Locatie: Rotterdam Alexander Oppervlakte: 39,4 m2 Prijs: € 1.491 (excl.) Kamers: 1 kamer Beschikbaar vanaf: 03-11-2026 Huurperiode: Tijdelijk (maximaal 6 maanden) Borg: 1 maand huur Besc",
-   "missed": 1
-  },
-  {
-   "id": "pararius-6e415e153c10",
-   "source": "pararius",
-   "title": "Kamer Bergweg",
-   "url": "https://www.pararius.nl/kamer-te-huur/rotterdam/3b27684d/bergweg",
-   "price": null,
-   "price_text": "Prijs op aanvraag",
-   "address": "3036 BK Rotterdam (Oude Noorden)",
-   "postcode": "3036 BK",
-   "wijk": "Oude Noorden",
-   "rooms": 1,
-   "surface": 15,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/3b27684d-546f-5a1d-80ad-596d5a5a6f42/399c146f-8bce-5a2d-a57c-0262be511aa4?original_uri=https%3A%2F%2Fpararius-office-prod.global.ssl.fastly.net%2F10467%2Ffiles%2Fphotos%2Foriginals%2Fdb70871c.jpg&sig=e347a036302b689dfa8750a2c0a60ebb42fafbc6c6af3dec79fab2645d534db1&width=1200&auto=webp",
-   "extra": "Kamer Bergweg Bewaar als favoriet 3036 BK Rotterdam (Oude Noorden) Prijs op aanvraag 15 m² 1 kamer Gestoffeerd Max Rental",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Kamer te huur Bergweg, Rotterdam te huur voor prijs op aanvraag, 15 m². Kamer huren aan de Bergweg in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Noord Oude Noorden Bergweg Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Plattegrond Te huur: Kamer Bergweg in Rotterdam Bekijk kaart 3036 BK (Oude Noorden) Prijs op aanvraag 15 m² 1 kamer Gestoffeerd Meer info Beschrijving Studentenkamers aan de Bergweg, Rotterdam-Noord Op zoek naar een fijne studentenkamer in een van de leukste wijken van Rotterdam? Aan de Bergweg komen maar liefst 11 gloednieuwe studentenkamers beschikbaar, verdeeld over 4 appartementen. Het pand wordt op dit moment volledig en volgens moderne maatstaven verbouwd en is naar verwachting begin november 2026 klaar voor bewoning. De kamers Elke kamer wordt gestoffeerd opgeleverd, met laminaat en wandafwerking. Je hoeft dus alleen je eigen meubels mee te nemen en je kunt er meteen een eigen plek van maken. De appartementen Elk appartement heeft een eigen keuken, badkamer en toilet, die je deelt met je huisgenoten in hetzelfde appartement. Zo woon je samen met een kleine groep medestudenten, zonder dat je met het hele pand een keuken of badkamer hoeft te delen. Alles is nieuw en fris na de verbouwing. De omgeving De Bergweg ligt in Rotterdam-Noord, een levendige en gelie",
-   "missed": 1
-  },
-  {
-   "id": "pararius-4ace4371ba48",
-   "source": "pararius",
-   "title": "Appartement Abraham Kuyperlaan",
-   "url": "https://www.pararius.nl/appartement-te-huur/rotterdam/549056a0/abraham-kuyperlaan",
-   "price": 1112,
-   "price_text": "€ 1.112 per maand",
-   "address": "3038 PN Rotterdam (Bergpolder)",
-   "postcode": "3038 PN",
-   "wijk": "Bergpolder",
-   "rooms": 2,
-   "surface": 56,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/549056a0-a2a2-53ca-b4be-0719daa8eb1e/e5666001-38b2-54f2-9a62-a26a9dd9b1c2?original_uri=https%3A%2F%2Fathomevastgoed.nl%2Fimage%3Fid%3D217236%26wm%3D1%26size%3Dlarge&sig=7b2b6f173b46dba99e8d40f95887f22c8a7fc46a3b6effaca5e91adf0c95b738&width=1200&auto=webp",
-   "extra": "Appartement Abraham Kuyperlaan Bewaar als favoriet 3038 PN Rotterdam (Bergpolder) € 1.112 per maand 56 m² 2 kamers Gestoffeerd At Home Vastgoed Beheer BV",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Appartement te huur Abraham Kuyperlaan, Rotterdam te huur voor € 1.112, 56 m². Appartement huren aan de Abraham Kuyperlaan in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Noord Bergpolder Abraham Kuyperlaan Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Appartement Abraham Kuyperlaan in Rotterdam Bekijk kaart 3038 PN (Bergpolder) € 1.112 per maand 56 m² 2 kamers Gestoffeerd Meer info Beschrijving Toelatingseisen voor dit object: Huisdieren zijn niet toegestaan Ook beschikbaar voor studenten met garantsteller Indien u niet aan de inkomenseis voldoet is het ook mogelijk om deze woning te huren als u een garantsteller heeft. Begane grond: Hal (7.12 m x 0.86 m) 6.12 m2 Woonkamer (6.96 m x 3.11 m) 21.65 m2 Slaapkamer 1 (4.88 m x 3.41 m) 16.64 m2 Keuken (2.98 m x 1.48 m) 4.41 m2 Tuin (6.88 m x 5.29 m) 36.40 m2 Badkamer (0.90 m x 0.88 m) 0.79 m2 Toilet (1.01 m x 0.84 m) 0.85 m2 Wasruimte (1.48 m x 1.44 m) 2.13 m2 Meterkast (0.84 m x 0.76 m) 0.64 m2 Meterkast (1.32 m x 0.85 m) 1.12 m2 Bijzonderheden Centrale verwarming Voorzien van een laminaatvloer Huisdieren zijn niet toegestaan Roken in de woonruimte is niet toegestaan Kunststof kozijnen met dubbele beglazing De huurprijs is exclusief gas, water, elektra, tv, internet en gemeentelijke belastingen en heffingen Ook beschikbaar ",
-   "missed": 1
-  },
-  {
-   "id": "pararius-c706f1449527",
-   "source": "pararius",
-   "title": "Studio Oudedijk",
-   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/94d31c5f/oudedijk",
-   "price": 1350,
-   "price_text": "€ 1.350 per maand",
-   "address": "3061 AB Rotterdam (Kralingen West)",
-   "postcode": "3061 AB",
-   "wijk": "Kralingen West",
-   "rooms": 1,
-   "surface": 34,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/94d31c5f-6062-5999-87b8-a05a83f5294a/af5cb24f-4e01-5d0d-983a-8ec49cb30dfd?original_uri=https%3A%2F%2Free.rotterdamapartments.com%2Fstorage%2Fobject_photos%2F10398%2Flarge%2F3.jpg&sig=2993d365864dad5f9fd0c7769d94ea4b1eb89ba887fc178fb60dd8b9d404ce73&width=1200&auto=webp",
-   "extra": "Studio Oudedijk Bewaar als favoriet 3061 AB Rotterdam (Kralingen West) € 1.350 per maand 34 m² 1 kamer Gemeubileerd Rotterdam Apartments",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Studio te huur Oudedijk, Rotterdam te huur voor € 1.350, 34 m². Studio huren aan de Oudedijk in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Kralingen West Oudedijk Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Studio Oudedijk in Rotterdam Bekijk kaart 3061 AB (Kralingen West) € 1.350 per maand 34 m² 1 kamer Gemeubileerd Meer info Beschrijving Gemeubileerde studio in Kralingen – perfect gelegen en direct beschikbaar In het gewilde Rotterdam Kralingen, op een uitstekende locatie, bieden wij deze gemeubileerde studio aan, gelegen op de tweede verdieping aan de voorzijde van het pand. De studio is uitermate geschikt voor één persoon en bevindt zich op loopafstand van tramlijn 7, metrostation Gerdesiaweg én Voorschoterlaan. De Erasmus Universiteit en de Kralingse Plas zijn eenvoudig bereikbaar, net als diverse winkels en horecagelegenheden in de buurt. Indeling Via de gezamenlijke entree bereik je de lichte woon-/slaapkamer aan de voorzijde. De open keuken is functioneel ingericht en voorzien van een koelkast, spoelbak, afzuigkap en 4-pits gaskookplaat. De badkamer beschikt over een betegelde douche, wastafel met spiegel en toilet. Let op Deze studio wordt verhuurd in de huidige staat: as is / what you see is what you get. Het betreft geen nieuwbouw en d",
-   "missed": 1
-  },
-  {
-   "id": "pararius-9aa2e7d71e18",
-   "source": "pararius",
-   "title": "Studio Oudedijk",
-   "url": "https://www.pararius.nl/studio-te-huur/rotterdam/d2949fba/oudedijk",
-   "price": 1295,
-   "price_text": "€ 1.295 per maand",
-   "address": "3061 AB Rotterdam (Kralingen West)",
-   "postcode": "3061 AB",
-   "wijk": "Kralingen West",
-   "rooms": 1,
-   "surface": 20,
-   "image": "https://casco-media-prod.global.ssl.fastly.net/listings/api/media/d2949fba-56e2-51a9-8f7f-948088e35f4d/aa6bedef-63c7-5c3e-bbce-7afebe70895a?original_uri=https%3A%2F%2Free.rotterdamapartments.com%2Fstorage%2Fobject_photos%2F4984%2Flarge%2F15.jpg&sig=fabd67c388c6fcf6a991dd54b2dcdd9f3114201feaaceacf7f86837e2a85f3d4&width=1200&auto=webp",
-   "extra": "Studio Oudedijk Bewaar als favoriet 3061 AB Rotterdam (Kralingen West) € 1.295 per maand 20 m² 1 kamer Gemeubileerd Rotterdam Apartments",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-03T20:46:32+00:00",
-   "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
-   "detail_checked": true,
-   "detail_text": "Studio te huur Oudedijk, Rotterdam te huur voor € 1.295, 20 m². Studio huren aan de Oudedijk in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Kralingen West Oudedijk Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Studio Oudedijk in Rotterdam Bekijk kaart 3061 AB (Kralingen West) € 1.295 per maand 20 m² 1 kamer Gemeubileerd Meer info Beschrijving Studio in Kralingen – Rotterdam Oost In de gewilde wijk Kralingen, in Rotterdam Oost, bevindt zich deze studio op de vierde verdieping aan de achterzijde van het pand. De ligging is ideaal, op loopafstand van metrostation Gerdesiaweg en met tramlijn 7 die voor de deur stopt. Supermarkt Albert Heijn ligt op een steenworp afstand en ook het Kralingse Bos en de Erasmus Universiteit zijn nabij. Indeling Via de gezamenlijke trapopgang bereik je de entree van de studio op de vierde verdieping. De woon-/slaapruimte beschikt over een open keuken, die aan de achterzijde is gesitueerd en voorzien is van een 2-pits elektrische kookplaat, koelkast, afzuigkap, spoelbak en een losse magnetron. De volledig betegelde badkamer in witte kleurstelling is uitgerust met een douche, een wastafel met spiegel, een wasmachine en een zwevend toilet. Daarnaast beschikt de studio over een ingebouwde bergkast. Opmerkingen: Geschikt voor 1 ",
-   "missed": 1
-  },
-  {
    "id": "pararius-ae3b98d4377e",
    "source": "pararius",
    "title": "Appartement Kortekade",
@@ -1528,10 +1644,10 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
    "detail_text": "Appartement te huur Kortekade, Rotterdam te huur voor € 1.257, 58 m². Appartement huren aan de Kortekade in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Kralingen Oost Kortekade Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Appartement Kortekade in Rotterdam Bekijk kaart 3062 GP (Kralingen Oost) € 1.257 per maand 58 m² 2 kamers Gestoffeerd Meer info Beschrijving Toelatingseisen voor dit object: Huisdieren zijn niet toegestaan Voor maximaal 2 persoon/personen Ook beschikbaar voor studenten met garantsteller Indien u niet aan de inkomenseis voldoet is het ook mogelijk om deze woning te huren als u een garantsteller heeft. Te huur: Ook beschikbaar voor studenten met garantsteller Begane grond: Hal (5.75 m x 0.90 m) 5.18 m2 Woonkamer (8.20 m x 3.30 m) 27.06 m2 Slaapkamer 1 (3.95 m x 3.30 m) 13.04 m2 Keuken (2.45 m x 1.50 m) 3.68 m2 Badkamer (2.55 m x 0.80 m) 2.04 m2 Toilet (1.35 m x 0.85 m) 1.15 m2 Tuin (11.70 m x 5.50 m) 64.35 m2 Balkon (1.90 m x 0.95 m) 1.81 m2 Souterrain Kelder (6.80 m x 1.75 m) 11.90 m2 Bijzonderheden Centrale verwarming Voorzien van een laminaatvloer Huisdieren zijn niet toegestaan Roken in de woonruimte is niet toegestaan De huurprijs is exclusief gas, water, elektra, tv, internet en gemeentelijke belastingen en heffingen Dubbele b",
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-0968c84c65b0",
@@ -1550,9 +1666,9 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-a2dbe1258617",
@@ -1571,10 +1687,10 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
    "detail_text": "Studio te huur Oudedijk, Rotterdam te huur voor € 1.450, 25 m². Studio huren aan de Oudedijk in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Kralingen West Oudedijk Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Studio Oudedijk in Rotterdam Bekijk kaart 3061 AB (Kralingen West) € 1.450 per maand 25 m² 1 kamer Gemeubileerd Meer info Beschrijving SHORT STAY ONLY – minimale verblijfsduur 1 maand, maximale verblijfsduur 3 maanden Gemeubileerde studio gelegen aan de achterzijde op de eerste verdieping van een karakteristiek pand in het populaire Kralingen. De ligging is ideaal ten opzichte van openbaar vervoer: tramlijn 7 en metrostation Gerdesiaweg bevinden zich op loopafstand. Supermarkt Albert Heijn ligt om de hoek, en met tramlijn 7 ben je binnen één halte bij de Erasmus Universiteit. Indeling: Entree via het centrale trappenhuis. De studio bestaat uit een lichte woon-/slaapkamer, ingericht met een tweepersoonsbed, eettafel en dressoir. De open keuken is voorzien van een koelkast, afzuigkap, spoelbak en gaskookplaat. De nette badkamer beschikt over een douche, wastafel met spiegel en toilet. Bijzonderheden: Geschikt voor één persoon Short stay contract: minimaal 1 maand, maximaal 2 maanden Waarborgsom gelijk aan één maand huur Toon meer Hoe populair is",
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-597b93a45e74",
@@ -1593,10 +1709,10 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
    "detail_text": "Appartement te huur Jacob van Campenplein 172, Rotterdam te huur voor € 768, 95 m². Appartement huren aan de Jacob van Campenplein 172 in Rotterdam? Kijk op Pararius. Huur Rotterdam Oost Prins Alexander Het Lage Land Jacob van Campenplein Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Bewaar als favoriet Foto's Te huur: Appartement Jacob van Campenplein 172 in Rotterdam Bekijk kaart 3067 LE (Het Lage Land) € 768 per maand 95 m² 3 kamers 1965 Beschrijving Tijdelijke studentenwoning (temporary student accommodation) beschikbaar per 19 oktober 2026 – Jacob van Campenplein 172, Rotterdam Per 1 juli 2026 komt deze woning aan het Jacob van Campenplein 172, 3067 LE Rotterdam beschikbaar voor tijdelijke verhuur aan studenten. De woning wordt verhuurd op basis van tijdelijke studentenverhuur en is geschikt voor een student die op zoek is naar woonruimte in Rotterdam. Let op je mag niet ingeschreven staan in gemeente Rotterdam. Huurinformatie: De maandelijkse servicekosten bedragen €44,-. Daarnaast bedragen de stookkosten €140,- per maand. Toon meer Hoe populair is deze woning? Geplaatst 7 september 2026 Aantal reacties lol Weergaven bb Opgeslagen door BB Bekijk de cijfers met Pararius Overdracht Huurprijs € 768 per maand Prijs per m² € 8 Aangeboden sinds 07-09-2026 Status Te huur Beschikbaar Per direct Contractvorm Tijdelijke verhuur Borg € 768 Meer info On",
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-991dac9ed854",
@@ -1615,10 +1731,10 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
    "detail_text": "Studio te huur Oudedijk, Rotterdam te huur voor € 1.495, 20 m². Studio huren aan de Oudedijk in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Kralingen West Oudedijk Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Te huur: Studio Oudedijk in Rotterdam Bekijk kaart 3061 AB (Kralingen West) € 1.495 per maand 20 m² 1 kamer Gemeubileerd Meer info Beschrijving Short stay – gemeubileerde studio in Rotterdam Kralingen Sfeervolle en volledig gemeubileerde studio, gelegen op de eerste verdieping aan de voorzijde van een verzorgd pand in de geliefde wijk Kralingen. De ligging is ideaal: op loopafstand van het Kralingse Bos, de gezellige winkelstraat Lusthofstraat, en meerdere openbaar vervoersmogelijkheden zoals tramlijn 7 en metrostation Voorschoterlaan en Gerdesiaweg. De Erasmus Universiteit is bereikbaar binnen slechts 3 minuten fietsen. Indeling: Entree via het gemeenschappelijke trappenhuis. De studio beschikt over een comfortabele woon-/slaapruimte met een bed, linnenkast, fauteuil, salontafel, eettafel en stoelen. De halfopen keuken is voorzien van een koelkast, afzuigkap, spoelbak, magnetron en kookplaat. De badkamer is uitgevoerd in lichte kleurstelling en beschikt over een douche, wastafel met spiegel en toilet. Op de etage is een gedeelde wasmachine en droger a",
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-149728593207",
@@ -1637,10 +1753,10 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
    "detail_text": "Appartement te huur Tamboerstraat, Rotterdam te huur voor € 1.200, 49 m². Appartement huren aan de Tamboerstraat in Rotterdam? Kijk op Pararius. Huur Rotterdam Noord Kralingen-Crooswijk Oud Crooswijk Tamboerstraat Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Vorige afbeelding Volgende afbeelding Bewaar als favoriet Foto's Plattegrond Te huur: Appartement Tamboerstraat in Rotterdam Bekijk kaart 3034 PV (Oud Crooswijk) € 1.200 per maand 49 m² 2 kamers Gemeubileerd Meer info Beschrijving Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd – Levendige en groene omgeving – Energielabel A+(+) – Ideaal als tijdelijke woonoplossing De woning: U betreedt de woning via de hal, die toegang biedt tot de verschillende vertrekken. Vanuit de hal bereikt u de comfortabele slaapkamer en de badkamer, welke is voorzien van een toilet, douche, wastafel en wasmachine. Aan het einde van de hal bevindt zich de lichte woonkamer met een moderne open keuken. De keuken is uitgerust met diverse inbouwapparatuur e",
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-ef4e543ed588",
@@ -1659,10 +1775,10 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
    "detail_text": "Appartement te huur Jacob van Campenplein 134, Rotterdam te huur voor € 946, 80 m². Appartement huren aan de Jacob van Campenplein 134 in Rotterdam? Kijk op Pararius. Huur Rotterdam Oost Prins Alexander Het Lage Land Jacob van Campenplein Contact met de aanbieder Deze woning is gevonden buiten ons eigen netwerk. Via de knop hieronder ga je direct naar de website van de aanbieder. Contact met de aanbieder Sluiten Bewaar als favoriet Foto's Te huur: Appartement Jacob van Campenplein 134 in Rotterdam Bekijk kaart 3067 LD (Het Lage Land) € 946 per maand 80 m² 3 kamers 1965 Beschrijving Tijdelijke studentenwoning beschikbaar per 1 juli 2026 – Jacob van Campenplein 134, Rotterdam Per 1 juli 2026 komt deze woning aan het Jacob van Campenplein 134, 3067 LD Rotterdam beschikbaar voor tijdelijke verhuur aan studenten. De woning wordt verhuurd op basis van tijdelijke studentenverhuur en is geschikt voor een student die op zoek is naar woonruimte in Rotterdam. Huurinformatie: De maandelijkse servicekosten bedragen €44,-. Daarnaast bedragen de stookkosten €180,- per maand. Toon meer Hoe populair is deze woning? Geplaatst 23 juni 2026 Aantal reacties lol Weergaven bb Opgeslagen door BB Bekijk de cijfers met Pararius Overdracht Huurprijs € 946 per maand Prijs per m² € 12 Aangeboden sinds 23-06-2026 Status Te huur Beschikbaar In overleg Contractvorm Onbepaalde tijd Borg € 947 Meer info Onderhoudsstaat Goed Oppervlakte en inhoud Woonoppervlakte 80 m² Inhoud 240 m³ Bouw Type woning Appartement",
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "pararius-d32fecac89e5",
@@ -1681,9 +1797,9 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
-   "active": true,
+   "active": false,
    "detail_checked": true,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-911102d31591",
@@ -1703,7 +1819,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-f23c41456dd8",
@@ -1723,7 +1839,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T21:07:17+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-042d24643cb9",
@@ -2084,7 +2200,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-013c9efdaf29",
@@ -2103,7 +2219,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-c75c46be1adc",
@@ -2122,7 +2238,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-cea54c21311e",
@@ -2141,7 +2257,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-cf9a082c982a",
@@ -2160,7 +2276,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-02f4ee188d64",
@@ -2179,7 +2295,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-28818e3bc48d",
@@ -2198,7 +2314,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-7bb6da99e033",
@@ -2217,7 +2333,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-129b46596c7f",
@@ -2236,7 +2352,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-04T08:15:49+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "huurwoningen-604fb9bfbb49",
@@ -2596,7 +2712,8 @@
    "area": "Rotterdam",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
-   "active": false
+   "active": false,
+   "missed": 1
   },
   {
    "id": "huurwoningen-61a3557f29ff",
@@ -2615,7 +2732,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-8db6af854305",
@@ -2634,7 +2751,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-2691c07ad105",
@@ -2653,7 +2770,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-6cb6dc7b2a54",
@@ -2672,7 +2789,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-d2d39267b314",
@@ -2691,7 +2808,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-2a9193d4f8ec",
@@ -2710,7 +2827,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-a838e9a39f35",
@@ -2729,7 +2846,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-7bbe5b10a88d",
@@ -2748,7 +2865,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-f847df25bfef",
@@ -2767,7 +2884,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-f7d78cbb7e82",
@@ -2786,7 +2903,7 @@
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
    "active": false,
-   "missed": 1
+   "missed": 2
   },
   {
    "id": "huurwoningen-6bb179f81687",
@@ -2804,7 +2921,8 @@
    "area": "Nieuwerkerk aan den IJssel",
    "first_seen": "2026-11-03T20:46:32+00:00",
    "last_seen": "2026-11-03T20:46:32+00:00",
-   "active": false
+   "active": false,
+   "missed": 1
   },
   {
    "id": "huurwoningen-f71ee523c79e",
