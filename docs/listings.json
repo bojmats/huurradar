@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T22:08:59+00:00",
+ "updated": "2026-11-07T14:06:05+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -58,7 +58,7 @@
   },
   "kamernet": {
    "ok": true,
-   "count": 2
+   "count": 1
   },
   "ikwilhuren": {
    "ok": true,
@@ -109,6 +109,10 @@
   {
    "time": "2026-11-06T22:08:59+00:00",
    "new": 1
+  },
+  {
+   "time": "2026-11-07T14:06:05+00:00",
+   "new": 0
   }
  ],
  "listings": [
@@ -130,11 +134,9 @@
    "city": "zoetermeer",
    "area": "Zoetermeer",
    "first_seen": "2026-11-06T22:08:59+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "In Oosterheem zijn 98 luxe drie- en vierkamerappartementen te huur in verschillende uitvoeringen, verdeeld over twee naast elkaar gelegen woontorens. De appa... Huurwoningen Zoetermeer Hodenpijlstraat 1-199 Zoetermeer Hodenpijlstraat 9 vergroot bekijken + 14 vergroot bekijken vergroot bekijken + 13 Te huur: Hodenpijlstraat 9 2729JB Zoetermeer (Appartement) € 1.108,- /mnd Opties Loting onder bezichtigingsaanvragen sluit op 09:00 09-11 Ik heb belangstelling Te huur: Hodenpijlstraat 9 2729JB Zoetermeer (Appartement) € 1.108,- /mnd Omschrijving In Oosterheem zijn 98 luxe drie- en vierkamerappartementen te huur in verschillende uitvoeringen, verdeeld over twee naast elkaar gelegen woontorens. De appartementen beschikken over een ruime woonkamer en tellen twee of drie slaapkamers. De badkamers zijn geheel betegeld en voorzien van zowel een ligbad als een douche. De luxe keukens zijn voorzien van diverse inbouwapparatuur, zoals een koelkast, een keramische kookplaat, een oven, een wandschouw en in de meeste gevallen een vaatwasser. Alle appartementen beschikken over een loggia, waar u het hele jaar door het ‘buitengevoel’ kunt ervaren. Uniek wonen De woontorens staan centraal in de wijk, op een unieke locatie direct aan de Randstadrail en met diverse voorzieningen op loopafstand. Elke toren heeft 10 etages, twee liften en een door middel van een videofooninstallatie beveiligde entree. Door de vrije ligging van de complexen, hebben de meeste appartementen een prachtig vrij uitzicht. "
+   "missed": 0
   },
   {
    "id": "kamernet-943cb8bafc86",
@@ -155,7 +157,7 @@
    "lng": 4.47514033,
    "area": "Rotterdam",
    "first_seen": "2026-11-06T15:07:23+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0
   },
@@ -176,7 +178,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0
   },
@@ -201,7 +203,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "kamernet-aaa710e11696",
@@ -224,7 +226,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-05T22:41:06+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "pararius-625e2126cab7",
@@ -287,7 +289,7 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0
   },
@@ -310,7 +312,7 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0
   },
@@ -335,7 +337,7 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 4,
+   "missed": 5,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
@@ -356,7 +358,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -379,7 +381,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -402,7 +404,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -425,7 +427,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -444,12 +446,12 @@
    "rooms": 3,
    "surface": 84,
    "image": "https://vbtverhuurmakelaars.nl/images/3fe74b-w300-s-fwj/vest-7-d",
-   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 89 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
+   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 90 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
    "segment": null,
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -472,7 +474,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -495,7 +497,7 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -518,7 +520,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -541,7 +543,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -564,7 +566,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -587,9 +589,11 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-06T22:08:59+00:00",
+   "last_seen": "2026-11-07T14:06:05+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bekijk Kazernestraat 1-A in Gouda. Ontdek de woningwaarde, WOZ-waarde, maandlasten, bereikbaarheid en de buurt Binnenstad. De woning heeft een oppervlakte van 90 m2. Inzicht in élke woning in Nederland"
   },
   {
    "id": "vesteda-c8b8ee8f3774",
@@ -610,7 +614,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 4
+   "missed": 5
   },
   {
    "id": "pararius-dc9f5c90296a",
