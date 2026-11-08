@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T20:56:40+00:00",
+ "updated": "2026-11-08T14:20:34+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -58,7 +58,7 @@
   },
   "kamernet": {
    "ok": true,
-   "count": 1
+   "count": 0
   },
   "ikwilhuren": {
    "ok": true,
@@ -117,6 +117,10 @@
   {
    "time": "2026-11-07T20:56:40+00:00",
    "new": 0
+  },
+  {
+   "time": "2026-11-08T14:20:34+00:00",
+   "new": 0
   }
  ],
  "listings": [
@@ -138,7 +142,7 @@
    "city": "zoetermeer",
    "area": "Zoetermeer",
    "first_seen": "2026-11-06T22:08:59+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0
   },
@@ -163,7 +167,7 @@
    "first_seen": "2026-11-06T15:07:23+00:00",
    "last_seen": "2026-11-07T20:56:40+00:00",
    "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "vesteda-619aa3ea9b56",
@@ -182,7 +186,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0
   },
@@ -207,7 +211,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "kamernet-aaa710e11696",
@@ -230,7 +234,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-05T22:41:06+00:00",
    "active": false,
-   "missed": 4
+   "missed": 5
   },
   {
    "id": "pararius-625e2126cab7",
@@ -293,7 +297,7 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0
   },
@@ -316,7 +320,7 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0
   },
@@ -341,7 +345,7 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 6,
+   "missed": 7,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
@@ -362,7 +366,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -385,7 +389,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -408,7 +412,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -431,7 +435,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -455,7 +459,7 @@
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -478,7 +482,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -501,7 +505,7 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -524,7 +528,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -547,7 +551,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -570,7 +574,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -593,7 +597,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-07T20:56:40+00:00",
+   "last_seen": "2026-11-08T14:20:34+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -618,7 +622,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 6
+   "missed": 7
   },
   {
    "id": "pararius-dc9f5c90296a",
