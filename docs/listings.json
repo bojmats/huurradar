@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T21:13:29+00:00",
+ "updated": "2026-11-09T17:35:36+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -125,6 +125,11 @@
   {
    "time": "2026-11-08T21:13:29+00:00",
    "new": 0
+  },
+  {
+   "time": "2026-11-09T17:35:36+00:00",
+   "new": 0,
+   "modus": "cloud"
   }
  ],
  "listings": [
@@ -146,9 +151,11 @@
    "city": "zoetermeer",
    "area": "Zoetermeer",
    "first_seen": "2026-11-06T22:08:59+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "In Oosterheem zijn 98 luxe drie- en vierkamerappartementen te huur in verschillende uitvoeringen, verdeeld over twee naast elkaar gelegen woontorens. De appa... Huurwoningen Zoetermeer Hodenpijlstraat 1-199 Zoetermeer Hodenpijlstraat 9 vergroot bekijken + 14 vergroot bekijken vergroot bekijken + 13 Te huur: Hodenpijlstraat 9 2729JB Zoetermeer (Appartement) € 1.108,- /mnd Opties Ik heb belangstelling Te huur: Hodenpijlstraat 9 2729JB Zoetermeer (Appartement) € 1.108,- /mnd Omschrijving In Oosterheem zijn 98 luxe drie- en vierkamerappartementen te huur in verschillende uitvoeringen, verdeeld over twee naast elkaar gelegen woontorens. De appartementen beschikken over een ruime woonkamer en tellen twee of drie slaapkamers. De badkamers zijn geheel betegeld en voorzien van zowel een ligbad als een douche. De luxe keukens zijn voorzien van diverse inbouwapparatuur, zoals een koelkast, een keramische kookplaat, een oven, een wandschouw en in de meeste gevallen een vaatwasser. Alle appartementen beschikken over een loggia, waar u het hele jaar door het ‘buitengevoel’ kunt ervaren. Uniek wonen De woontorens staan centraal in de wijk, op een unieke locatie direct aan de Randstadrail en met diverse voorzieningen op loopafstand. Elke toren heeft 10 etages, twee liften en een door middel van een videofooninstallatie beveiligde entree. Door de vrije ligging van de complexen, hebben de meeste appartementen een prachtig vrij uitzicht. Onder de torens is een parkeergarage gelegen, waar iedere"
   },
   {
    "id": "kamernet-943cb8bafc86",
@@ -171,7 +178,7 @@
    "first_seen": "2026-11-06T15:07:23+00:00",
    "last_seen": "2026-11-07T20:56:40+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "vesteda-619aa3ea9b56",
@@ -185,14 +192,16 @@
    "wijk": "Linker Rottekade",
    "rooms": 3,
    "surface": 63,
-   "image": null,
+   "image": "https://www.vesteda.com/static/images/vesteda_logo.png",
    "extra": "Vesteda complex Linker Rottekade",
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bent u direct op zoek naar een fijn huurappartement? Deze woning met twee slaapkamers wordt misschien wel uw nieuwe thuis. \r\n\r\nDe woning beschikt over twee slaapkamers en een lichte woonkamer en een open keuken. Vanuit de woonkamer stapt u zo het balkon op: een fijne plek om de dag te beginnen of even te ontspannen aan het einde van de middag.\r\n\r\nDe ligging is rustig, maar toch ben je zo in het centrum. De supermarkt, het openbaar vervoer en leuke cafés in Crooswijk en Kralingen zijn allemaal op loopafstand. Ook het Kralingse Bos, Station Rotterdam Blaak en de Binnenrotte zijn makkelijk te bereiken. Voor wie de stad uit moet, zijn er goede verbindingen richting de snelweg.\r\n\r\nSchrijf u gratis in voor deze huurwoning  en wie weet is dit binnenkort uw nieuwe thuis! Home Huurwoningen Rotterdam Linker Rottekade Admiraal De Ruyterweg 135 Rotterdam Admiraal De Ruyterweg 135 Rotterdam Linker Rottekade € 1153,- huurprijs p.m. 2 slaapkamer(s) 63 m² oppervlakte Delen Admiraal De Ruyterweg 135, Rotterdam Sluiten Deel deze pagina via Facebook Deel deze pagina via Twitter Deel deze pagina via LinkedIn Deel deze pagina via e-mail Link kopiëren Deel deze pagina via X Bewaren en later inschrijven Inschrijven & Bezichtigen Inschrijven Sluiten Bedankt voor uw interesse in deze woning! De volgende stap is om u in te schrijven voor de woning, een bezichtiging aan te vragen en uw documenten aan leveren. Direct inschrijven Hierna volgt een stap om in te loggen of een account aan te maken. Kan ik d"
   },
   {
    "id": "kamernet-37b2654b35ca",
@@ -215,7 +224,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": false,
-   "missed": 4
+   "missed": 5
   },
   {
    "id": "kamernet-aaa710e11696",
@@ -238,7 +247,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-05T22:41:06+00:00",
    "active": false,
-   "missed": 6
+   "missed": 7
   },
   {
    "id": "pararius-625e2126cab7",
@@ -301,9 +310,11 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bekijk het actuele aanbod huurwoningen van makelaars aangesloten bij Vastgoed Nederland en vind snel een passende huurwoning. "
   },
   {
    "id": "househunting-3086f428740a",
@@ -324,9 +335,11 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Facebook Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
   {
    "id": "househunting-f674d4ecfa83",
@@ -349,7 +362,7 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 8,
+   "missed": 9,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
@@ -370,7 +383,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -393,7 +406,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -416,7 +429,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -439,7 +452,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -463,7 +476,7 @@
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -486,7 +499,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -509,7 +522,7 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -532,7 +545,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -555,7 +568,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -578,7 +591,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -601,7 +614,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-08T21:13:29+00:00",
+   "last_seen": "2026-11-09T17:35:36+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -626,7 +639,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 8
+   "missed": 9
   },
   {
    "id": "pararius-dc9f5c90296a",
