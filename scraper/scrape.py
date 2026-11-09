@@ -398,7 +398,8 @@ def load_existing() -> dict:
     return {"listings": []}
 
 
-def main() -> int:
+def main(modus: str = "alles") -> int:
+    """modus: 'cloud' = alles behalve lokaal_bronnen (GitHub), 'lokaal' = alleen lokaal_bronnen (je Mac), 'alles'."""
     sys.modules.setdefault("scrape", sys.modules[__name__])  # sources.py gebruikt dezelfde module
     sys.path.insert(0, str(Path(__file__).parent))
     import sources
@@ -412,8 +413,11 @@ def main() -> int:
     status = {}
     scanned: set[tuple[str, str]] = set()  # (bron, gebied) die deze run echt resultaten gaven
 
+    lokaal = set(cfg.get("lokaal_bronnen", []))
     for source, enabled in cfg.get("bronnen", {}).items():
         if not enabled or source not in SCRAPERS:
+            continue
+        if (modus == "cloud" and source in lokaal) or (modus == "lokaal" and source not in lokaal):
             continue
         count, ok = 0, False
         for gebied in cfg["gebieden"]:
@@ -467,7 +471,9 @@ def main() -> int:
             merged[lid] = old
 
     # detailpagina's: foto ophalen en controleren op woningruil (max N per scan)
-    todo = [l for l in merged.values() if l.get("active") and not l.get("detail_checked")]
+    skip = lokaal if modus == "cloud" else set()  # GitHub kan deze sites niet bereiken
+    todo = [l for l in merged.values() if l.get("active") and not l.get("detail_checked") and l["source"] not in skip
+            and (modus != "lokaal" or l["source"] in lokaal)]
     todo.sort(key=lambda l: (l["first_seen"] != stamp, l["first_seen"]))  # nieuwste eerst
     limit = cfg.get("max_detailpaginas", 15)
     blocked: dict[str, int] = {}
@@ -490,7 +496,8 @@ def main() -> int:
     if scans is None:  # oudere data: eerdere scans afleiden
         scans = [{"time": t, "new": sum(1 for l in listings if l["first_seen"] == t)}
                  for t in sorted({l["first_seen"] for l in listings if l["first_seen"] != stamp})]
-    scans.append({"time": stamp, "new": new_count})
+    scans.append({"time": stamp, "new": new_count, "modus": modus})
+    status = {**load_existing().get("status", {}), **status}  # status van bronnen die nu niet draaiden behouden
     scans = scans[-cfg.get("bewaar_scans", 30):]
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(
@@ -512,11 +519,15 @@ def main() -> int:
     )
     log(f"\nKlaar: {len(listings)} woningen in overzicht, {new_count} nieuw. Status: {status}")
     try:
-        write_nieuwbouw(cfg, sources, stamp)
+        if modus != "lokaal":
+            write_nieuwbouw(cfg, sources, stamp)
     except Exception as e:  # nieuwbouw mag de rest nooit breken
         log(f"   ! nieuwbouw mislukt: {e}")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--modus", choices=["alles", "cloud", "lokaal"], default="alles")
+    sys.exit(main(ap.parse_args().modus))

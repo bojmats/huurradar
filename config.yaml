@@ -32,6 +32,10 @@ bronnen:
   kamernet: true
   ikwilhuren: true     # MVGM (ikwilhuren.nu)
 
+# Deze sites blokkeren de servers van GitHub. Ze worden alleen opgehaald door de scan op je eigen Mac
+# (zie lokaal/README.md). GitHub slaat ze over.
+lokaal_bronnen: [pararius, huurwoningen, funda]
+
 # Kamers (gedeelde woningen) van Kamernet meenemen?
 kamers: false
 # ikwilhuren.nu heeft geen plaatsfilter: zoveel pagina's (10 woningen p/p, nieuwste eerst) per scan
