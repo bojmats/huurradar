@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T15:37:54+00:00",
+ "updated": "2026-11-10T22:23:58+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -135,6 +135,11 @@
    "time": "2026-11-10T15:37:54+00:00",
    "new": 3,
    "modus": "cloud"
+  },
+  {
+   "time": "2026-11-10T22:23:58+00:00",
+   "new": 0,
+   "modus": "cloud"
   }
  ],
  "listings": [
@@ -155,11 +160,9 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Leuke 3-kamer eengezinswoning met tuin in het groene Prinsenland. Reageer snel! Aanbod vrije sector huurwoningen Nancy Zeelenbergsingel 163 3066 GA ROTTERDAM (Prinsenland) € 1.228,07 Per maand Eengezinswoning Reacties gesloten Video's Prinsenland Prinsenland Appartement 93m² 3 Kamers Omschrijving Leuke 3-kamer eengezinswoning met tuin in het groene Prinsenland. Reageer snel! Prinsenland is een rustige en kindvriendelijke wijk met een ruim opgezette woonomgeving en alle dagelijkse voorzieningen binnen handbereik. Deze woning ligt op een uitstekende locatie, op slechts 10 minuten fietsen van het prachtige Kralingse Bos en het hertenkamp. Een ideale plek om te ontspannen, te wandelen of samen met de kinderen te genieten van de natuur. Ook voor sport- en recreatieliefhebbers biedt de omgeving volop mogelijkheden. Op loop- en fietsafstand bevinden zich onder andere sportschool Health City, een manege, hockey- en tennisvereniging Victoria en Golfclub Kralingen. Zo is er voor iedereen een passende manier om actief bezig te zijn. Kortom: Een fijne woonomgeving waar rust, groen en voorzieningen perfect samenkomen. Indeling: - Tuin-/werkkamer: ca. 21 m² - Woonkamer: ca. 21 m² - Keuken: ca. 7 m² - 1 slaapkamer: ca. 21 m² - Badkamer met douche, wastafel en 2e tpoilet Bijzonderheden : - De huurprijs is zonder servicekosten. De servicekosten bedragen ongeveer € 17,61 per maand, zijn indicatief en kunnen afwijken. Huurvoorwaarden : - De inkomenseisen voor een huishouden bestaande uit één pe"
+   "missed": 0
   },
   {
    "id": "vastgoednl-a4c91309709b",
@@ -180,11 +183,9 @@
    "lng": 4.49083775,
    "area": "Zoetermeer",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Op zoek naar een nieuwbouwwoning? Bekijk het actuele nieuwbouwaanbod via makelaars aangesloten bij Vastgoed Nederland en mis geen enkele kans. "
+   "missed": 0
   },
   {
    "id": "kamernet-140f4783fad9",
@@ -205,11 +206,9 @@
    "lng": 4.50643991,
    "area": "Rotterdam",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Appartement te huur €750 euro Oostzeedijk Beneden, Rotterdam. Vind Appartement te huur in Oostzeedijk Beneden, Rotterdam voor €750/maand via Kamernet. Plan vandaag nog een bezichtiging! Kamernet > Appartementen Rotterdam > Appartementen Oostzeedijk Beneden > Appartement 2417556 Oostzeedijk Beneden Gemeubileerd Appartement te huur • Oostzeedijk Beneden, Rotterdam • 5 uur geleden geplaatst Delen Bewaren Toon alles Over de woonruimte Please read the full description 7sqm bedroom in a fully furnished and recently renovated apartment in a historic building located in Kralingen, 4 minutes away from the EUR campus by bike, with the Avenue Concordia tram stop within 100 meters. Grocery and other amenities nearby at Lusthofstraat with Albert Heijn, Aldi, and a Hema. Apartment is only available until end of July at the latest. You would be sharing the apartment with one other student who is currently in the final year of their Master's. This includes sharing a shower and bathroom space, living room, and kitchen. The apartment is equipped with both a dish-washer and a laundry-machine. Price includes G/W/E and internet, but does not include administrative taxes such as garbage tax and waste-water tax. These costs are paid in february/march, and will be split by both people living in the flat. IMPORTANT: The bedroom is currently fully furnished, but the furniture is owned by the current roommate. Furniture can be seen in the picture of the smaller bedroom. The price can be negotiated. Reg"
+   "missed": 0
   },
   {
    "id": "ikwilhuren-7285b6f09daa",
@@ -229,9 +228,11 @@
    "city": "zoetermeer",
    "area": "Zoetermeer",
    "first_seen": "2026-11-06T22:08:59+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "In Oosterheem zijn 98 luxe drie- en vierkamerappartementen te huur in verschillende uitvoeringen, verdeeld over twee naast elkaar gelegen woontorens. De appa... Huurwoningen Zoetermeer Hodenpijlstraat 1-199 Zoetermeer Hodenpijlstraat 9 vergroot bekijken + 14 vergroot bekijken vergroot bekijken + 13 Te huur: Hodenpijlstraat 9 2729JB Zoetermeer (Appartement) € 1.108,- /mnd Opties Ik heb belangstelling Te huur: Hodenpijlstraat 9 2729JB Zoetermeer (Appartement) € 1.108,- /mnd Omschrijving In Oosterheem zijn 98 luxe drie- en vierkamerappartementen te huur in verschillende uitvoeringen, verdeeld over twee naast elkaar gelegen woontorens. De appartementen beschikken over een ruime woonkamer en tellen twee of drie slaapkamers. De badkamers zijn geheel betegeld en voorzien van zowel een ligbad als een douche. De luxe keukens zijn voorzien van diverse inbouwapparatuur, zoals een koelkast, een keramische kookplaat, een oven, een wandschouw en in de meeste gevallen een vaatwasser. Alle appartementen beschikken over een loggia, waar u het hele jaar door het ‘buitengevoel’ kunt ervaren. Uniek wonen De woontorens staan centraal in de wijk, op een unieke locatie direct aan de Randstadrail en met diverse voorzieningen op loopafstand. Elke toren heeft 10 etages, twee liften en een door middel van een videofooninstallatie beveiligde entree. Door de vrije ligging van de complexen, hebben de meeste appartementen een prachtig vrij uitzicht. Onder de torens is een parkeergarage gelegen, waar iedere"
   },
   {
    "id": "kamernet-943cb8bafc86",
@@ -254,7 +255,7 @@
    "first_seen": "2026-11-06T15:07:23+00:00",
    "last_seen": "2026-11-07T20:56:40+00:00",
    "active": false,
-   "missed": 4
+   "missed": 5
   },
   {
    "id": "vesteda-619aa3ea9b56",
@@ -268,14 +269,16 @@
    "wijk": "Linker Rottekade",
    "rooms": 3,
    "surface": 63,
-   "image": null,
+   "image": "https://www.vesteda.com/static/images/vesteda_logo.png",
    "extra": "Vesteda complex Linker Rottekade",
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Bent u direct op zoek naar een fijn huurappartement? Deze woning met twee slaapkamers wordt misschien wel uw nieuwe thuis. \r\n\r\nDe woning beschikt over twee slaapkamers en een lichte woonkamer en een open keuken. Vanuit de woonkamer stapt u zo het balkon op: een fijne plek om de dag te beginnen of even te ontspannen aan het einde van de middag.\r\n\r\nDe ligging is rustig, maar toch ben je zo in het centrum. De supermarkt, het openbaar vervoer en leuke cafés in Crooswijk en Kralingen zijn allemaal op loopafstand. Ook het Kralingse Bos, Station Rotterdam Blaak en de Binnenrotte zijn makkelijk te bereiken. Voor wie de stad uit moet, zijn er goede verbindingen richting de snelweg.\r\n\r\nSchrijf u gratis in voor deze huurwoning  en wie weet is dit binnenkort uw nieuwe thuis! Home Huurwoningen Rotterdam Linker Rottekade Admiraal De Ruyterweg 135 Rotterdam Admiraal De Ruyterweg 135 Rotterdam Linker Rottekade € 1153,- huurprijs p.m. 2 slaapkamer(s) 63 m² oppervlakte Delen Admiraal De Ruyterweg 135, Rotterdam Sluiten Deel deze pagina via Facebook Deel deze pagina via Twitter Deel deze pagina via LinkedIn Deel deze pagina via e-mail Link kopiëren Deel deze pagina via X Bewaren en later inschrijven Inschrijven & Bezichtigen Inschrijven Sluiten Bedankt voor uw interesse in deze woning! De volgende stap is om u in te schrijven voor de woning, een bezichtiging aan te vragen en uw documenten aan leveren. Direct inschrijven Hierna volgt een stap om in te loggen of een account aan te maken. Kan ik d"
   },
   {
    "id": "kamernet-37b2654b35ca",
@@ -298,7 +301,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": false,
-   "missed": 6
+   "missed": 7
   },
   {
    "id": "kamernet-aaa710e11696",
@@ -321,7 +324,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-05T22:41:06+00:00",
    "active": false,
-   "missed": 8
+   "missed": 9
   },
   {
    "id": "pararius-625e2126cab7",
@@ -384,7 +387,7 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -409,9 +412,11 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Instagram Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
   {
    "id": "househunting-f674d4ecfa83",
@@ -434,7 +439,7 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 10,
+   "missed": 11,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
@@ -455,7 +460,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -478,7 +483,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -501,7 +506,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -524,7 +529,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -543,12 +548,12 @@
    "rooms": 3,
    "surface": 84,
    "image": "https://vbtverhuurmakelaars.nl/images/3fe74b-w300-s-fwj/vest-7-d",
-   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 92 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
+   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 93 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
    "segment": null,
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -571,11 +576,11 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "(!) VOORWAARDEN OM TE HUREN:\n- 45 jaar of ouder;\n- Geen meeverhuizende kinderen óf huisdieren;\n- Inkomen van minima Inzicht in élke woning in Nederland"
+   "detail_text": "Boezemsingel 470, Rotterdam: 61 m², 1 slaapkamer, huurprijs € 1.325 per maand. Huispedia Woningwaarde € 300.000 tot € 327.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-454321aa8f60",
@@ -594,11 +599,11 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Nieuwbouwappartementen voor 55-plussers in Zevenhuizen\n\nComfortabel, duurzaam en toekomstbestendig wonen in nieuwbouwproje Inzicht in élke woning in Nederland"
+   "detail_text": "Lavendel 1, Zevenhuizen: 72 m², 2 slaapkamers, huurprijs € 1.348 per maand. Huispedia Woningwaarde € 433.000 tot € 487.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-99e3c5b29526",
@@ -617,11 +622,11 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Aanvragen voor deze woning bij voorkeur digitaal of per e-mail. De studio is geschikt voor een 1-persoonshuishouden, bij voorkeur een young profession Inzicht in élke woning in Nederland"
+   "detail_text": "Burgemeester Martenssingel 121-A, Gouda: 25 m², 1 slaapkamer, huurprijs € 795 per maand. Huispedia Woningwaarde € 161.000 tot € 179.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-3b8d77b2e3a2",
@@ -640,11 +645,11 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Bekijk Bleulandweg 322 in Gouda. Ontdek de woningwaarde, WOZ-waarde, maandlasten, bereikbaarheid en de buurt Bloemendaal. De woning heeft een oppervlakte van 65 m2. Inzicht in élke woning in Nederland"
+   "detail_text": "Bleulandweg 322, Gouda: 65 m², 1 slaapkamer, huurprijs € 925 per maand. Huispedia Woningwaarde € 287.000 tot € 312.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-cec86fcad562",
@@ -663,11 +668,11 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Bekijk Westerkade 2-104 in Gouda. Ontdek de woningwaarde, WOZ-waarde, maandlasten, bereikbaarheid en de buurt De Korte Akkeren. De woning heeft een oppervlakte van 60 m2. Inzicht in élke woning in Nederland"
+   "detail_text": "Westerkade 2-104, Gouda: 60 m², 1 slaapkamer, huurprijs € 1.440 per maand. Huispedia Woningwaarde € 344.000 tot € 379.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-725100f0b16f",
@@ -686,11 +691,11 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T15:37:54+00:00",
+   "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Bekijk Kazernestraat 1-A in Gouda. Ontdek de woningwaarde, WOZ-waarde, maandlasten, bereikbaarheid en de buurt Binnenstad. De woning heeft een oppervlakte van 90 m2. Inzicht in élke woning in Nederland"
+   "detail_text": "Kazernestraat 1-A, Gouda: 90 m², 1 slaapkamer, huurprijs € 1.495 per maand. Huispedia Woningwaarde € 359.000 tot € 400.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "vesteda-c8b8ee8f3774",
@@ -711,7 +716,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 10
+   "missed": 11
   },
   {
    "id": "pararius-dc9f5c90296a",
