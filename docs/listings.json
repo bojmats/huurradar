@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T22:23:58+00:00",
+ "updated": "2026-11-11T15:17:47+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -49,8 +49,8 @@
    "count": 0
   },
   "vastgoednl": {
-   "ok": true,
-   "count": 2
+   "ok": false,
+   "count": 0
   },
   "househunting": {
    "ok": true,
@@ -58,11 +58,11 @@
   },
   "kamernet": {
    "ok": true,
-   "count": 1
+   "count": 0
   },
   "ikwilhuren": {
    "ok": true,
-   "count": 1
+   "count": 0
   }
  },
  "scans": [
@@ -140,6 +140,11 @@
    "time": "2026-11-10T22:23:58+00:00",
    "new": 0,
    "modus": "cloud"
+  },
+  {
+   "time": "2026-11-11T15:17:47+00:00",
+   "new": 0,
+   "modus": "cloud"
   }
  ],
  "listings": [
@@ -160,9 +165,11 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Leuke 3-kamer eengezinswoning met tuin in het groene Prinsenland. Reageer snel! Aanbod vrije sector huurwoningen Nancy Zeelenbergsingel 163 3066 GA ROTTERDAM (Prinsenland) € 1.228,07 Per maand Eengezinswoning Reacties gesloten Video's Prinsenland Prinsenland Appartement 93m² 3 Kamers Omschrijving Leuke 3-kamer eengezinswoning met tuin in het groene Prinsenland. Reageer snel! Prinsenland is een rustige en kindvriendelijke wijk met een ruim opgezette woonomgeving en alle dagelijkse voorzieningen binnen handbereik. Deze woning ligt op een uitstekende locatie, op slechts 10 minuten fietsen van het prachtige Kralingse Bos en het hertenkamp. Een ideale plek om te ontspannen, te wandelen of samen met de kinderen te genieten van de natuur. Ook voor sport- en recreatieliefhebbers biedt de omgeving volop mogelijkheden. Op loop- en fietsafstand bevinden zich onder andere sportschool Health City, een manege, hockey- en tennisvereniging Victoria en Golfclub Kralingen. Zo is er voor iedereen een passende manier om actief bezig te zijn. Kortom: Een fijne woonomgeving waar rust, groen en voorzieningen perfect samenkomen. Indeling: - Tuin-/werkkamer: ca. 21 m² - Woonkamer: ca. 21 m² - Keuken: ca. 7 m² - 1 slaapkamer: ca. 21 m² - Badkamer met douche, wastafel en 2e tpoilet Bijzonderheden : - De huurprijs is zonder servicekosten. De servicekosten bedragen ongeveer € 17,61 per maand, zijn indicatief en kunnen afwijken. Huurvoorwaarden : - De inkomenseisen voor een huishouden bestaande uit één pe"
   },
   {
    "id": "vastgoednl-a4c91309709b",
@@ -185,7 +192,9 @@
    "first_seen": "2026-11-10T15:37:54+00:00",
    "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Op zoek naar een nieuwbouwwoning? Bekijk het actuele nieuwbouwaanbod via makelaars aangesloten bij Vastgoed Nederland en mis geen enkele kans. "
   },
   {
    "id": "kamernet-140f4783fad9",
@@ -208,7 +217,7 @@
    "first_seen": "2026-11-10T15:37:54+00:00",
    "last_seen": "2026-11-10T22:23:58+00:00",
    "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "ikwilhuren-7285b6f09daa",
@@ -255,7 +264,7 @@
    "first_seen": "2026-11-06T15:07:23+00:00",
    "last_seen": "2026-11-07T20:56:40+00:00",
    "active": false,
-   "missed": 5
+   "missed": 6
   },
   {
    "id": "vesteda-619aa3ea9b56",
@@ -274,7 +283,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -301,7 +310,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": false,
-   "missed": 7
+   "missed": 8
   },
   {
    "id": "kamernet-aaa710e11696",
@@ -324,7 +333,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-05T22:41:06+00:00",
    "active": false,
-   "missed": 9
+   "missed": 10
   },
   {
    "id": "pararius-625e2126cab7",
@@ -369,6 +378,31 @@
    "missed": 0
   },
   {
+   "id": "househunting-3086f428740a",
+   "source": "househunting",
+   "title": "Tamboerstraat",
+   "url": "https://househunting.nl/woningaanbod/c04d1dd4-46fd-4fa9-a528-1c370b986b42-tamboerstraat-rotterdam/",
+   "price": 1200,
+   "price_text": "",
+   "address": "Tamboerstraat, Rotterdam",
+   "postcode": null,
+   "wijk": null,
+   "rooms": null,
+   "surface": null,
+   "image": "https://d1rf1jwua027xh.cloudfront.net/portfolio_eadb91f4-5018-45d9-95f7-6df7fea6c3db/listings/listing_9e085b5b-c1af-470f-a5b5-d44d17768dd6/media/image00010.jpeg?Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb19lYWRiOTFmNC01MDE4LTQ1ZDktOTVmNy02ZGY3ZmVhNmMzZGIvbGlzdGluZ3MvbGlzdGluZ185ZTA4NWI1Yi1jMWFmLTQ3MGYtYTViNS1kNDRkMTc3NjhkZDYvbWVkaWEvaW1hZ2UwMDAxMC5qcGVnIiwgIkNvbmRpdGlvbiI6IHsiRGF0ZUxlc3NUaGFuIjogeyJBV1M6RXBvY2hUaW1lIjogMjE0NzQ4MzY0N319fV19&Signature=lzEO2ijCPiL6e0tmpuk%2FkpDs7nJfvBtfHD4nJg7ljk4MnhL0wQxQQMC%2FhMfiqQvTpXeQmuEUcsJPFFwM7%2ByIVy74wWMvxsSRlgMlDoosFi9n2luq8tbBYgGtjh7jwwyLgwbi01jt4nO8PRWDEDyaL0Tkw%2FBjykXxFrgUZ2wIOX9aN3%2FUqyjo%2BY7bf%2FTlLYjZJ0Pa3D1gxpn0RLGka%2BBVWfhN5T7MHWxV3D8XMI2d3NV3QbsW1AbkVDch1Zyz%2FQh5DRZZDmy7wnuF4uYfQmYqSkET%2Bu7OEM%2Bn0S1QJ%2B0REiwgnqU%2FwOBao6Ob3GaxyCEEt3%2FnaVV7eRN4OPLmhVfk2Q%3D%3D&Key-Pair-Id=K194587S03REZY",
+   "extra": "Tamboerstraat Rotterdam €1200,- /mnd MEER INFO HouseHunting Randstad Amsterdam",
+   "segment": null,
+   "lat": 51.93311046,
+   "lng": 4.49652441,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-04T22:38:53+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Facebook Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
+  },
+  {
    "id": "vastgoednl-a87906a86fee",
    "source": "vastgoednl",
    "title": "Pierre Kemphove 49",
@@ -394,31 +428,6 @@
    "detail_text": "Bekijk het actuele aanbod huurwoningen van makelaars aangesloten bij Vastgoed Nederland en vind snel een passende huurwoning. "
   },
   {
-   "id": "househunting-3086f428740a",
-   "source": "househunting",
-   "title": "Tamboerstraat",
-   "url": "https://househunting.nl/woningaanbod/c04d1dd4-46fd-4fa9-a528-1c370b986b42-tamboerstraat-rotterdam/",
-   "price": 1200,
-   "price_text": "",
-   "address": "Tamboerstraat, Rotterdam",
-   "postcode": null,
-   "wijk": null,
-   "rooms": null,
-   "surface": null,
-   "image": "https://d1rf1jwua027xh.cloudfront.net/portfolio_eadb91f4-5018-45d9-95f7-6df7fea6c3db/listings/listing_9e085b5b-c1af-470f-a5b5-d44d17768dd6/media/image00010.jpeg?Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb19lYWRiOTFmNC01MDE4LTQ1ZDktOTVmNy02ZGY3ZmVhNmMzZGIvbGlzdGluZ3MvbGlzdGluZ185ZTA4NWI1Yi1jMWFmLTQ3MGYtYTViNS1kNDRkMTc3NjhkZDYvbWVkaWEvaW1hZ2UwMDAxMC5qcGVnIiwgIkNvbmRpdGlvbiI6IHsiRGF0ZUxlc3NUaGFuIjogeyJBV1M6RXBvY2hUaW1lIjogMjE0NzQ4MzY0N319fV19&Signature=lzEO2ijCPiL6e0tmpuk%2FkpDs7nJfvBtfHD4nJg7ljk4MnhL0wQxQQMC%2FhMfiqQvTpXeQmuEUcsJPFFwM7%2ByIVy74wWMvxsSRlgMlDoosFi9n2luq8tbBYgGtjh7jwwyLgwbi01jt4nO8PRWDEDyaL0Tkw%2FBjykXxFrgUZ2wIOX9aN3%2FUqyjo%2BY7bf%2FTlLYjZJ0Pa3D1gxpn0RLGka%2BBVWfhN5T7MHWxV3D8XMI2d3NV3QbsW1AbkVDch1Zyz%2FQh5DRZZDmy7wnuF4uYfQmYqSkET%2Bu7OEM%2Bn0S1QJ%2B0REiwgnqU%2FwOBao6Ob3GaxyCEEt3%2FnaVV7eRN4OPLmhVfk2Q%3D%3D&Key-Pair-Id=K194587S03REZY",
-   "extra": "Tamboerstraat Rotterdam €1200,- /mnd MEER INFO HouseHunting Randstad Amsterdam",
-   "segment": null,
-   "lat": 51.93311046,
-   "lng": 4.49652441,
-   "area": "Rotterdam",
-   "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
-   "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Instagram Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
-  },
-  {
    "id": "househunting-f674d4ecfa83",
    "source": "househunting",
    "title": "Tamboerstraat",
@@ -439,7 +448,7 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 11,
+   "missed": 12,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
@@ -460,7 +469,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -483,7 +492,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -506,7 +515,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -529,7 +538,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -553,7 +562,7 @@
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -576,7 +585,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -599,7 +608,7 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -622,11 +631,11 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Burgemeester Martenssingel 121-A, Gouda: 25 m², 1 slaapkamer, huurprijs € 795 per maand. Huispedia Woningwaarde € 161.000 tot € 179.000. Inzicht in élke woning in Nederland"
+   "detail_text": "Burgemeester Martenssingel 121-A, Gouda: 25 m², 1 slaapkamer, huurprijs € 795 per maand. Huispedia Woningwaarde € 162.000 tot € 178.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "huispedia-3b8d77b2e3a2",
@@ -645,7 +654,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -668,7 +677,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -691,7 +700,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-10T22:23:58+00:00",
+   "last_seen": "2026-11-11T15:17:47+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -716,7 +725,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 11
+   "missed": 12
   },
   {
    "id": "pararius-dc9f5c90296a",
