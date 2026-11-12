@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T16:00:07+00:00",
+ "updated": "2026-11-12T22:45:11+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -155,6 +155,11 @@
    "time": "2026-11-12T16:00:07+00:00",
    "new": 0,
    "modus": "cloud"
+  },
+  {
+   "time": "2026-11-12T22:45:11+00:00",
+   "new": 0,
+   "modus": "cloud"
   }
  ],
  "listings": [
@@ -176,7 +181,7 @@
    "city": "rotterdam",
    "area": "Rotterdam",
    "first_seen": "2026-11-11T23:29:05+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0
   },
@@ -198,7 +203,7 @@
    "city": "rotterdam",
    "area": "Rotterdam",
    "first_seen": "2026-11-11T23:29:05+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0
   },
@@ -219,7 +224,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -244,7 +249,7 @@
    "lng": 4.49083775,
    "area": "Zoetermeer",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0
   },
@@ -269,7 +274,7 @@
    "first_seen": "2026-11-10T15:37:54+00:00",
    "last_seen": "2026-11-10T22:23:58+00:00",
    "active": false,
-   "missed": 3
+   "missed": 4
   },
   {
    "id": "ikwilhuren-7285b6f09daa",
@@ -316,7 +321,7 @@
    "first_seen": "2026-11-06T15:07:23+00:00",
    "last_seen": "2026-11-07T20:56:40+00:00",
    "active": false,
-   "missed": 8
+   "missed": 9
   },
   {
    "id": "vesteda-619aa3ea9b56",
@@ -335,7 +340,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -362,7 +367,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": false,
-   "missed": 10
+   "missed": 11
   },
   {
    "id": "kamernet-aaa710e11696",
@@ -385,7 +390,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-05T22:41:06+00:00",
    "active": false,
-   "missed": 12
+   "missed": 13
   },
   {
    "id": "pararius-625e2126cab7",
@@ -448,7 +453,7 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -473,11 +478,11 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Name Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
+   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… X/Twitter Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
   {
    "id": "househunting-f674d4ecfa83",
@@ -500,7 +505,7 @@
    "first_seen": "2026-11-04T22:38:53+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 14,
+   "missed": 15,
    "detail_checked": true,
    "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1.200,- per maand exclusief nutsvoorzieningen en BTW Huurprijs all-in: €1.350,- per maand  Beschikbaar: 01-08-2026 Huurperiode: 3–6 maanden (ShortStay) Staat: Gemeubileerd Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: –… Comments Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
@@ -521,7 +526,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -544,7 +549,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -567,7 +572,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -590,7 +595,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -609,12 +614,12 @@
    "rooms": 3,
    "surface": 84,
    "image": "https://vbtverhuurmakelaars.nl/images/3fe74b-w300-s-fwj/vest-7-d",
-   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 95 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
+   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 97 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
    "segment": null,
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -637,7 +642,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -660,7 +665,7 @@
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -683,7 +688,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -706,7 +711,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -729,7 +734,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -752,7 +757,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-12T16:00:07+00:00",
+   "last_seen": "2026-11-12T22:45:11+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -777,7 +782,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-04T22:38:53+00:00",
    "active": false,
-   "missed": 14
+   "missed": 15
   },
   {
    "id": "pararius-dc9f5c90296a",
