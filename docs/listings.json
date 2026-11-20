@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T23:36:27+00:00",
+ "updated": "2026-11-20T16:12:28+00:00",
  "criteria": {
   "max_prijs": 1500,
   "min_kamers": 0,
@@ -38,7 +38,7 @@
   },
   "huispedia": {
    "ok": true,
-   "count": 8
+   "count": 9
   },
   "mijndak": {
    "ok": true,
@@ -54,11 +54,11 @@
   },
   "househunting": {
    "ok": true,
-   "count": 1
+   "count": 2
   },
   "kamernet": {
    "ok": true,
-   "count": 1
+   "count": 0
   },
   "ikwilhuren": {
    "ok": true,
@@ -66,10 +66,6 @@
   }
  },
  "scans": [
-  {
-   "time": "2026-11-04T22:38:53+00:00",
-   "new": 3
-  },
   {
    "time": "2026-11-05T15:32:29+00:00",
    "new": 5
@@ -206,9 +202,85 @@
    "time": "2026-11-19T23:36:27+00:00",
    "new": 0,
    "modus": "cloud"
+  },
+  {
+   "time": "2026-11-20T16:12:28+00:00",
+   "new": 3,
+   "modus": "cloud"
   }
  ],
  "listings": [
+  {
+   "id": "huispedia-1fc5b1c9836c",
+   "source": "huispedia",
+   "title": "Boezemsingel 414",
+   "url": "https://huispedia.nl/rotterdam/3034cd/boezemsingel/414",
+   "price": 1392,
+   "price_text": "",
+   "address": "Boezemsingel 414 3034 CD Rotterdam € 1.392 /mnd 61 m² 2 kamers",
+   "postcode": "3034 CD",
+   "wijk": null,
+   "rooms": 2,
+   "surface": 61,
+   "image": "https://d36jewe1e30sna.cloudfront.net/properties/3034/cd/414/id_2796043_291795010941_thumb.jpg?t=1795008376",
+   "extra": "Boezemsingel 414 3034 CD Rotterdam € 1.392 /mnd 61 m² 2 kamers",
+   "segment": null,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-20T16:12:28+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Boezemsingel 414, Rotterdam: 61 m², 1 slaapkamer, huurprijs € 1.392 per maand. Huispedia Woningwaarde € 276.000 tot € 307.000. Inzicht in élke woning in Nederland"
+  },
+  {
+   "id": "huispedia-1176016883b8",
+   "source": "huispedia",
+   "title": "Vest 7-D",
+   "url": "https://huispedia.nl/gouda/2801vc/vest/7-d",
+   "price": 1422,
+   "price_text": "",
+   "address": "Net op de markt Vest 7-D 2801 VC Gouda € 1.422 /mnd 84 m² 3 kamers",
+   "postcode": "2801 VC",
+   "wijk": null,
+   "rooms": 3,
+   "surface": 84,
+   "image": "https://img.huispedia.nl/sview/MjgwMVZDLTctRA==/NTIuMDA5NjYzMDUtNC43MDM4Mjg3Mg==",
+   "extra": "Net op de markt Vest 7-D 2801 VC Gouda € 1.422 /mnd 84 m² 3 kamers",
+   "segment": null,
+   "area": "Gouda",
+   "first_seen": "2026-11-20T16:12:28+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Vest 7-D, Gouda: 84 m², 2 slaapkamers, huurprijs € 1.422 per maand. Huispedia Woningwaarde € 441.000 tot € 486.000. Inzicht in élke woning in Nederland"
+  },
+  {
+   "id": "househunting-8c73a15d4fd1",
+   "source": "househunting",
+   "title": "Zwart Janstraat",
+   "url": "https://househunting.nl/woningaanbod/10b92939-14dd-46a0-b232-df3119b176db-zwart-janstraat-rotterdam/",
+   "price": 650,
+   "price_text": "",
+   "address": "Zwart Janstraat, Rotterdam",
+   "postcode": null,
+   "wijk": null,
+   "rooms": null,
+   "surface": null,
+   "image": "https://d1rf1jwua027xh.cloudfront.net/portfolio_be84b509-336f-48dc-8d85-003795ff4c26/listings/listing_f849860f-2b51-4621-ac8b-e3952879177c/media/655776380c05e.jpg?Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6ICJodHRwczovL2QxcmYxand1YTAyN3hoLmNsb3VkZnJvbnQubmV0L3BvcnRmb2xpb19iZTg0YjUwOS0zMzZmLTQ4ZGMtOGQ4NS0wMDM3OTVmZjRjMjYvbGlzdGluZ3MvbGlzdGluZ19mODQ5ODYwZi0yYjUxLTQ2MjEtYWM4Yi1lMzk1Mjg3OTE3N2MvbWVkaWEvNjU1Nzc2MzgwYzA1ZS5qcGciLCAiQ29uZGl0aW9uIjogeyJEYXRlTGVzc1RoYW4iOiB7IkFXUzpFcG9jaFRpbWUiOiAyMTQ3NDgzNjQ3fX19XX0%3D&Signature=kkUYJ3qKgpYV03oRdw39k004yh%2BFaiOauHeosJt6a94lydHKeDH5ug%2B56gA6gTqkQGlHpmtpyaMLsfv1YGYXPlbM6auug8on0%2Fl0YBIJCfja9duB6blGx%2B%2Bq3ukFw46mvJDmYO3uGPc2nhezEXIxxoJTs%2BWBp9rH9dD2SZNMXPIDizhE9A869G2BWYmk3SHKgA6dJ1ZgGRNdE0k8509vTvqcRue5IeSZKtZBjggGezMY4mXYTVswaRJMYzo9oeocayr1ViLwEPaur%2FUG%2Fo%2B%2B1y2HMxxbbgg0yFB%2FLS%2F1T7ZVtVApznGQVJzF9akb6Bh6SZiz8tIXN8uXo0mx3qGRhg%3D%3D&Key-Pair-Id=K194587S03REZY",
+   "extra": "Zwart Janstraat Rotterdam €650,- /mnd MEER INFO HouseHunting Randstad Amsterdam",
+   "segment": null,
+   "lat": 51.93348891,
+   "lng": 4.47772446,
+   "area": "Rotterdam",
+   "first_seen": "2026-11-20T16:12:28+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
+   "active": true,
+   "missed": 0,
+   "detail_checked": true,
+   "detail_text": "Te huur: Zeer ruime studio in Rotterdam! Enkel geschikt voor studenten! Huurprijs: €650,00 exclusief per maand. (€725,00 inclusief) Borg: €1300,00 Staat: Kaal Beschikbaar: 04-01-2027 Periode: 24 maanden (doelgroep contract) Highlights: – Fantastische locatie – Studentenwoning – Grote raampartijen – Eigen keukenblok De woning: Nette studentenkamer met gescheiden woon/slaapgedeelte. Eigen keukenblok… Instagram Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
+  },
   {
    "id": "vesteda-b3a8a77f2561",
    "source": "vesteda",
@@ -226,7 +298,29 @@
    "segment": null,
    "area": "Zoetermeer",
    "first_seen": "2026-11-19T16:37:04+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "ikwilhuren-9d5d96f21fff",
+   "source": "ikwilhuren",
+   "title": "Appartement Hoge Filterweg 658 ",
+   "url": "https://ikwilhuren.nu/object/rotterdam-3063km-658-hoge-filterweg-b1b38e764c10bfbc6b96a585c77bafde/",
+   "price": 1250,
+   "price_text": "",
+   "address": "Te huur Appartement Hoge Filterweg 658 3063KM Rotterdam Direct beschikbaar Direct inschrijven via deze site Nieuw € 1.250,- /mnd 84 m 2 2 slaapkamers",
+   "postcode": "3063 KM",
+   "wijk": null,
+   "rooms": null,
+   "surface": 84,
+   "image": "https://b.static.nbo.nl/media/d3/d33b7015e1acd7ec352938c137c5cf12/768x510/thumb.jpg",
+   "extra": "Te huur Appartement Hoge Filterweg 658 3063KM Rotterdam Direct beschikbaar Direct inschrijven via deze site Nieuw € 1.250,- /mnd 84 m 2 2 slaapkamers",
+   "segment": null,
+   "city": "rotterdam",
+   "area": "Rotterdam",
+   "first_seen": "2026-11-19T16:37:04+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0
   },
@@ -251,29 +345,7 @@
    "first_seen": "2026-11-19T16:37:04+00:00",
    "last_seen": "2026-11-19T23:36:27+00:00",
    "active": true,
-   "missed": 0
-  },
-  {
-   "id": "ikwilhuren-9d5d96f21fff",
-   "source": "ikwilhuren",
-   "title": "Appartement Hoge Filterweg 658 ",
-   "url": "https://ikwilhuren.nu/object/rotterdam-3063km-658-hoge-filterweg-b1b38e764c10bfbc6b96a585c77bafde/",
-   "price": 1250,
-   "price_text": "",
-   "address": "Te huur Appartement Hoge Filterweg 658 3063KM Rotterdam Direct beschikbaar Direct inschrijven via deze site Nieuw € 1.250,- /mnd 84 m 2 2 slaapkamers",
-   "postcode": "3063 KM",
-   "wijk": null,
-   "rooms": null,
-   "surface": 84,
-   "image": "https://b.static.nbo.nl/media/d3/d33b7015e1acd7ec352938c137c5cf12/768x510/thumb.jpg",
-   "extra": "Te huur Appartement Hoge Filterweg 658 3063KM Rotterdam Direct beschikbaar Direct inschrijven via deze site Nieuw € 1.250,- /mnd 84 m 2 2 slaapkamers",
-   "segment": null,
-   "city": "rotterdam",
-   "area": "Rotterdam",
-   "first_seen": "2026-11-19T16:37:04+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
-   "active": true,
-   "missed": 0
+   "missed": 1
   },
   {
    "id": "huispedia-538d33a5dbe4",
@@ -282,17 +354,17 @@
    "url": "https://huispedia.nl/zevenhuizen/2761ed/tweemanspolder/6-a60",
    "price": 1450,
    "price_text": "",
-   "address": "Net op de markt Tweemanspolder 6-A60 2761 ED Zevenhuizen € 1.450 /mnd 80 m² 288 m² 4 kamers",
+   "address": "Tweemanspolder 6-A60 2761 ED Zevenhuizen € 1.450 /mnd 80 m² 288 m² 4 kamers",
    "postcode": "2761 ED",
    "wijk": null,
    "rooms": 4,
    "surface": 80,
    "image": "https://img.huispedia.nl/sview/Mjc2MUVELTYtQTYw/NTIuMDA5NzAwNjUtNC41NjI5MDY1NA==",
-   "extra": "Net op de markt Tweemanspolder 6-A60 2761 ED Zevenhuizen € 1.450 /mnd 80 m² 288 m² 4 kamers",
+   "extra": "Tweemanspolder 6-A60 2761 ED Zevenhuizen € 1.450 /mnd 80 m² 288 m² 4 kamers",
    "segment": null,
    "area": "Zevenhuizen",
    "first_seen": "2026-11-18T16:29:27+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -305,21 +377,63 @@
    "url": "https://huispedia.nl/gouda/2803dd/groenhovenweg/161",
    "price": 1500,
    "price_text": "",
-   "address": "Net op de markt Groenhovenweg 161 2803 DD Gouda € 1.500 /mnd 92 m²",
+   "address": "Groenhovenweg 161 2803 DD Gouda € 1.500 /mnd 92 m²",
    "postcode": "2803 DD",
    "wijk": null,
    "rooms": null,
    "surface": 92,
    "image": "https://d36jewe1e30sna.cloudfront.net/properties/2803/dd/161/642b59a27053bc35fe50939051a963037ae92df1_thumb.jpg?t=1795005317",
-   "extra": "Net op de markt Groenhovenweg 161 2803 DD Gouda € 1.500 /mnd 92 m²",
+   "extra": "Groenhovenweg 161 2803 DD Gouda € 1.500 /mnd 92 m²",
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-18T16:29:27+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
    "detail_text": "Groenhovenweg 161, Gouda: 92 m², 2 slaapkamers, huurprijs € 1.500 per maand. Huispedia Woningwaarde € 339.000 tot € 385.000. Inzicht in élke woning in Nederland"
+  },
+  {
+   "id": "huispedia-8aed7c39a4e0",
+   "source": "huispedia",
+   "title": "Van Leeuwenhoeklaan 199",
+   "url": "https://huispedia.nl/zoetermeer/2713ra/van-leeuwenhoeklaan/199",
+   "price": 1210,
+   "price_text": "",
+   "address": "Van Leeuwenhoeklaan 199 2713 RA Zoetermeer € 1.210 /mnd 85 m² 2 kamers",
+   "postcode": "2713 RA",
+   "wijk": null,
+   "rooms": 2,
+   "surface": 85,
+   "image": "https://img.huispedia.nl/sview/MjcxM1JBLTE5OQ==/NTIuMDU3OTAzNjQtNC40ODMxNzk2Nw==",
+   "extra": "Van Leeuwenhoeklaan 199 2713 RA Zoetermeer € 1.210 /mnd 85 m² 2 kamers",
+   "segment": null,
+   "area": "Zoetermeer",
+   "first_seen": "2026-11-18T16:29:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
+   "active": true,
+   "missed": 0
+  },
+  {
+   "id": "huispedia-d888e8d34210",
+   "source": "huispedia",
+   "title": "Engelandlaan 266-A",
+   "url": "https://huispedia.nl/zoetermeer/2711dz/engelandlaan/266-a",
+   "price": 1333,
+   "price_text": "",
+   "address": "Net op de markt Engelandlaan 266-A 2711 DZ Zoetermeer € 1.333 /mnd 41 m² 1 kamer",
+   "postcode": "2711 DZ",
+   "wijk": null,
+   "rooms": 1,
+   "surface": 41,
+   "image": "https://d36jewe1e30sna.cloudfront.net/properties/2711/dz/266-a/id_30162573_991795002577_thumb.jpg?t=1795190174",
+   "extra": "Net op de markt Engelandlaan 266-A 2711 DZ Zoetermeer € 1.333 /mnd 41 m² 1 kamer",
+   "segment": null,
+   "area": "Zoetermeer",
+   "first_seen": "2026-11-18T16:29:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
+   "active": true,
+   "missed": 0
   },
   {
    "id": "huispedia-9df645e0fc79",
@@ -340,55 +454,9 @@
    "first_seen": "2026-11-18T16:29:27+00:00",
    "last_seen": "2026-11-19T23:36:27+00:00",
    "active": true,
-   "missed": 0,
+   "missed": 1,
    "detail_checked": true,
    "detail_text": "Het Rond 12-N, Zoetermeer: 60 m², 1 slaapkamer, huurprijs € 1.173 per maand. Huispedia Woningwaarde € 305.000 tot € 337.000. Inzicht in élke woning in Nederland"
-  },
-  {
-   "id": "huispedia-8aed7c39a4e0",
-   "source": "huispedia",
-   "title": "Van Leeuwenhoeklaan 199",
-   "url": "https://huispedia.nl/zoetermeer/2713ra/van-leeuwenhoeklaan/199",
-   "price": 1210,
-   "price_text": "",
-   "address": "Net op de markt Van Leeuwenhoeklaan 199 2713 RA Zoetermeer € 1.210 /mnd 85 m² 2 kamers",
-   "postcode": "2713 RA",
-   "wijk": null,
-   "rooms": 2,
-   "surface": 85,
-   "image": "https://img.huispedia.nl/sview/MjcxM1JBLTE5OQ==/NTIuMDU3OTAzNjQtNC40ODMxNzk2Nw==",
-   "extra": "Net op de markt Van Leeuwenhoeklaan 199 2713 RA Zoetermeer € 1.210 /mnd 85 m² 2 kamers",
-   "segment": null,
-   "area": "Zoetermeer",
-   "first_seen": "2026-11-18T16:29:27+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
-   "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Van Leeuwenhoeklaan 199, Zoetermeer: 85 m², 1 slaapkamer, huurprijs € 1.210 per maand. Huispedia Woningwaarde € 383.000 tot € 430.000. Inzicht in élke woning in Nederland"
-  },
-  {
-   "id": "huispedia-d888e8d34210",
-   "source": "huispedia",
-   "title": "Engelandlaan 266-A",
-   "url": "https://huispedia.nl/zoetermeer/2711dz/engelandlaan/266-a",
-   "price": 1333,
-   "price_text": "",
-   "address": "Net op de markt Engelandlaan 266-A 2711 DZ Zoetermeer € 1.333 /mnd 41 m² 1 kamer",
-   "postcode": "2711 DZ",
-   "wijk": null,
-   "rooms": 1,
-   "surface": 41,
-   "image": "https://d36jewe1e30sna.cloudfront.net/properties/2711/dz/266-a/id_30162573_991795002577_thumb.jpg?t=1795123815",
-   "extra": "Net op de markt Engelandlaan 266-A 2711 DZ Zoetermeer € 1.333 /mnd 41 m² 1 kamer",
-   "segment": null,
-   "area": "Zoetermeer",
-   "first_seen": "2026-11-18T16:29:27+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
-   "active": true,
-   "missed": 0,
-   "detail_checked": true,
-   "detail_text": "Engelandlaan 266-A, Zoetermeer: 41 m², huurprijs € 1.333 per maand. Huispedia Woningwaarde € 264.000 tot € 297.000. Inzicht in élke woning in Nederland"
   },
   {
    "id": "kamernet-200a8a917469",
@@ -411,7 +479,7 @@
    "first_seen": "2026-11-18T16:29:27+00:00",
    "last_seen": "2026-11-18T23:24:50+00:00",
    "active": false,
-   "missed": 2
+   "missed": 3
   },
   {
    "id": "kamernet-fba6015d2203",
@@ -434,7 +502,7 @@
    "first_seen": "2026-11-18T16:29:27+00:00",
    "last_seen": "2026-11-18T16:29:27+00:00",
    "active": false,
-   "missed": 3,
+   "missed": 4,
    "detail_checked": true,
    "detail_text": "Appartement te huur €1350 euro Luzacstraat, Rotterdam. Vind Appartement te huur in Luzacstraat, Rotterdam voor €1350/maand via Kamernet. Plan vandaag nog een bezichtiging! Kamernet > Appartementen Rotterdam > Appartementen Luzacstraat > Appartement 2419285 Luzacstraat Kaal Appartement te huur • Luzacstraat, Rotterdam • 5 uur geleden geplaatst Delen Bewaren Toon alles Over de woonruimte 55 m² Kaal appartement Beschikbaar vanaf 17 nov 2026 Onbepaalde tijd Bezichtiging mogelijk Vraag de verhuurder om een bezichtiging Appartment for students 1 year avalaible 1 sleepingroom not furnihed registration is possible exclsueif gas water electra wifi Wat je krijgt Privé woonkamer Privé keuken Privé badkamer Privé toilet Geen internet Energielabel B 0 huisgenoten Geen huisdieren toegestaan Wat je betaalt Huur (exclusief vaste lasten) € 1.350 Borg € 2.000 Extra kosten --- Waar je woont Luzacstraat, Rotterdam Verhuurders ideale huurder Aantal huurders 2 personen Leeftijd 16 - 99 jaar Geslacht Niet belangrijk Bezigheid Student , Werkende student Gesproken talen Engels Verblijfsduur 1 jaar Over de verhuurder Bas Je moet ingelogd zijn om meer details te zien Account maken Inloggen € 1.350 /maand Excl. vaste lasten · Deposit € 2.000 (1.5 maanden) Bas Particuliere verhuurder • Laatst gezien op 17 nov 2026 Contacteer verhuurder Weet wanneer er soortgelijke woningen online komen Vind je dit wat? Schrijf je in en wij laten je weten wanneer er een nieuwe ad zoals deze geplaatst is. Schrijf je in Ver"
   },
@@ -459,7 +527,7 @@
    "first_seen": "2026-11-16T17:05:40+00:00",
    "last_seen": "2026-11-17T00:50:11+00:00",
    "active": false,
-   "missed": 6,
+   "missed": 7,
    "detail_checked": true,
    "detail_text": "Studio te huur €1250 euro Zwart Janstraat, Rotterdam. Vind Studio te huur in Zwart Janstraat, Rotterdam voor €1250/maand via Kamernet. Plan vandaag nog een bezichtiging! Kamernet > Studios Rotterdam > Studios Zwart Janstraat > Studio 2418837 Zwart Janstraat Gestoffeerd Studio te huur • Zwart Janstraat, Rotterdam • 1 dagen geleden geplaatst Delen Bewaren Toon alles Over de woonruimte 25 m² Gestoffeerd studio Beschikbaar vanaf 30 nov 2026 Onbepaalde tijd Bezichtiging mogelijk Vraag de verhuurder om een bezichtiging De prijzen zijn all incl. Gas water elektra, internet en belastingen. Wil je het volledig gemeubileerd hebben? We kunnen de studio volledig meubileren met: - moderne boxspring bed - kledingkast - eettafel met stoelen - mooie bank - salontafel - wasmachine - koelkast - gordijnen Registration possible 1 person, no couples minimum of 6 months, max 24 months pets allowed no dogs De foto's zijn bedoeld als impressiefoto's van een ander project die we pasgeleden hebben opgeleverd. Visgraat, mooie keuken en een hele mooie badkamer. Genieten maar :) Kom langs op onze open huis en dan leggen we alles uit. Wat je krijgt Privé woonkamer Privé keuken Privé badkamer Privé toilet Internet beschikbaar Onbekend energielabel Geen huisdieren toegestaan Wat je betaalt Huur (inclusief vaste lasten) € 1.250 Borg € 2.500 Extra kosten --- Waar je woont Zwart Janstraat, Rotterdam Verhuurders ideale huurder Aantal huurders 1 personen Leeftijd 16 - 99 jaar Geslacht Niet belangrijk Bezigheid S"
   },
@@ -484,7 +552,7 @@
    "first_seen": "2026-11-14T14:12:53+00:00",
    "last_seen": "2026-11-14T21:32:31+00:00",
    "active": false,
-   "missed": 10
+   "missed": 11
   },
   {
    "id": "ikwilhuren-d04f0fe88a67",
@@ -506,7 +574,7 @@
    "first_seen": "2026-11-11T23:29:05+00:00",
    "last_seen": "2026-11-17T00:50:11+00:00",
    "active": false,
-   "missed": 6,
+   "missed": 7,
    "detail_checked": true,
    "detail_text": "Comfortabel wonen in een bijzonder stukje stad. Een bijzonder geslaagd initiatief op dit gebied is de Kralinger Esch, een nieuw woongebied op het voormalige ... Huurwoningen Rotterdam Hoge Filterweg Hoge Filterweg 644 vergroot bekijken + 17 vergroot bekijken vergroot bekijken + 16 Te huur: Hoge Filterweg 644 3063KM Rotterdam (Appartement) € 1.300,- /mnd Opties Ik heb belangstelling Te huur: Hoge Filterweg 644 3063KM Rotterdam (Appartement) € 1.300,- /mnd Omschrijving Comfortabel wonen in een bijzonder stukje stad. Een bijzonder geslaagd initiatief op dit gebied is de Kralinger Esch, een nieuw woongebied op het voormalige Drinkwaterleidingterrein in de wijk Kralingen. Dit woongebied, direct gelegen aan de Maas, is een sprekend voorbeeld van creatief hergebruik de metamorfose van een 19e eeuws industrieel complex, waar modern wooncomfort en gebouwen van historische waarde zijn geïntegreerd. Op loopafstand bevindt zich kleinschalig winkelcentrum met de diverse voorzieningen. Nabij het complex bevindt zich een tramhalte die een regelmatige dienstregeling kent. Met de tram bent u binnen 10 á 15 minuten in het centrum van Rotterdam. Indeling: De appartementen zijn gelegen in zes 'lagere' gebouwen van acht verdiepingen en één 'hoger' gebouw. De 3- en 4 huurappartementen hebben een oppervlakte van circa 80 m2 tot 100 m2. Uiteraard zijn de appartementen allen voorzien van moderne badkamer met ligbad en een aparte doucheruimte. De fietsenberging is bereikbaar via een afgesloten central"
   },
@@ -530,7 +598,7 @@
    "first_seen": "2026-11-11T23:29:05+00:00",
    "last_seen": "2026-11-17T00:50:11+00:00",
    "active": false,
-   "missed": 6,
+   "missed": 7,
    "detail_checked": true,
    "detail_text": "Comfortabel wonen in een bijzonder stukje stad. Een bijzonder geslaagd initiatief op dit gebied is de Kralinger Esch, een nieuw woongebied op het voormalige ... Huurwoningen Rotterdam Hoge Filterweg Hoge Filterweg 570 vergroot bekijken + 17 vergroot bekijken vergroot bekijken + 16 Te huur: Hoge Filterweg 570 3063KL Rotterdam (Appartement) € 1.300,- /mnd Opties Ik heb belangstelling Te huur: Hoge Filterweg 570 3063KL Rotterdam (Appartement) € 1.300,- /mnd Omschrijving Comfortabel wonen in een bijzonder stukje stad. Een bijzonder geslaagd initiatief op dit gebied is de Kralinger Esch, een nieuw woongebied op het voormalige Drinkwaterleidingterrein in de wijk Kralingen. Dit woongebied, direct gelegen aan de Maas, is een sprekend voorbeeld van creatief hergebruik de metamorfose van een 19e eeuws industrieel complex, waar modern wooncomfort en gebouwen van historische waarde zijn geïntegreerd. Op loopafstand bevindt zich kleinschalig winkelcentrum met de diverse voorzieningen. Nabij het complex bevindt zich een tramhalte die een regelmatige dienstregeling kent. Met de tram bent u binnen 10 á 15 minuten in het centrum van Rotterdam. Indeling: De appartementen zijn gelegen in zes 'lagere' gebouwen van acht verdiepingen en één 'hoger' gebouw. De 3- en 4 huurappartementen hebben een oppervlakte van circa 80 m2 tot 100 m2. Uiteraard zijn de appartementen allen voorzien van moderne badkamer met ligbad en een aparte doucheruimte. De fietsenberging is bereikbaar via een afgesloten central"
   },
@@ -551,7 +619,7 @@
    "segment": "vrije sector",
    "area": "Rotterdam",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -576,7 +644,7 @@
    "lng": 4.49083775,
    "area": "Zoetermeer",
    "first_seen": "2026-11-10T15:37:54+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -603,7 +671,7 @@
    "first_seen": "2026-11-10T15:37:54+00:00",
    "last_seen": "2026-11-10T22:23:58+00:00",
    "active": false,
-   "missed": 18
+   "missed": 19
   },
   {
    "id": "ikwilhuren-7285b6f09daa",
@@ -650,7 +718,7 @@
    "first_seen": "2026-11-06T15:07:23+00:00",
    "last_seen": "2026-11-07T20:56:40+00:00",
    "active": false,
-   "missed": 23
+   "missed": 24
   },
   {
    "id": "vesteda-619aa3ea9b56",
@@ -669,7 +737,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-05T15:32:29+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -696,7 +764,7 @@
    "first_seen": "2026-11-05T15:32:29+00:00",
    "last_seen": "2026-11-06T22:08:59+00:00",
    "active": false,
-   "missed": 25
+   "missed": 26
   },
   {
    "id": "pararius-625e2126cab7",
@@ -759,7 +827,7 @@
    "lng": 4.4873082,
    "area": "Zoetermeer",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -784,11 +852,11 @@
    "lng": 4.49652441,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T22:38:53+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
-   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Phone Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
+   "detail_text": "Te huur: Nieuw en licht appartement in groene wijk Crooswijk Huurprijs: €1200,00 per maand exclusief nutsvoorzieningen en internet Beschikbaar: 01-11-2026 Huurperiode: 3 maanden  Staat: Gemeubileerd  Een moderne woning met veel lichtinval, perfect geschikt voor tijdelijke bewoning in een rustige maar centrale omgeving. Highlights: – Volledig nieuw opgeleverd – Gemeubileerd –… Instagram Dit veld is bedoeld voor validatiedoeleinden en moet niet worden gewijzigd. Naam * Email * Telefoonnummer Uw bericht CAPTCHA"
   },
   {
    "id": "vesteda-279fa1654a61",
@@ -807,7 +875,7 @@
    "segment": null,
    "area": "Rotterdam",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -826,12 +894,12 @@
    "rooms": 3,
    "surface": 84,
    "image": "https://vbtverhuurmakelaars.nl/images/3fe74b-w300-s-fwj/vest-7-d",
-   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 102 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
+   "extra": "Soort object: Appartement Woonoppervlakte: 84 m² Kamers: 3 Kamers Servicekosten: € 75,- per maand Huurtermijn (min.): 12 Maanden Beschikbaar: Per direct Aantal reacties: 103 Bij deze woning hoort een parkeerplaats: Bij deze woning hoort een parkeerplaats status: Beschikbaar",
    "segment": null,
    "city": "Gouda",
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -854,7 +922,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -877,7 +945,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -900,7 +968,7 @@
    "segment": null,
    "area": "Gouda",
    "first_seen": "2026-11-04T21:41:50+00:00",
-   "last_seen": "2026-11-19T23:36:27+00:00",
+   "last_seen": "2026-11-20T16:12:28+00:00",
    "active": true,
    "missed": 0,
    "detail_checked": true,
@@ -925,7 +993,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-18T23:24:50+00:00",
    "active": false,
-   "missed": 2,
+   "missed": 3,
    "detail_checked": true,
    "detail_text": "Boezemsingel 470, Rotterdam: 61 m², 1 slaapkamer, huurprijs € 1.325 per maand. Huispedia Woningwaarde € 300.000 tot € 327.000. Inzicht in élke woning in Nederland"
   },
@@ -948,7 +1016,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-17T23:51:53+00:00",
    "active": false,
-   "missed": 4,
+   "missed": 5,
    "detail_checked": true,
    "detail_text": "Lavendel 1, Zevenhuizen: 72 m², 2 slaapkamers, huurprijs € 1.348 per maand. Huispedia Woningwaarde € 433.000 tot € 487.000. Inzicht in élke woning in Nederland"
   },
@@ -971,7 +1039,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-17T23:51:53+00:00",
    "active": false,
-   "missed": 4,
+   "missed": 5,
    "detail_checked": true,
    "detail_text": "Westerkade 2-104, Gouda: 60 m², 1 slaapkamer, huurprijs € 1.440 per maand. Huispedia Woningwaarde € 344.000 tot € 379.000. Inzicht in élke woning in Nederland"
   },
@@ -994,7 +1062,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-17T00:50:11+00:00",
    "active": false,
-   "missed": 6,
+   "missed": 7,
    "detail_checked": true,
    "detail_text": "Bent u op zoek naar een fijn appartement in Rotterdam? Dan wordt dit misschien wel uw nieuwe thuis!\r\n\r\nBij binnenkomst komt u uit in de hal die toegang biedt tot de verschillende vertrekken. De woonkamer vormt samen met de halfopen keuken een gezellige leefruimte. Door de halfopen keuken blijft u tijdens het koken gezellig in contact met uw gasten. Vanuit de woonkamer heeft u toegang tot de loggia, een fijne plek waar u het hele jaar door kunt genieten. Het appartement beschikt daarnaast over twee slaapkamers die naar wens kunnen worden ingericht als slaap-, werk- of hobbykamer. Ook is er een praktische berging aanwezig, ideaal voor het opbergen van spullen die u niet dagelijks gebruikt.\r\n\r\nDe woning ligt in Rotterdam-IJsselmonde, een wijk waar rust en voorzieningen goed samenkomen. Voor uw dagelijkse boodschappen zijn diverse winkels en supermarkten in de omgeving aanwezig. In de buurt vindt u ook verschillende scholen, sportverenigingen en horecagelegenheden. Liefhebbers van groen kunnen terecht in het nabijgelegen Park De Twee Heuvels, een fijne plek om te wandelen, sporten of ontspannen. Ook de Oude Maas en het recreatiegebied rondom de Brienenoord bieden mogelijkheden voor een wandeling of fietstocht. Met het openbaar vervoer en de uitvalswegen in de directe omgeving bent u bovendien snel op weg naar het centrum van Rotterdam of andere bestemmingen in de regio.\r\n\r\nZiet u zichzelf al wonen in dit appartement op een goed bereikbare locatie in Rotterdam? Verzamel dan snel d"
   },
@@ -1017,7 +1085,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-15T21:51:47+00:00",
    "active": false,
-   "missed": 8,
+   "missed": 9,
    "detail_checked": true,
    "detail_text": "Vlakbij het strand van Nesselande vind je dit fraaie, in 2025 opgeleverde 3-kamer appartement. Reageer snel! Aanbod vrije sector huurwoningen Pianosapad 58 3059 PX ROTTERDAM (Nesselande) € 1.263,07 Per maand Appartement Reacties gesloten Appartement 1e verdieping 68m² 3 Kamers Omschrijving Vlakbij het strand van Nesselande vind je dit fraaie, in 2025 opgeleverde 3-kamer appartement. Reageer snel! De woning ligt centraal in Nesselande: een gezellige buitenwijk met veel ruimte voor recreatie. De grote Zevenhuizerplas biedt volop mogelijkheden voor zwemmen, varen of suppen. Het strandje is bij mooi weer een heerlijke uitvalsbasis voor wie verkoeling zoekt. Liever geen natte voeten? Haal dan een ijsje op de boulevard. Hier heb je de keuze uit verschillende cafés en restaurants die het hele jaar open zijn. Winkels, sportverenigingen en andere voorzieningen vind je ook vlakbij. Indeling : - Woonkamer inclusief keuken: ca. 30 m² - 2 slaapkamers: ca. 11 m² en 8 m² - Bad met douche en wastafel - Berging - Eigen parkeerplaats Bijzonderheden : - De huurprijs is zonder servicekosten. De servicekosten bedragen ongeveer € 72,80 per maand, zijn indicatief en kunnen afwijken. - De getoonde foto's in de advertentie zijn impressie foto's. De werkelijkheid kan afwijken. Huurvoorwaarden : - De inkomenseis voor een huishouden bestaande één persoon is: een geregistreerd jaarinkomen over 2024 bij de Belastingdienst of laatste 12 maanden geregistreerd door het UWV van minimaal € 59.504 en maximaal €"
   },
@@ -1040,7 +1108,7 @@
    "first_seen": "2026-11-04T21:41:50+00:00",
    "last_seen": "2026-11-15T21:51:47+00:00",
    "active": false,
-   "missed": 8,
+   "missed": 9,
    "detail_checked": true,
    "detail_text": "Fraai 4-kamer appartement in het gewilde Kralingen. Grijp je kans en reageer snel op deze woning! Aanbod vrije sector huurwoningen Jeruzalemstraat 99 3061 GM ROTTERDAM (Kralingen-West) € 1.228,07 Per maand Appartement Reacties gesloten Appartement 1e verdieping 87m² 4 Kamers Omschrijving Fraai 4-kamer appartement in het gewilde Kralingen. Grijp je kans en reageer snel op deze woning! Wonen aan de Jeruzalemstraat betekent genieten van alles wat Kralingen te bieden heeft. Deze gezellige zijstraat van de Oudedijk ligt op korte afstand van diverse winkels, waaronder een XL Albert Heijn, en een ruim aanbod aan gezellige cafés en eetgelegenheden. Zin in ontspanning of beweging? Het prachtige Kralingse Bos ligt dichtbij en biedt volop mogelijkheden om te wandelen, hard te lopen of te recreëren. Daarnaast is de bereikbaarheid uitstekend: met tram, metro en bus ben je snel in het stadscentrum en andere delen van Rotterdam. Indeling: - Woonkamer inclusief keuken: ca. 47m² - 3 slaapkamers: ca. 12 m², 8 m² en 6 m² - Badkamer met douche en wastafel - Berging Bijzonderheden: - De huurprijs is zonder servicekosten. De servicekosten bedragen ongeveer € 60,35 per maand. Deze zijn indicatief en kunnen afwijken. Huurvoorwaarden : - De inkomenseis voor een huishouden bestaande uit twee personen of meer is: een geregistreerd jaarinkomen over 2025 bij de Belastingdienst of laatste 12 maanden geregistreerd door het UWV van minimaal € 68.858 en maximaal € 93.531. - De woning is bestemd voor minimaal"
   },
